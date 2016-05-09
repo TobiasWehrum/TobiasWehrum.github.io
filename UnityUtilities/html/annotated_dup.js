@@ -1,4 +1,4 @@
 var annotated_dup =
 [
-    [ "UnityUtilities", "namespace_unity_utilities.html", "namespace_unity_utilities" ]
+    [ "UnityUtilities", "a00034.html", "a00034" ]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>UnityUtilities: Main Page</title>
+<title>UnityUtilities: Unity Utilities</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -98,10 +98,29 @@ $(document).ready(function(){initNavTree('index.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">UnityUtilities Documentation</div>  </div>
+<div class="title">Unity Utilities </div>  </div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<div class="textblock"><p>Over the years, I've worked on a lot of <a href="http://dragonlab.de/portfolio">projects</a> and <a href="http://blog.dragonlab.de/tag/unity">game jam prototypes</a> with Unity3D and there are some pieces of code that I've needed time and time again. I'm sharing them here in the hopes that they are useful for you too! It's just a few scripts for now, but expect updates with more once I clean them up.</p>
+<p>Everything is released under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
+<p>If you find any bugs or have suggestions, please add an <a href="https://github.com/TobiasWehrum/unity-utilities/issues">Issue</a> here or send me a mail at <a href="#" onclick="location.href='mai'+'lto:'+'Tob'+'ia'+'s.W'+'eh'+'rum'+'@d'+'rag'+'on'+'lab'+'.d'+'e'; return false;">Tobia<span style="display: none;">.nosp@m.</span>s.We<span style="display: none;">.nosp@m.</span>hrum@<span style="display: none;">.nosp@m.</span>drag<span style="display: none;">.nosp@m.</span>onlab<span style="display: none;">.nosp@m.</span>.de</a>.</p>
+<h2>Overview</h2>
+<ul>
+<li><a href="https://github.com/TobiasWehrum/unity-utilities/tree/master/Countdown">Countdown</a>: Useful for things like cooldowns or spawn delays. It is also helpful for tweening things by using the <code>PercentElapsed</code> property.</li>
+<li><a href="https://github.com/TobiasWehrum/unity-utilities/tree/master/NoiseOutputValue">NoiseOutputValue</a>: Enter a range and a speed in the editor, get an output value that fluctuates over time using <a href="http://docs.unity3d.com/ScriptReference/Mathf.PerlinNoise.html">Perlin Noise</a>.</li>
+<li><a href="https://github.com/TobiasWehrum/unity-utilities/tree/master/Range">Range</a>: Editable data types that takes an int/float range. Used for things like "Spawn 2 to 4 enemies."</li>
+<li><a href="https://github.com/TobiasWehrum/unity-utilities/tree/master/Singleton">Singleton</a>: Allows easy and convenient creation of a Singleton. Optionally makes a Singleton persist between scenes while ensuring that only one exists.</li>
+</ul>
+<h2>Usage</h2>
+<p>To use the scripts, just drop them into the Assets folder of your projects. Or better yet, make an "Assets/Extensions/UnityUtitilites" folder and drop them there. Hurray for proper organisation.</p>
+<p>You can also just use selected scripts, but you should check the "Dependencies" section in the respective folder to make sure you copy everything you need.</p>
+<h2>Documentation</h2>
+<p>The class documentation is available <a href="http://tobiaswehrum.github.io/UnityUtilities/html/annotated.html">here</a>.</p>
+<h2>Changelog</h2>
+<ul>
+<li>2015-05-08: Added <a href="https://github.com/TobiasWehrum/unity-utilities/tree/master/Countdown">Countdown</a>, <a href="https://github.com/TobiasWehrum/unity-utilities/tree/master/NoiseOutputValue">NoiseOutputValue</a>, <a href="https://github.com/TobiasWehrum/unity-utilities/tree/master/Range">Range</a> and <a href="https://github.com/TobiasWehrum/unity-utilities/tree/master/Singleton">Singleton</a>. </li>
+</ul>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

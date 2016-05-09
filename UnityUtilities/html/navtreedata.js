@@ -1,11 +1,11 @@
 var NAVTREE =
 [
   [ "UnityUtilities", "index.html", [
-    [ "Countdown", "md_C:_dev_Projekte_Unity_Packages_&_Stuff_UnityUtilities_Assets_Library_Countdown_README.html", null ],
-    [ "NoiseOutputValue", "md_C:_dev_Projekte_Unity_Packages_&_Stuff_UnityUtilities_Assets_Library_NoiseOutputValue_README.html", null ],
-    [ "RangeInt/Float", "md_C:_dev_Projekte_Unity_Packages_&_Stuff_UnityUtilities_Assets_Library_Range_README.html", null ],
-    [ "Unity Utilities", "md_C:_dev_Projekte_Unity_Packages_&_Stuff_UnityUtilities_Assets_Library_README.html", null ],
-    [ "SingletonMonoBehaviour and PersistentSingletonMonoBehaviour", "md_C:_dev_Projekte_Unity_Packages_&_Stuff_UnityUtilities_Assets_Library_Singleton_README.html", null ],
+    [ "Unity Utilities", "index.html", null ],
+    [ "Countdown", "a00001.html", null ],
+    [ "NoiseOutputValue", "a00002.html", null ],
+    [ "RangeInt/Float", "a00003.html", null ],
+    [ "SingletonMonoBehaviour and PersistentSingletonMonoBehaviour", "a00004.html", null ],
     [ "Packages", null, [
       [ "Packages", "namespaces.html", "namespaces" ]
     ] ],
@@ -24,7 +24,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"a00001.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
