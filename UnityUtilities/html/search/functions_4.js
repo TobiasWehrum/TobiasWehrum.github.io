@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['progress',['Progress',['../a00006.html#a824c6eccdadef99402f1ba9583d47938',1,'UnityUtilities.Countdown.Progress()'],['../a00010.html#a7ab20474679e6a2a42bf9e7e8519c319',1,'UnityUtilities.NoiseOutputValue.Progress()']]]
+  ['lerp',['Lerp',['../a00016.html#a555ce2f332f776b0169f47864fb0d04f',1,'UnityUtilities::RangeFloat']]],
+  ['lerpunclamped',['LerpUnclamped',['../a00016.html#ac696d5a89bb0266e7e1f43edc116ee63',1,'UnityUtilities::RangeFloat']]]
 ];

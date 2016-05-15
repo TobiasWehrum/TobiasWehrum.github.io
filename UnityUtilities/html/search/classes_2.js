@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['persistentsingletonmonobehaviour',['PersistentSingletonMonoBehaviour',['../a00011.html',1,'UnityUtilities']]]
+  ['noiseoutputvalue',['NoiseOutputValue',['../a00013.html',1,'UnityUtilities']]]
 ];

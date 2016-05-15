@@ -3,9 +3,11 @@ var NAVTREE =
   [ "UnityUtilities", "index.html", [
     [ "Unity Utilities", "index.html", null ],
     [ "Countdown", "a00001.html", null ],
-    [ "NoiseOutputValue", "a00002.html", null ],
-    [ "RangeInt/Float", "a00003.html", null ],
-    [ "SingletonMonoBehaviour and PersistentSingletonMonoBehaviour", "a00004.html", null ],
+    [ "LINQExtensions", "a00002.html", null ],
+    [ "NoiseOutputValue", "a00003.html", null ],
+    [ "RandomBag", "a00004.html", null ],
+    [ "RangeInt/Float", "a00005.html", null ],
+    [ "SingletonMonoBehaviour and PersistentSingletonMonoBehaviour", "a00006.html", null ],
     [ "Packages", null, [
       [ "Packages", "namespaces.html", "namespaces" ]
     ] ],

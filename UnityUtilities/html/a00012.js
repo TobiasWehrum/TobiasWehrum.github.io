@@ -1,12 +1,10 @@
 var a00012 =
 [
-    [ "RangeFloat", "a00012.html#a3f902e890c68daec20fd5b550044c61d", null ],
-    [ "RangeFloat", "a00012.html#a10b694c29d04105076d7c2b387827d35", null ],
-    [ "InverseLerp", "a00012.html#aef437bca51390f168c261b80f8f43fe3", null ],
-    [ "Lerp", "a00012.html#a555ce2f332f776b0169f47864fb0d04f", null ],
-    [ "LerpUnclamped", "a00012.html#ac696d5a89bb0266e7e1f43edc116ee63", null ],
-    [ "From", "a00012.html#a5a7805e0e6d42dad05d008bb3a948491", null ],
-    [ "RandomInclusive", "a00012.html#a78f43c5d9a3cbea3e4b7b169706657ea", null ],
-    [ "Range", "a00012.html#aa133e42641bbbc9ab7af3806421bcb6a", null ],
-    [ "To", "a00012.html#aae6babc6b9a3917567250d277afe19bb", null ]
+    [ "FirstByGeneratedValue< TElement, TValue >", "a00012.html#ae204dd2116c36c23715f492126e7b8e9", null ],
+    [ "Nearest< TElement >", "a00012.html#aa6b0177d596d3715fb3282326d9fcf7f", null ],
+    [ "RandomElement< T >", "a00012.html#a100bff4656dc40b420634e535b13c641", null ],
+    [ "RandomElement< T >", "a00012.html#a8fbe3473e388120e8e5789fdb578aff5", null ],
+    [ "Shuffle< T >", "a00012.html#abaf96186110194567025c17a222b7546", null ],
+    [ "Shuffle< T >", "a00012.html#ae22fb31ce997aeda7e08eb7816c0b8ce", null ],
+    [ "ToOneLineString< T >", "a00012.html#a1b68a813f8c3314cfc0e22ff6f39ca29", null ]
 ];

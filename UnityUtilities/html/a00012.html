@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>UnityUtilities: UnityUtilities.RangeFloat Class Reference</title>
+<title>UnityUtilities: UnityUtilities.LINQExtensions Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,85 +106,67 @@ $(document).ready(function(){initNavTree('a00012.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#properties">Properties</a> &#124;
-<a href="a00041.html">List of all members</a>  </div>
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="a00048.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">UnityUtilities.RangeFloat Class Reference</div>  </div>
+<div class="title">UnityUtilities.LINQExtensions Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Provides input for a float value range in the editor and various convencience functions to work with that range.  
+<p>A collection of extension methods for IEnumerable&lt;T&gt;, List&lt;T&gt; and arrays.  
  <a href="a00012.html#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a3f902e890c68daec20fd5b550044c61d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a3f902e890c68daec20fd5b550044c61d">RangeFloat</a> ()</td></tr>
-<tr class="memdesc:a3f902e890c68daec20fd5b550044c61d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="a00012.html" title="Provides input for a float value range in the editor and various convencience functions to work with ...">RangeFloat</a> with 0-0 as the range. Needed for the editor.  <a href="#a3f902e890c68daec20fd5b550044c61d">More...</a><br /></td></tr>
-<tr class="separator:a3f902e890c68daec20fd5b550044c61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10b694c29d04105076d7c2b387827d35"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a10b694c29d04105076d7c2b387827d35">RangeFloat</a> (float @from, float to)</td></tr>
-<tr class="memdesc:a10b694c29d04105076d7c2b387827d35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="a00012.html" title="Provides input for a float value range in the editor and various convencience functions to work with ...">RangeFloat</a> with a certain range.  <a href="#a10b694c29d04105076d7c2b387827d35">More...</a><br /></td></tr>
-<tr class="separator:a10b694c29d04105076d7c2b387827d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a555ce2f332f776b0169f47864fb0d04f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a555ce2f332f776b0169f47864fb0d04f">Lerp</a> (float t)</td></tr>
-<tr class="memdesc:a555ce2f332f776b0169f47864fb0d04f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linearly interpolates between to and from by t.  <a href="#a555ce2f332f776b0169f47864fb0d04f">More...</a><br /></td></tr>
-<tr class="separator:a555ce2f332f776b0169f47864fb0d04f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac696d5a89bb0266e7e1f43edc116ee63"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#ac696d5a89bb0266e7e1f43edc116ee63">LerpUnclamped</a> (float t)</td></tr>
-<tr class="memdesc:ac696d5a89bb0266e7e1f43edc116ee63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linearly interpolates between to and from by t.  <a href="#ac696d5a89bb0266e7e1f43edc116ee63">More...</a><br /></td></tr>
-<tr class="separator:ac696d5a89bb0266e7e1f43edc116ee63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef437bca51390f168c261b80f8f43fe3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#aef437bca51390f168c261b80f8f43fe3">InverseLerp</a> (float value)</td></tr>
-<tr class="memdesc:aef437bca51390f168c261b80f8f43fe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the linear parameter t that produces the interpolant value within the range [from, to].  <a href="#aef437bca51390f168c261b80f8f43fe3">More...</a><br /></td></tr>
-<tr class="separator:aef437bca51390f168c261b80f8f43fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
-Properties</h2></td></tr>
-<tr class="memitem:a5a7805e0e6d42dad05d008bb3a948491"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a5a7805e0e6d42dad05d008bb3a948491">From</a><code> [get]</code></td></tr>
-<tr class="memdesc:a5a7805e0e6d42dad05d008bb3a948491"><td class="mdescLeft">&#160;</td><td class="mdescRight">The range start.  <a href="#a5a7805e0e6d42dad05d008bb3a948491">More...</a><br /></td></tr>
-<tr class="separator:a5a7805e0e6d42dad05d008bb3a948491"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae6babc6b9a3917567250d277afe19bb"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#aae6babc6b9a3917567250d277afe19bb">To</a><code> [get]</code></td></tr>
-<tr class="memdesc:aae6babc6b9a3917567250d277afe19bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The range end.  <a href="#aae6babc6b9a3917567250d277afe19bb">More...</a><br /></td></tr>
-<tr class="separator:aae6babc6b9a3917567250d277afe19bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa133e42641bbbc9ab7af3806421bcb6a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#aa133e42641bbbc9ab7af3806421bcb6a">Range</a><code> [get]</code></td></tr>
-<tr class="memdesc:aa133e42641bbbc9ab7af3806421bcb6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns how wide the range between from and to is.  <a href="#aa133e42641bbbc9ab7af3806421bcb6a">More...</a><br /></td></tr>
-<tr class="separator:aa133e42641bbbc9ab7af3806421bcb6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78f43c5d9a3cbea3e4b7b169706657ea"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a78f43c5d9a3cbea3e4b7b169706657ea">RandomInclusive</a><code> [get]</code></td></tr>
-<tr class="memdesc:a78f43c5d9a3cbea3e4b7b169706657ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a random number between from [inclusive] and to [inclusive].  <a href="#a78f43c5d9a3cbea3e4b7b169706657ea">More...</a><br /></td></tr>
-<tr class="separator:a78f43c5d9a3cbea3e4b7b169706657ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae204dd2116c36c23715f492126e7b8e9"><td class="memItemLeft" align="right" valign="top">static TElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#ae204dd2116c36c23715f492126e7b8e9">FirstByGeneratedValue&lt; TElement, TValue &gt;</a> (this IEnumerable&lt; TElement &gt; list, Func&lt; TElement, TValue &gt; valueConverter, Predicate&lt; TValue &gt; predicateValue=null)</td></tr>
+<tr class="memdesc:ae204dd2116c36c23715f492126e7b8e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a collection, generates values from the items and and returns the item with the lowest generated value. Useful for example to find the closest item. Reverse the generated values to find the item with the highest generated value.  <a href="#ae204dd2116c36c23715f492126e7b8e9">More...</a><br /></td></tr>
+<tr class="separator:ae204dd2116c36c23715f492126e7b8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6b0177d596d3715fb3282326d9fcf7f"><td class="memItemLeft" align="right" valign="top">static TElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#aa6b0177d596d3715fb3282326d9fcf7f">Nearest&lt; TElement &gt;</a> (this IEnumerable&lt; TElement &gt; list, Vector3 referencePoint, float minDistance=0, float maxDistance=float.PositiveInfinity)</td></tr>
+<tr class="memdesc:aa6b0177d596d3715fb3282326d9fcf7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the component nearest to the referencePoint and in minimum/maximum range.  <a href="#aa6b0177d596d3715fb3282326d9fcf7f">More...</a><br /></td></tr>
+<tr class="separator:aa6b0177d596d3715fb3282326d9fcf7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaf96186110194567025c17a222b7546"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#abaf96186110194567025c17a222b7546">Shuffle&lt; T &gt;</a> (this T[] list)</td></tr>
+<tr class="memdesc:abaf96186110194567025c17a222b7546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuffles an array in place.  <a href="#abaf96186110194567025c17a222b7546">More...</a><br /></td></tr>
+<tr class="separator:abaf96186110194567025c17a222b7546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae22fb31ce997aeda7e08eb7816c0b8ce"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#ae22fb31ce997aeda7e08eb7816c0b8ce">Shuffle&lt; T &gt;</a> (this List&lt; T &gt; list)</td></tr>
+<tr class="memdesc:ae22fb31ce997aeda7e08eb7816c0b8ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuffles an list in place.  <a href="#ae22fb31ce997aeda7e08eb7816c0b8ce">More...</a><br /></td></tr>
+<tr class="separator:ae22fb31ce997aeda7e08eb7816c0b8ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a100bff4656dc40b420634e535b13c641"><td class="memItemLeft" align="right" valign="top">static T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a100bff4656dc40b420634e535b13c641">RandomElement&lt; T &gt;</a> (this T[] array)</td></tr>
+<tr class="memdesc:a100bff4656dc40b420634e535b13c641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a random element from the array.  <a href="#a100bff4656dc40b420634e535b13c641">More...</a><br /></td></tr>
+<tr class="separator:a100bff4656dc40b420634e535b13c641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fbe3473e388120e8e5789fdb578aff5"><td class="memItemLeft" align="right" valign="top">static T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a8fbe3473e388120e8e5789fdb578aff5">RandomElement&lt; T &gt;</a> (this List&lt; T &gt; list)</td></tr>
+<tr class="memdesc:a8fbe3473e388120e8e5789fdb578aff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a random element from the list.  <a href="#a8fbe3473e388120e8e5789fdb578aff5">More...</a><br /></td></tr>
+<tr class="separator:a8fbe3473e388120e8e5789fdb578aff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b68a813f8c3314cfc0e22ff6f39ca29"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a1b68a813f8c3314cfc0e22ff6f39ca29">ToOneLineString&lt; T &gt;</a> (this IEnumerable&lt; T &gt; list, string separator=&quot;, &quot;, string encapsulate=&quot;\&quot;&quot;)</td></tr>
+<tr class="memdesc:a1b68a813f8c3314cfc0e22ff6f39ca29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls ToString() on every element of the list, puts [encapsulate] directly before and after the result and then concatenates the results with [seperator] between them.  <a href="#a1b68a813f8c3314cfc0e22ff6f39ca29">More...</a><br /></td></tr>
+<tr class="separator:a1b68a813f8c3314cfc0e22ff6f39ca29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Provides input for a float value range in the editor and various convencience functions to work with that range. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a3f902e890c68daec20fd5b550044c61d"></a>
+<div class="textblock"><p>A collection of extension methods for IEnumerable&lt;T&gt;, List&lt;T&gt; and arrays. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ae204dd2116c36c23715f492126e7b8e9"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">UnityUtilities.RangeFloat.RangeFloat </td>
+          <td class="memname">static TElement UnityUtilities.LINQExtensions.FirstByGeneratedValue&lt; TElement, TValue &gt; </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a <a class="el" href="a00012.html" title="Provides input for a float value range in the editor and various convencience functions to work with ...">RangeFloat</a> with 0-0 as the range. Needed for the editor. </p>
-
-</div>
-</div>
-<a class="anchor" id="a10b694c29d04105076d7c2b387827d35"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">UnityUtilities.RangeFloat.RangeFloat </td>
-          <td>(</td>
-          <td class="paramtype">float @&#160;</td>
-          <td class="paramname"><em>from</em>, </td>
+          <td class="paramtype">this IEnumerable&lt; TElement &gt;&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>to</em>&#160;</td>
+          <td class="paramtype">Func&lt; TElement, TValue &gt;&#160;</td>
+          <td class="paramname"><em>valueConverter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Predicate&lt; TValue &gt;&#160;</td>
+          <td class="paramname"><em>predicateValue</em> = <code>null</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -192,97 +174,231 @@ Properties</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Create a <a class="el" href="a00012.html" title="Provides input for a float value range in the editor and various convencience functions to work with ...">RangeFloat</a> with a certain range. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">from</td><td>Lower range bound.</td></tr>
-    <tr><td class="paramname">to</td><td>Upper range bound.</td></tr>
+<p>Takes a collection, generates values from the items and and returns the item with the lowest generated value. Useful for example to find the closest item. Reverse the generated values to find the item with the highest generated value. </p>
+<p>This returns the same as list.Where(element =&gt; predicateValue(valueConverter(element))).OrderBy(valueConverter).First(), but it a) doesn't order the whole list and b) doesn't call valueConverted more than once per element. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TElement</td><td>The collection element type.</td></tr>
+    <tr><td class="paramname">TValue</td><td>The generated value type.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The list of elements.</td></tr>
+    <tr><td class="paramname">valueConverter</td><td>The method to convert an element to a generated value used for ordering.</td></tr>
+    <tr><td class="paramname">predicateValue</td><td>A predicate testing whether the generated value is permitted. If true, the element is used; if false, the element is skipped.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The first element by the generated value in order that succeeded the predicateValue test.</dd></dl>
+<div class="typeconstraint">
+<dl><dt><b>Type Constraints</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>TValue</em></td><td>&#160;:</td><td valign="top"><em>IComparable</em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aef437bca51390f168c261b80f8f43fe3"></a>
+<a class="anchor" id="aa6b0177d596d3715fb3282326d9fcf7f"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float UnityUtilities.RangeFloat.InverseLerp </td>
+          <td class="memname">static TElement UnityUtilities.LINQExtensions.Nearest&lt; TElement &gt; </td>
           <td>(</td>
+          <td class="paramtype">this IEnumerable&lt; TElement &gt;&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3&#160;</td>
+          <td class="paramname"><em>referencePoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
+          <td class="paramname"><em>minDistance</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>maxDistance</em> = <code>float.PositiveInfinity</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the component nearest to the referencePoint and in minimum/maximum range. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TElement</td><td>The collection element type. Needs to be a subclass of Component.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The list of components.</td></tr>
+    <tr><td class="paramname">referencePoint</td><td>A reference point to get the distance from.</td></tr>
+    <tr><td class="paramname">minDistance</td><td>Optional: The minimum distance.</td></tr>
+    <tr><td class="paramname">maxDistance</td><td>Optional: The maximum distance.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The element nearest to the referencePoint and in minimum/maximum range.</dd></dl>
+<div class="typeconstraint">
+<dl><dt><b>Type Constraints</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>TElement</em></td><td>&#160;:</td><td valign="top"><em>Component</em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
+
+</div>
+</div>
+<a class="anchor" id="a100bff4656dc40b420634e535b13c641"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static T UnityUtilities.LINQExtensions.RandomElement&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">this T[]&#160;</td>
+          <td class="paramname"><em>array</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Calculates the linear parameter t that produces the interpolant value within the range [from, to]. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">value</td><td></td></tr>
+<p>Returns a random element from the array. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The array element type.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">array</td><td>The array to return an element from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A random element from the array.</dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a555ce2f332f776b0169f47864fb0d04f"></a>
+<a class="anchor" id="a8fbe3473e388120e8e5789fdb578aff5"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float UnityUtilities.RangeFloat.Lerp </td>
+          <td class="memname">static T UnityUtilities.LINQExtensions.RandomElement&lt; T &gt; </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
+          <td class="paramtype">this List&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Linearly interpolates between to and from by t. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">t</td><td>How much to interpolate. Clamped between 0 and 1. 0 is [to] and 1 is [from].</td></tr>
+<p>Returns a random element from the list. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The list element type.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The list to return an element from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A random element from the list.</dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ac696d5a89bb0266e7e1f43edc116ee63"></a>
+<a class="anchor" id="abaf96186110194567025c17a222b7546"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float UnityUtilities.RangeFloat.LerpUnclamped </td>
+          <td class="memname">static void UnityUtilities.LINQExtensions.Shuffle&lt; T &gt; </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
+          <td class="paramtype">this T[]&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Linearly interpolates between to and from by t. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">t</td><td>How much to interpolate. 0 is [to] and 1 is [from].</td></tr>
+<p>Shuffles an array in place. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The array element type.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The array to shuffle.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<h2 class="groupheader">Property Documentation</h2>
-<a class="anchor" id="a5a7805e0e6d42dad05d008bb3a948491"></a>
+<a class="anchor" id="ae22fb31ce997aeda7e08eb7816c0b8ce"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -290,21 +406,37 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float UnityUtilities.RangeFloat.From</td>
+          <td class="memname">static void UnityUtilities.LINQExtensions.Shuffle&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">this List&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The range start. </p>
+<p>Shuffles an list in place. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The list element type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The list to shuffle.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a class="anchor" id="a78f43c5d9a3cbea3e4b7b169706657ea"></a>
+<a class="anchor" id="a1b68a813f8c3314cfc0e22ff6f39ca29"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -312,73 +444,64 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float UnityUtilities.RangeFloat.RandomInclusive</td>
+          <td class="memname">static string UnityUtilities.LINQExtensions.ToOneLineString&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">this IEnumerable&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a random number between from [inclusive] and to [inclusive]. </p>
-
-</div>
-</div>
-<a class="anchor" id="aa133e42641bbbc9ab7af3806421bcb6a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">float UnityUtilities.RangeFloat.Range</td>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>separator</em> = <code>&quot;,&#160;&quot;</code>, </td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns how wide the range between from and to is. </p>
-
-</div>
-</div>
-<a class="anchor" id="aae6babc6b9a3917567250d277afe19bb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">float UnityUtilities.RangeFloat.To</td>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>encapsulate</em> = <code>&quot;\&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The range end. </p>
+<p>Calls ToString() on every element of the list, puts [encapsulate] directly before and after the result and then concatenates the results with [seperator] between them. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The collection element type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The collection to concatenate.</td></tr>
+    <tr><td class="paramname">separator</td><td>The seperator between entries.</td></tr>
+    <tr><td class="paramname">encapsulate</td><td>The string to put directly before and after every item.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A string containing the ToString() results of all items.</dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Range/RangeFloat.cs</li>
+<li>LINQExtensions/LINQExtensions.cs</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00034.html">UnityUtilities</a></li><li class="navelem"><a class="el" href="a00012.html">RangeFloat</a></li>
+    <li class="navelem"><a class="el" href="a00043.html">UnityUtilities</a></li><li class="navelem"><a class="el" href="a00012.html">LINQExtensions</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['lerp',['Lerp',['../a00012.html#a555ce2f332f776b0169f47864fb0d04f',1,'UnityUtilities::RangeFloat']]],
-  ['lerpunclamped',['LerpUnclamped',['../a00012.html#ac696d5a89bb0266e7e1f43edc116ee63',1,'UnityUtilities::RangeFloat']]],
-  ['loop',['Loop',['../a00006.html#adcf22b8bf87e7707948a95f252eb16bf',1,'UnityUtilities::Countdown']]]
+  ['instance',['Instance',['../a00014.html#a31171a31077abbd9940e6bb28746e890',1,'UnityUtilities.PersistentSingletonMonoBehaviour.Instance()'],['../a00018.html#a2f148625a4dd30cd1e9787b7e41639f2',1,'UnityUtilities.SingletonMonoBehaviour.Instance()']]],
+  ['instanceexists',['InstanceExists',['../a00014.html#abc4667bd6fa49504fffbe3465c246f63',1,'UnityUtilities::PersistentSingletonMonoBehaviour']]],
+  ['instanceoptional',['InstanceOptional',['../a00018.html#a9e4452520904ce3efbaa7ee0777b604c',1,'UnityUtilities::SingletonMonoBehaviour']]],
+  ['inverselerp',['InverseLerp',['../a00016.html#aef437bca51390f168c261b80f8f43fe3',1,'UnityUtilities::RangeFloat']]],
+  ['isrunning',['IsRunning',['../a00008.html#ac457a716f953957583df46cdb0f087ba',1,'UnityUtilities::Countdown']]]
 ];

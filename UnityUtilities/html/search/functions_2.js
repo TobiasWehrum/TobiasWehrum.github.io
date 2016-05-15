@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['lerp',['Lerp',['../a00012.html#a555ce2f332f776b0169f47864fb0d04f',1,'UnityUtilities::RangeFloat']]],
-  ['lerpunclamped',['LerpUnclamped',['../a00012.html#ac696d5a89bb0266e7e1f43edc116ee63',1,'UnityUtilities::RangeFloat']]]
+  ['getendlessenumerator',['GetEndlessEnumerator',['../a00015.html#acb86eb2831f7cb34cc84867c8ed57233',1,'UnityUtilities::RandomBag']]],
+  ['getremainderenumerator',['GetRemainderEnumerator',['../a00015.html#aecf553b86b51b542e33e674afcc84f02',1,'UnityUtilities::RandomBag']]]
 ];

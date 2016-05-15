@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['percentelapsed',['PercentElapsed',['../a00006.html#a9286a93e627bf6c1d5cf7776caea34c3',1,'UnityUtilities::Countdown']]],
-  ['percentleft',['PercentLeft',['../a00006.html#a638e28244523db7a200e321fba873c11',1,'UnityUtilities::Countdown']]],
-  ['persistentsingletonmonobehaviour',['PersistentSingletonMonoBehaviour',['../a00011.html',1,'UnityUtilities']]],
-  ['progress',['Progress',['../a00006.html#a824c6eccdadef99402f1ba9583d47938',1,'UnityUtilities.Countdown.Progress()'],['../a00010.html#a7ab20474679e6a2a42bf9e7e8519c319',1,'UnityUtilities.NoiseOutputValue.Progress()']]]
+  ['onafterdeserialize',['OnAfterDeserialize',['../a00009.html#af4dfbcc5bd6679393b3ca39677d07dca',1,'UnityUtilities::CountdownProperty']]],
+  ['onawakeorswitch',['OnAwakeOrSwitch',['../a00014.html#a0c1be3e0d13f8ba2da7ee1f6943be216',1,'UnityUtilities::PersistentSingletonMonoBehaviour']]],
+  ['onbeforeserialize',['OnBeforeSerialize',['../a00009.html#a67e2b4534468ba7b55c9c3af7857f667',1,'UnityUtilities::CountdownProperty']]],
+  ['ondestroy',['OnDestroy',['../a00014.html#a9aba1d7dae803878ba16f99ed55918ff',1,'UnityUtilities::PersistentSingletonMonoBehaviour']]],
+  ['onpersistentsingletonawake',['OnPersistentSingletonAwake',['../a00014.html#a748d2abb1599f2905665c945a0dbd951',1,'UnityUtilities::PersistentSingletonMonoBehaviour']]],
+  ['onsceneswitched',['OnSceneSwitched',['../a00014.html#aaa5668bd8329ff57f3a19b14d781c566',1,'UnityUtilities::PersistentSingletonMonoBehaviour']]],
+  ['outputvalue',['OutputValue',['../a00013.html#a7b6079848d94e95bad098446322a70cc',1,'UnityUtilities::NoiseOutputValue']]]
 ];
