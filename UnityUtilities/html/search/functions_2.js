@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['getendlessenumerator',['GetEndlessEnumerator',['../a00015.html#acb86eb2831f7cb34cc84867c8ed57233',1,'UnityUtilities::RandomBag']]],
-  ['getremainderenumerator',['GetRemainderEnumerator',['../a00015.html#aecf553b86b51b542e33e674afcc84f02',1,'UnityUtilities::RandomBag']]]
+  ['firstbygeneratedvalue_3c_20telement_2c_20tvalue_20_3e',['FirstByGeneratedValue&lt; TElement, TValue &gt;',['../a00015.html#ae204dd2116c36c23715f492126e7b8e9',1,'UnityUtilities::LINQExtensions']]]
 ];

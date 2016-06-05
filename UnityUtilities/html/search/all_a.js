@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['singletonmonobehaviour_20and_20persistentsingletonmonobehaviour',['SingletonMonoBehaviour and PersistentSingletonMonoBehaviour',['../a00006.html',1,'']]],
-  ['setrefilldelegate',['SetRefillDelegate',['../a00015.html#a58dd8ef2082d864cbbb3e59f59c12d70',1,'UnityUtilities::RandomBag']]],
-  ['setrefillitems',['SetRefillItems',['../a00015.html#a82e14932b24ac665f0ca78e0d30b9580',1,'UnityUtilities::RandomBag']]],
-  ['shuffle_3c_20t_20_3e',['Shuffle&lt; T &gt;',['../a00012.html#abaf96186110194567025c17a222b7546',1,'UnityUtilities.LINQExtensions.Shuffle&lt; T &gt;(this T[] list)'],['../a00012.html#ae22fb31ce997aeda7e08eb7816c0b8ce',1,'UnityUtilities.LINQExtensions.Shuffle&lt; T &gt;(this List&lt; T &gt; list)']]],
-  ['singletonmonobehaviour',['SingletonMonoBehaviour',['../a00018.html',1,'UnityUtilities']]],
-  ['speed',['Speed',['../a00013.html#aa517cd42c7cc50db484e3c3c54d1963c',1,'UnityUtilities::NoiseOutputValue']]],
-  ['start',['Start',['../a00014.html#aafb0041f946b2d3803a395fc3a5880a5',1,'UnityUtilities::PersistentSingletonMonoBehaviour']]]
+  ['percentelapsed',['PercentElapsed',['../a00010.html#a9286a93e627bf6c1d5cf7776caea34c3',1,'UnityUtilities::Countdown']]],
+  ['percentleft',['PercentLeft',['../a00010.html#a638e28244523db7a200e321fba873c11',1,'UnityUtilities::Countdown']]],
+  ['persistentsingletonmonobehaviour',['PersistentSingletonMonoBehaviour',['../a00017.html',1,'UnityUtilities']]],
+  ['poprandomitem',['PopRandomItem',['../a00018.html#a65ad3da831ff78a796163fd34dcf7d50',1,'UnityUtilities::RandomBag']]],
+  ['poprandomitems',['PopRandomItems',['../a00018.html#ad603c36ae4b6cbff4426766218c45dc8',1,'UnityUtilities::RandomBag']]],
+  ['progress',['Progress',['../a00010.html#a824c6eccdadef99402f1ba9583d47938',1,'UnityUtilities.Countdown.Progress()'],['../a00016.html#a7ab20474679e6a2a42bf9e7e8519c319',1,'UnityUtilities.NoiseOutputValue.Progress()']]]
 ];

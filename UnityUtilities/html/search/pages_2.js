@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['noiseoutputvalue',['NoiseOutputValue',['../a00003.html',1,'']]]
+  ['linqextensions',['LINQExtensions',['../a00003.html',1,'']]]
 ];

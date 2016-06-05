@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['onafterdeserialize',['OnAfterDeserialize',['../a00009.html#af4dfbcc5bd6679393b3ca39677d07dca',1,'UnityUtilities::CountdownProperty']]],
-  ['onawakeorswitch',['OnAwakeOrSwitch',['../a00014.html#a0c1be3e0d13f8ba2da7ee1f6943be216',1,'UnityUtilities::PersistentSingletonMonoBehaviour']]],
-  ['onbeforeserialize',['OnBeforeSerialize',['../a00009.html#a67e2b4534468ba7b55c9c3af7857f667',1,'UnityUtilities::CountdownProperty']]],
-  ['ondestroy',['OnDestroy',['../a00014.html#a9aba1d7dae803878ba16f99ed55918ff',1,'UnityUtilities::PersistentSingletonMonoBehaviour']]],
-  ['onpersistentsingletonawake',['OnPersistentSingletonAwake',['../a00014.html#a748d2abb1599f2905665c945a0dbd951',1,'UnityUtilities::PersistentSingletonMonoBehaviour']]],
-  ['onsceneswitched',['OnSceneSwitched',['../a00014.html#aaa5668bd8329ff57f3a19b14d781c566',1,'UnityUtilities::PersistentSingletonMonoBehaviour']]],
-  ['outputvalue',['OutputValue',['../a00013.html#a7b6079848d94e95bad098446322a70cc',1,'UnityUtilities::NoiseOutputValue']]]
+  ['latestelement',['LatestElement',['../a00021.html#af2cba6059ad08bd80d5293529876c284',1,'UnityUtilities::RollingArray']]],
+  ['lerp',['Lerp',['../a00019.html#a555ce2f332f776b0169f47864fb0d04f',1,'UnityUtilities::RangeFloat']]],
+  ['lerpunclamped',['LerpUnclamped',['../a00019.html#ac696d5a89bb0266e7e1f43edc116ee63',1,'UnityUtilities::RangeFloat']]],
+  ['linqextensions',['LINQExtensions',['../a00015.html',1,'UnityUtilities']]],
+  ['loop',['Loop',['../a00010.html#adcf22b8bf87e7707948a95f252eb16bf',1,'UnityUtilities::Countdown']]],
+  ['linqextensions',['LINQExtensions',['../a00003.html',1,'']]]
 ];
