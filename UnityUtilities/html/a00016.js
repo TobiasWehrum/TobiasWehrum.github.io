@@ -1,7 +1,10 @@
 var a00016 =
 [
-    [ "Progress", "a00016.html#a7ab20474679e6a2a42bf9e7e8519c319", null ],
-    [ "OutputValue", "a00016.html#a7b6079848d94e95bad098446322a70cc", null ],
-    [ "Range", "a00016.html#a975abcc1270fc4b256ec544b04f5a28e", null ],
-    [ "Speed", "a00016.html#aa517cd42c7cc50db484e3c3c54d1963c", null ]
+    [ "FirstByGeneratedValue< TElement, TValue >", "a00016.html#ae204dd2116c36c23715f492126e7b8e9", null ],
+    [ "Nearest< TElement >", "a00016.html#aa6b0177d596d3715fb3282326d9fcf7f", null ],
+    [ "RandomElement< T >", "a00016.html#a100bff4656dc40b420634e535b13c641", null ],
+    [ "RandomElement< T >", "a00016.html#a8fbe3473e388120e8e5789fdb578aff5", null ],
+    [ "Shuffle< T >", "a00016.html#abaf96186110194567025c17a222b7546", null ],
+    [ "Shuffle< T >", "a00016.html#ae22fb31ce997aeda7e08eb7816c0b8ce", null ],
+    [ "ToOneLineString< T >", "a00016.html#a1b68a813f8c3314cfc0e22ff6f39ca29", null ]
 ];

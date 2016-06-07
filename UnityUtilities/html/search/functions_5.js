@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['lerp',['Lerp',['../a00019.html#a555ce2f332f776b0169f47864fb0d04f',1,'UnityUtilities::RangeFloat']]],
-  ['lerpunclamped',['LerpUnclamped',['../a00019.html#ac696d5a89bb0266e7e1f43edc116ee63',1,'UnityUtilities::RangeFloat']]]
+  ['inverselerp',['InverseLerp',['../a00020.html#aef437bca51390f168c261b80f8f43fe3',1,'UnityUtilities::RangeFloat']]]
 ];

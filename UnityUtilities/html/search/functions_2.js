@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['firstbygeneratedvalue_3c_20telement_2c_20tvalue_20_3e',['FirstByGeneratedValue&lt; TElement, TValue &gt;',['../a00015.html#ae204dd2116c36c23715f492126e7b8e9',1,'UnityUtilities::LINQExtensions']]]
+  ['extend',['Extend',['../a00024.html#a4ff4e6ceaf4d88515eaeac3d2a93e5d9',1,'UnityUtilities::UnityHelper']]]
 ];

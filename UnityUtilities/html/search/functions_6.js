@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['nearest_3c_20telement_20_3e',['Nearest&lt; TElement &gt;',['../a00015.html#aa6b0177d596d3715fb3282326d9fcf7f',1,'UnityUtilities::LINQExtensions']]]
+  ['lerp',['Lerp',['../a00020.html#a555ce2f332f776b0169f47864fb0d04f',1,'UnityUtilities::RangeFloat']]],
+  ['lerpunclamped',['LerpUnclamped',['../a00020.html#ac696d5a89bb0266e7e1f43edc116ee63',1,'UnityUtilities::RangeFloat']]]
 ];

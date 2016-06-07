@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>UnityUtilities: UnityUtilities.NoiseOutputValue Class Reference</title>
+<title>UnityUtilities: UnityUtilities.LINQExtensions Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,64 +106,299 @@ $(document).ready(function(){initNavTree('a00016.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#properties">Properties</a> &#124;
-<a href="a00060.html">List of all members</a>  </div>
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="a00063.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">UnityUtilities.NoiseOutputValue Class Reference</div>  </div>
+<div class="title">UnityUtilities.LINQExtensions Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Provides a fluidly changing output value using Mathf.PerlinNoise.  
+<p>A collection of extension methods for IEnumerable&lt;T&gt;, List&lt;T&gt; and arrays.  
  <a href="a00016.html#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a7ab20474679e6a2a42bf9e7e8519c319"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#a7ab20474679e6a2a42bf9e7e8519c319">Progress</a> (float?deltaTime=null)</td></tr>
-<tr class="memdesc:a7ab20474679e6a2a42bf9e7e8519c319"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the <a class="el" href="a00016.html#a7b6079848d94e95bad098446322a70cc" title="The current output value between range.from and range.to. ">OutputValue</a>. Should be called once per frame before using <a class="el" href="a00016.html#a7b6079848d94e95bad098446322a70cc" title="The current output value between range.from and range.to. ">OutputValue</a> for the first time.  <a href="#a7ab20474679e6a2a42bf9e7e8519c319">More...</a><br /></td></tr>
-<tr class="separator:a7ab20474679e6a2a42bf9e7e8519c319"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
-Properties</h2></td></tr>
-<tr class="memitem:a7b6079848d94e95bad098446322a70cc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#a7b6079848d94e95bad098446322a70cc">OutputValue</a><code> [get]</code></td></tr>
-<tr class="memdesc:a7b6079848d94e95bad098446322a70cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current output value between range.from and range.to.  <a href="#a7b6079848d94e95bad098446322a70cc">More...</a><br /></td></tr>
-<tr class="separator:a7b6079848d94e95bad098446322a70cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a975abcc1270fc4b256ec544b04f5a28e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html">RangeFloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#a975abcc1270fc4b256ec544b04f5a28e">Range</a><code> [get]</code></td></tr>
-<tr class="memdesc:a975abcc1270fc4b256ec544b04f5a28e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The range of the output value.  <a href="#a975abcc1270fc4b256ec544b04f5a28e">More...</a><br /></td></tr>
-<tr class="separator:a975abcc1270fc4b256ec544b04f5a28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa517cd42c7cc50db484e3c3c54d1963c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#aa517cd42c7cc50db484e3c3c54d1963c">Speed</a><code> [get]</code></td></tr>
-<tr class="memdesc:aa517cd42c7cc50db484e3c3c54d1963c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The range of the output speed.  <a href="#aa517cd42c7cc50db484e3c3c54d1963c">More...</a><br /></td></tr>
-<tr class="separator:aa517cd42c7cc50db484e3c3c54d1963c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae204dd2116c36c23715f492126e7b8e9"><td class="memItemLeft" align="right" valign="top">static TElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#ae204dd2116c36c23715f492126e7b8e9">FirstByGeneratedValue&lt; TElement, TValue &gt;</a> (this IEnumerable&lt; TElement &gt; list, Func&lt; TElement, TValue &gt; valueConverter, Predicate&lt; TValue &gt; predicateValue=null)</td></tr>
+<tr class="memdesc:ae204dd2116c36c23715f492126e7b8e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a collection, generates values from the items and and returns the item with the lowest generated value. Useful for example to find the closest item. Reverse the generated values to find the item with the highest generated value.  <a href="#ae204dd2116c36c23715f492126e7b8e9">More...</a><br /></td></tr>
+<tr class="separator:ae204dd2116c36c23715f492126e7b8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6b0177d596d3715fb3282326d9fcf7f"><td class="memItemLeft" align="right" valign="top">static TElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#aa6b0177d596d3715fb3282326d9fcf7f">Nearest&lt; TElement &gt;</a> (this IEnumerable&lt; TElement &gt; list, Vector3 referencePoint, float minDistance=0, float maxDistance=float.PositiveInfinity)</td></tr>
+<tr class="memdesc:aa6b0177d596d3715fb3282326d9fcf7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the component nearest to the referencePoint and in minimum/maximum range.  <a href="#aa6b0177d596d3715fb3282326d9fcf7f">More...</a><br /></td></tr>
+<tr class="separator:aa6b0177d596d3715fb3282326d9fcf7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaf96186110194567025c17a222b7546"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#abaf96186110194567025c17a222b7546">Shuffle&lt; T &gt;</a> (this T[] list)</td></tr>
+<tr class="memdesc:abaf96186110194567025c17a222b7546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuffles an array in place.  <a href="#abaf96186110194567025c17a222b7546">More...</a><br /></td></tr>
+<tr class="separator:abaf96186110194567025c17a222b7546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae22fb31ce997aeda7e08eb7816c0b8ce"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#ae22fb31ce997aeda7e08eb7816c0b8ce">Shuffle&lt; T &gt;</a> (this List&lt; T &gt; list)</td></tr>
+<tr class="memdesc:ae22fb31ce997aeda7e08eb7816c0b8ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuffles an list in place.  <a href="#ae22fb31ce997aeda7e08eb7816c0b8ce">More...</a><br /></td></tr>
+<tr class="separator:ae22fb31ce997aeda7e08eb7816c0b8ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a100bff4656dc40b420634e535b13c641"><td class="memItemLeft" align="right" valign="top">static T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#a100bff4656dc40b420634e535b13c641">RandomElement&lt; T &gt;</a> (this T[] array)</td></tr>
+<tr class="memdesc:a100bff4656dc40b420634e535b13c641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a random element from the array.  <a href="#a100bff4656dc40b420634e535b13c641">More...</a><br /></td></tr>
+<tr class="separator:a100bff4656dc40b420634e535b13c641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fbe3473e388120e8e5789fdb578aff5"><td class="memItemLeft" align="right" valign="top">static T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#a8fbe3473e388120e8e5789fdb578aff5">RandomElement&lt; T &gt;</a> (this List&lt; T &gt; list)</td></tr>
+<tr class="memdesc:a8fbe3473e388120e8e5789fdb578aff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a random element from the list.  <a href="#a8fbe3473e388120e8e5789fdb578aff5">More...</a><br /></td></tr>
+<tr class="separator:a8fbe3473e388120e8e5789fdb578aff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b68a813f8c3314cfc0e22ff6f39ca29"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#a1b68a813f8c3314cfc0e22ff6f39ca29">ToOneLineString&lt; T &gt;</a> (this IEnumerable&lt; T &gt; list, string separator=&quot;, &quot;, string encapsulate=&quot;\&quot;&quot;)</td></tr>
+<tr class="memdesc:a1b68a813f8c3314cfc0e22ff6f39ca29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls ToString() on every element of the list, puts [encapsulate] directly before and after the result and then concatenates the results with [seperator] between them.  <a href="#a1b68a813f8c3314cfc0e22ff6f39ca29">More...</a><br /></td></tr>
+<tr class="separator:a1b68a813f8c3314cfc0e22ff6f39ca29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Provides a fluidly changing output value using Mathf.PerlinNoise. </p>
+<div class="textblock"><p>A collection of extension methods for IEnumerable&lt;T&gt;, List&lt;T&gt; and arrays. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a7ab20474679e6a2a42bf9e7e8519c319"></a>
+<a class="anchor" id="ae204dd2116c36c23715f492126e7b8e9"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void UnityUtilities.NoiseOutputValue.Progress </td>
+          <td class="memname">static TElement UnityUtilities.LINQExtensions.FirstByGeneratedValue&lt; TElement, TValue &gt; </td>
           <td>(</td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>deltaTime</em> = <code>null</code></td><td>)</td>
+          <td class="paramtype">this IEnumerable&lt; TElement &gt;&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Func&lt; TElement, TValue &gt;&#160;</td>
+          <td class="paramname"><em>valueConverter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Predicate&lt; TValue &gt;&#160;</td>
+          <td class="paramname"><em>predicateValue</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Takes a collection, generates values from the items and and returns the item with the lowest generated value. Useful for example to find the closest item. Reverse the generated values to find the item with the highest generated value. </p>
+<p>This returns the same as list.Where(element =&gt; predicateValue(valueConverter(element))).OrderBy(valueConverter).First(), but it a) doesn't order the whole list and b) doesn't call valueConverted more than once per element. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TElement</td><td>The collection element type.</td></tr>
+    <tr><td class="paramname">TValue</td><td>The generated value type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The list of elements.</td></tr>
+    <tr><td class="paramname">valueConverter</td><td>The method to convert an element to a generated value used for ordering.</td></tr>
+    <tr><td class="paramname">predicateValue</td><td>A predicate testing whether the generated value is permitted. If true, the element is used; if false, the element is skipped.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The first element by the generated value in order that succeeded the predicateValue test.</dd></dl>
+<div class="typeconstraint">
+<dl><dt><b>Type Constraints</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>TValue</em></td><td>&#160;:</td><td valign="top"><em>IComparable</em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
+
+</div>
+</div>
+<a class="anchor" id="aa6b0177d596d3715fb3282326d9fcf7f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static TElement UnityUtilities.LINQExtensions.Nearest&lt; TElement &gt; </td>
+          <td>(</td>
+          <td class="paramtype">this IEnumerable&lt; TElement &gt;&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3&#160;</td>
+          <td class="paramname"><em>referencePoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>minDistance</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>maxDistance</em> = <code>float.PositiveInfinity</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the component nearest to the referencePoint and in minimum/maximum range. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TElement</td><td>The collection element type. Needs to be a subclass of Component.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The list of components.</td></tr>
+    <tr><td class="paramname">referencePoint</td><td>A reference point to get the distance from.</td></tr>
+    <tr><td class="paramname">minDistance</td><td>Optional: The minimum distance.</td></tr>
+    <tr><td class="paramname">maxDistance</td><td>Optional: The maximum distance.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The element nearest to the referencePoint and in minimum/maximum range.</dd></dl>
+<div class="typeconstraint">
+<dl><dt><b>Type Constraints</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>TElement</em></td><td>&#160;:</td><td valign="top"><em>Component</em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
+
+</div>
+</div>
+<a class="anchor" id="a100bff4656dc40b420634e535b13c641"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static T UnityUtilities.LINQExtensions.RandomElement&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">this T[]&#160;</td>
+          <td class="paramname"><em>array</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Updates the <a class="el" href="a00016.html#a7b6079848d94e95bad098446322a70cc" title="The current output value between range.from and range.to. ">OutputValue</a>. Should be called once per frame before using <a class="el" href="a00016.html#a7b6079848d94e95bad098446322a70cc" title="The current output value between range.from and range.to. ">OutputValue</a> for the first time. </p>
+<p>Returns a random element from the array. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The array element type.</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">deltaTime</td><td>Optional: Provide the deltaTime for the scrolling if it isn't Time.deltaTime.</td></tr>
+    <tr><td class="paramname">array</td><td>The array to return an element from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A random element from the array.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8fbe3473e388120e8e5789fdb578aff5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static T UnityUtilities.LINQExtensions.RandomElement&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">this List&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a random element from the list. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The list element type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The list to return an element from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A random element from the list.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abaf96186110194567025c17a222b7546"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void UnityUtilities.LINQExtensions.Shuffle&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">this T[]&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Shuffles an array in place. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The array element type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The array to shuffle.</td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<h2 class="groupheader">Property Documentation</h2>
-<a class="anchor" id="a7b6079848d94e95bad098446322a70cc"></a>
+<a class="anchor" id="ae22fb31ce997aeda7e08eb7816c0b8ce"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -171,21 +406,37 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float UnityUtilities.NoiseOutputValue.OutputValue</td>
+          <td class="memname">static void UnityUtilities.LINQExtensions.Shuffle&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">this List&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The current output value between range.from and range.to. </p>
+<p>Shuffles an list in place. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The list element type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The list to shuffle.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a class="anchor" id="a975abcc1270fc4b256ec544b04f5a28e"></a>
+<a class="anchor" id="a1b68a813f8c3314cfc0e22ff6f39ca29"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -193,51 +444,64 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">RangeFloat</a> UnityUtilities.NoiseOutputValue.Range</td>
+          <td class="memname">static string UnityUtilities.LINQExtensions.ToOneLineString&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">this IEnumerable&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The range of the output value. </p>
-
-</div>
-</div>
-<a class="anchor" id="aa517cd42c7cc50db484e3c3c54d1963c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">float UnityUtilities.NoiseOutputValue.Speed</td>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>separator</em> = <code>&quot;,&#160;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>encapsulate</em> = <code>&quot;\&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The range of the output speed. </p>
+<p>Calls ToString() on every element of the list, puts [encapsulate] directly before and after the result and then concatenates the results with [seperator] between them. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The collection element type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The collection to concatenate.</td></tr>
+    <tr><td class="paramname">separator</td><td>The seperator between entries.</td></tr>
+    <tr><td class="paramname">encapsulate</td><td>The string to put directly before and after every item.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A string containing the ToString() results of all items.</dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>NoiseOutputValue/NoiseOutputValue.cs</li>
+<li>LINQExtensions/LINQExtensions.cs</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00053.html">UnityUtilities</a></li><li class="navelem"><a class="el" href="a00016.html">NoiseOutputValue</a></li>
+    <li class="navelem"><a class="el" href="a00057.html">UnityUtilities</a></li><li class="navelem"><a class="el" href="a00016.html">LINQExtensions</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

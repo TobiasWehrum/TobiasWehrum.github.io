@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['poprandomitem',['PopRandomItem',['../a00018.html#a65ad3da831ff78a796163fd34dcf7d50',1,'UnityUtilities::RandomBag']]],
-  ['poprandomitems',['PopRandomItems',['../a00018.html#ad603c36ae4b6cbff4426766218c45dc8',1,'UnityUtilities::RandomBag']]],
-  ['progress',['Progress',['../a00010.html#a824c6eccdadef99402f1ba9583d47938',1,'UnityUtilities.Countdown.Progress()'],['../a00016.html#a7ab20474679e6a2a42bf9e7e8519c319',1,'UnityUtilities.NoiseOutputValue.Progress()']]]
+  ['onafterdeserialize',['OnAfterDeserialize',['../a00012.html#af4dfbcc5bd6679393b3ca39677d07dca',1,'UnityUtilities::CountdownProperty']]],
+  ['onawakeorswitch',['OnAwakeOrSwitch',['../a00018.html#a0c1be3e0d13f8ba2da7ee1f6943be216',1,'UnityUtilities::PersistentSingletonMonoBehaviour']]],
+  ['onbeforeserialize',['OnBeforeSerialize',['../a00012.html#a67e2b4534468ba7b55c9c3af7857f667',1,'UnityUtilities::CountdownProperty']]],
+  ['ondestroy',['OnDestroy',['../a00018.html#a9aba1d7dae803878ba16f99ed55918ff',1,'UnityUtilities::PersistentSingletonMonoBehaviour']]],
+  ['onpersistentsingletonawake',['OnPersistentSingletonAwake',['../a00018.html#a748d2abb1599f2905665c945a0dbd951',1,'UnityUtilities::PersistentSingletonMonoBehaviour']]],
+  ['onsceneswitched',['OnSceneSwitched',['../a00018.html#aaa5668bd8329ff57f3a19b14d781c566',1,'UnityUtilities::PersistentSingletonMonoBehaviour']]]
 ];

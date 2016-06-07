@@ -1,12 +1,14 @@
 var a00019 =
 [
-    [ "RangeFloat", "a00019.html#a3f902e890c68daec20fd5b550044c61d", null ],
-    [ "RangeFloat", "a00019.html#a10b694c29d04105076d7c2b387827d35", null ],
-    [ "InverseLerp", "a00019.html#aef437bca51390f168c261b80f8f43fe3", null ],
-    [ "Lerp", "a00019.html#a555ce2f332f776b0169f47864fb0d04f", null ],
-    [ "LerpUnclamped", "a00019.html#ac696d5a89bb0266e7e1f43edc116ee63", null ],
-    [ "From", "a00019.html#a5a7805e0e6d42dad05d008bb3a948491", null ],
-    [ "RandomInclusive", "a00019.html#a78f43c5d9a3cbea3e4b7b169706657ea", null ],
-    [ "Range", "a00019.html#aa133e42641bbbc9ab7af3806421bcb6a", null ],
-    [ "To", "a00019.html#aae6babc6b9a3917567250d277afe19bb", null ]
+    [ "RandomBag", "a00019.html#adfb628736b2d5028bd868c7d9311c6da", null ],
+    [ "RandomBag", "a00019.html#a8fb585117608488361cadf6c89ca0d89", null ],
+    [ "GetEndlessEnumerator", "a00019.html#acb86eb2831f7cb34cc84867c8ed57233", null ],
+    [ "GetRemainderEnumerator", "a00019.html#aecf553b86b51b542e33e674afcc84f02", null ],
+    [ "PopRandomItem", "a00019.html#a65ad3da831ff78a796163fd34dcf7d50", null ],
+    [ "PopRandomItems", "a00019.html#ad603c36ae4b6cbff4426766218c45dc8", null ],
+    [ "Reset", "a00019.html#afdb96c06be84f384d4f41ffae81cb4a0", null ],
+    [ "SetRefillDelegate", "a00019.html#a58dd8ef2082d864cbbb3e59f59c12d70", null ],
+    [ "SetRefillItems", "a00019.html#a82e14932b24ac665f0ca78e0d30b9580", null ],
+    [ "Fillings", "a00019.html#a87873b7400c0e09a0ca4d57301a6fa12", null ],
+    [ "RemainderCount", "a00019.html#a686ada39962cdb7a9a38b45082436348", null ]
 ];
