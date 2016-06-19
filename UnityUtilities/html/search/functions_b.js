@@ -1,14 +1,14 @@
 var searchData=
 [
-  ['seteulerangles',['SetEulerAngles',['../a00024.html#a6bbb59e5f2ef9273357fdc061c588b22',1,'UnityUtilities::UnityHelper']]],
-  ['setlocaleulerangles',['SetLocalEulerAngles',['../a00024.html#a7d467909d932ea997016c2ebc382d446',1,'UnityUtilities::UnityHelper']]],
-  ['setlocalposition',['SetLocalPosition',['../a00024.html#af9149a2907e0245de95f56e50132b46a',1,'UnityUtilities::UnityHelper']]],
-  ['setlocalscale',['SetLocalScale',['../a00024.html#a9dfd5015ccf67cde5af9857ed74cadf9',1,'UnityUtilities::UnityHelper']]],
-  ['setlossyscale',['SetLossyScale',['../a00024.html#a4e6cd3afea9122b7f254dcb31f60f527',1,'UnityUtilities::UnityHelper']]],
-  ['setposition',['SetPosition',['../a00024.html#adb4401a87105552c433b8a89684d6227',1,'UnityUtilities::UnityHelper']]],
-  ['setrefilldelegate',['SetRefillDelegate',['../a00019.html#a58dd8ef2082d864cbbb3e59f59c12d70',1,'UnityUtilities::RandomBag']]],
-  ['setrefillitems',['SetRefillItems',['../a00019.html#a82e14932b24ac665f0ca78e0d30b9580',1,'UnityUtilities::RandomBag']]],
-  ['shuffle_3c_20t_20_3e',['Shuffle&lt; T &gt;',['../a00016.html#abaf96186110194567025c17a222b7546',1,'UnityUtilities.LINQExtensions.Shuffle&lt; T &gt;(this T[] list)'],['../a00016.html#ae22fb31ce997aeda7e08eb7816c0b8ce',1,'UnityUtilities.LINQExtensions.Shuffle&lt; T &gt;(this List&lt; T &gt; list)']]],
-  ['start',['Start',['../a00018.html#aafb0041f946b2d3803a395fc3a5880a5',1,'UnityUtilities::PersistentSingletonMonoBehaviour']]],
-  ['stripclonefromname',['StripCloneFromName',['../a00024.html#a7eb18f837434bbe372481727a256c524',1,'UnityUtilities::UnityHelper']]]
+  ['randombag',['RandomBag',['../a00020.html#adfb628736b2d5028bd868c7d9311c6da',1,'UnityUtilities.RandomBag.RandomBag(T[] refillItems, int fillings)'],['../a00020.html#a8fb585117608488361cadf6c89ca0d89',1,'UnityUtilities.RandomBag.RandomBag(Action&lt; List&lt; T &gt;&gt; refillDelegate, int fillings)']]],
+  ['randomelement_3c_20t_20_3e',['RandomElement&lt; T &gt;',['../a00017.html#a100bff4656dc40b420634e535b13c641',1,'UnityUtilities.LINQExtensions.RandomElement&lt; T &gt;(this T[] array)'],['../a00017.html#a8fbe3473e388120e8e5789fdb578aff5',1,'UnityUtilities.LINQExtensions.RandomElement&lt; T &gt;(this List&lt; T &gt; list)']]],
+  ['randomposition',['RandomPosition',['../a00025.html#ac81e6d97497f6a6f5e3f1117900d6659',1,'UnityUtilities::UnityHelper']]],
+  ['randomsubrect',['RandomSubRect',['../a00025.html#a1aa9957492c617067a41b17d64ec403d',1,'UnityUtilities::UnityHelper']]],
+  ['rangefloat',['RangeFloat',['../a00021.html#a3f902e890c68daec20fd5b550044c61d',1,'UnityUtilities.RangeFloat.RangeFloat()'],['../a00021.html#a10b694c29d04105076d7c2b387827d35',1,'UnityUtilities.RangeFloat.RangeFloat(float @from, float to)']]],
+  ['rangeint',['RangeInt',['../a00022.html#a0e1b0001224eeed5dced7b381039edaa',1,'UnityUtilities.RangeInt.RangeInt()'],['../a00022.html#a3725503d60c9716b230882fd41ccc8fe',1,'UnityUtilities.RangeInt.RangeInt(int from, int to)']]],
+  ['refill',['Refill',['../a00012.html#a1bcd69c5c645ea9536cb291156866de6',1,'UnityUtilities.Countdown.Refill()'],['../a00012.html#a9cc495451065ad685a5fca74ae6de33d',1,'UnityUtilities.Countdown.Refill(float newTotalTimeLeft)']]],
+  ['reset',['Reset',['../a00012.html#ac094735062916a531c489cbe8332073e',1,'UnityUtilities.Countdown.Reset()'],['../a00012.html#a7b4be28034b65c884e7e0924b7fa4f33',1,'UnityUtilities.Countdown.Reset(float timeLeft)'],['../a00020.html#afdb96c06be84f384d4f41ffae81cb4a0',1,'UnityUtilities.RandomBag.Reset()']]],
+  ['rollingarray',['RollingArray',['../a00023.html#a66653e2df3309e7373cf5e0bf50279e2',1,'UnityUtilities::RollingArray']]],
+  ['rotatedeg',['RotateDeg',['../a00025.html#ad38dcffe2ba6cb20268a614287571378',1,'UnityUtilities::UnityHelper']]],
+  ['rotaterad',['RotateRad',['../a00025.html#a5f878ac9461c6ebfa88a33e81a9d1cf2',1,'UnityUtilities::UnityHelper']]]
 ];

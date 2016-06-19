@@ -1,12 +1,10 @@
 var a00022 =
 [
-    [ "RollingArray", "a00022.html#a66653e2df3309e7373cf5e0bf50279e2", null ],
-    [ "Append", "a00022.html#a41d3466c39027953afe9c0ed79a60e12", null ],
-    [ "Clear", "a00022.html#ad5f16cddd586de6ca4e681068a0b9bc2", null ],
-    [ "GetEnumerator", "a00022.html#aee8a1399b7bd9c394fb390f17a2a74d3", null ],
-    [ "Count", "a00022.html#a3ef3a46617ec7c84cded2b18cfb00aa7", null ],
-    [ "IsEmpty", "a00022.html#a7c73a97671dafbf6c270e553ebdaf274", null ],
-    [ "LatestElement", "a00022.html#af2cba6059ad08bd80d5293529876c284", null ],
-    [ "OldestElement", "a00022.html#ac6b7fb7e512f1f3a989407e119e7d665", null ],
-    [ "this[int i]", "a00022.html#a7a89b7849291edc84cf9937c9c4113c4", null ]
+    [ "RangeInt", "a00022.html#a0e1b0001224eeed5dced7b381039edaa", null ],
+    [ "RangeInt", "a00022.html#a3725503d60c9716b230882fd41ccc8fe", null ],
+    [ "From", "a00022.html#af1af41f71d6c9f6b3e15d6e7dc567a01", null ],
+    [ "RandomExclusive", "a00022.html#a8c317a36882f1203093268e6bcd4ead1", null ],
+    [ "RandomInclusive", "a00022.html#ae225ac60cefedb062ca5d2e4e901c54a", null ],
+    [ "Range", "a00022.html#a7d226a239cb5cf2919ea101be69a4af8", null ],
+    [ "To", "a00022.html#a55058850d928e994b2d122d7146b91e7", null ]
 ];

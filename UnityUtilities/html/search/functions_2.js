@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['extend',['Extend',['../a00024.html#a4ff4e6ceaf4d88515eaeac3d2a93e5d9',1,'UnityUtilities::UnityHelper']]]
+  ['deserializefromxmlstring_3c_20t_20_3e',['DeserializeFromXmlString&lt; T &gt;',['../a00026.html#a1c417c8ae3a546fc151d77ea1f5bbebc',1,'UnityUtilities::XmlHelper']]]
 ];

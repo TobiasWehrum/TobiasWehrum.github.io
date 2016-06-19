@@ -11,6 +11,7 @@ var NAVTREE =
     [ "RollingArray", "a00007.html", null ],
     [ "SingletonMonoBehaviour and PersistentSingletonMonoBehaviour", "a00008.html", null ],
     [ "UnityHelper", "a00009.html", null ],
+    [ "XmlHelper", "a00010.html", null ],
     [ "Packages", null, [
       [ "Packages", "namespaces.html", "namespaces" ]
     ] ],
