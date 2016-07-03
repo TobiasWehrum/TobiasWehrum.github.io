@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xmlhelper',['XmlHelper',['../a00026.html',1,'UnityUtilities']]]
+  ['unityhelper',['UnityHelper',['../a00029.html',1,'UnityUtilities']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['percentelapsed',['PercentElapsed',['../a00012.html#a9286a93e627bf6c1d5cf7776caea34c3',1,'UnityUtilities::Countdown']]],
-  ['percentleft',['PercentLeft',['../a00012.html#a638e28244523db7a200e321fba873c11',1,'UnityUtilities::Countdown']]]
+  ['normal',['Normal',['../a00021.html#a119b356367e5ca2c8d427d1a646821dd',1,'UnityUtilities::MeshVertex']]]
 ];

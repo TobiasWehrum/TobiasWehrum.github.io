@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['percentelapsed',['PercentElapsed',['../a00012.html#a9286a93e627bf6c1d5cf7776caea34c3',1,'UnityUtilities::Countdown']]],
-  ['percentleft',['PercentLeft',['../a00012.html#a638e28244523db7a200e321fba873c11',1,'UnityUtilities::Countdown']]],
-  ['persistentsingletonmonobehaviour',['PersistentSingletonMonoBehaviour',['../a00019.html',1,'UnityUtilities']]],
-  ['playerprefsgetbool',['PlayerPrefsGetBool',['../a00025.html#acf88e68972e0fc1bc1ed1318511f12c1',1,'UnityUtilities::UnityHelper']]],
-  ['playerprefssetbool',['PlayerPrefsSetBool',['../a00025.html#a4fae3c4c72c64e04d685b57c1f8def7a',1,'UnityUtilities::UnityHelper']]],
-  ['poprandomitem',['PopRandomItem',['../a00020.html#a65ad3da831ff78a796163fd34dcf7d50',1,'UnityUtilities::RandomBag']]],
-  ['poprandomitems',['PopRandomItems',['../a00020.html#ad603c36ae4b6cbff4426766218c45dc8',1,'UnityUtilities::RandomBag']]],
-  ['progress',['Progress',['../a00012.html#a824c6eccdadef99402f1ba9583d47938',1,'UnityUtilities.Countdown.Progress()'],['../a00018.html#a7ab20474679e6a2a42bf9e7e8519c319',1,'UnityUtilities.NoiseOutputValue.Progress()']]]
+  ['oldestelement',['OldestElement',['../a00027.html#ac6b7fb7e512f1f3a989407e119e7d665',1,'UnityUtilities::RollingArray']]],
+  ['onafterdeserialize',['OnAfterDeserialize',['../a00014.html#af4dfbcc5bd6679393b3ca39677d07dca',1,'UnityUtilities::CountdownProperty']]],
+  ['onawakeorswitch',['OnAwakeOrSwitch',['../a00023.html#a0c1be3e0d13f8ba2da7ee1f6943be216',1,'UnityUtilities::PersistentSingletonMonoBehaviour']]],
+  ['onbeforeserialize',['OnBeforeSerialize',['../a00014.html#a67e2b4534468ba7b55c9c3af7857f667',1,'UnityUtilities::CountdownProperty']]],
+  ['ondestroy',['OnDestroy',['../a00023.html#a9aba1d7dae803878ba16f99ed55918ff',1,'UnityUtilities::PersistentSingletonMonoBehaviour']]],
+  ['onpersistentsingletonawake',['OnPersistentSingletonAwake',['../a00023.html#a748d2abb1599f2905665c945a0dbd951',1,'UnityUtilities::PersistentSingletonMonoBehaviour']]],
+  ['onsceneswitched',['OnSceneSwitched',['../a00023.html#aaa5668bd8329ff57f3a19b14d781c566',1,'UnityUtilities::PersistentSingletonMonoBehaviour']]],
+  ['outputvalue',['OutputValue',['../a00022.html#a7b6079848d94e95bad098446322a70cc',1,'UnityUtilities::NoiseOutputValue']]]
 ];

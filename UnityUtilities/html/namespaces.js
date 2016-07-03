@@ -1,4 +1,4 @@
 var namespaces =
 [
-    [ "UnityUtilities", "a00064.html", null ]
+    [ "UnityUtilities", "a00072.html", null ]
 ];

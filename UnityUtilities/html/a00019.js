@@ -1,10 +1,13 @@
 var a00019 =
 [
-    [ "OnAwakeOrSwitch", "a00019.html#a0c1be3e0d13f8ba2da7ee1f6943be216", null ],
-    [ "OnDestroy", "a00019.html#a9aba1d7dae803878ba16f99ed55918ff", null ],
-    [ "OnPersistentSingletonAwake", "a00019.html#a748d2abb1599f2905665c945a0dbd951", null ],
-    [ "OnSceneSwitched", "a00019.html#aaa5668bd8329ff57f3a19b14d781c566", null ],
-    [ "Start", "a00019.html#aafb0041f946b2d3803a395fc3a5880a5", null ],
-    [ "Instance", "a00019.html#a31171a31077abbd9940e6bb28746e890", null ],
-    [ "InstanceExists", "a00019.html#abc4667bd6fa49504fffbe3465c246f63", null ]
+    [ "MeshCreator", "a00019.html#a4f8d356eecf1e0d5c125289bdf0cde4f", null ],
+    [ "AddQuad", "a00019.html#af11f45d6c4f3218fcda7e15beb778473", null ],
+    [ "AddTriangle", "a00019.html#a934a816adfd3157d343ff309c4a9a354", null ],
+    [ "AddVertex", "a00019.html#ab6940295b4dbbe418def8106bf889606", null ],
+    [ "Clear", "a00019.html#a1b63e4427a8cd4137a873ca8e26986eb", null ],
+    [ "CreateMesh", "a00019.html#a03204a9edf528fec57e27917abda7baf", null ],
+    [ "UpdateMesh", "a00019.html#ac2be4b26adefa426c64429c4c0042fef", null ],
+    [ "MeshTriangles", "a00019.html#ac5df5184160311906ffd94fcbc42459c", null ],
+    [ "MeshVertices", "a00019.html#a227da9877597ec5c5ac6ed3f1cd7e1c1", null ],
+    [ "MeshVerticesCount", "a00019.html#ad23a51634295ab5bb5334eed0a39c166", null ]
 ];

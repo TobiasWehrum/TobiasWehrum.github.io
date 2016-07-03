@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>UnityUtilities: UnityUtilities.RangeFloat Class Reference</title>
+<title>UnityUtilities: UnityUtilities.MeshVertex Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,83 +108,69 @@ $(document).ready(function(){initNavTree('a00021.html','');});
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
-<a href="a00074.html">List of all members</a>  </div>
+<a href="a00081.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">UnityUtilities.RangeFloat Class Reference</div>  </div>
+<div class="title">UnityUtilities.MeshVertex Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Provides input for a float value range in the editor and various convencience functions to work with that range.  
+<p>A vertex in a <a class="el" href="a00020.html" title="A triangle, consisting of three MeshVertex. Used in a MeshCreator. Cannot be part of more than one Me...">MeshTriangle</a>. Can -and should!- be shared by multiple triangles. Used in a <a class="el" href="a00019.html" title="Stores the vertex/triangle data of a mesh in easily modifiable form - which can then be used to actua...">MeshCreator</a>. Cannot be part of more than one <a class="el" href="a00019.html" title="Stores the vertex/triangle data of a mesh in easily modifiable form - which can then be used to actua...">MeshCreator</a>.  
  <a href="a00021.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3f902e890c68daec20fd5b550044c61d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00021.html#a3f902e890c68daec20fd5b550044c61d">RangeFloat</a> ()</td></tr>
-<tr class="memdesc:a3f902e890c68daec20fd5b550044c61d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="a00021.html" title="Provides input for a float value range in the editor and various convencience functions to work with ...">RangeFloat</a> with 0-0 as the range. Needed for the editor.  <a href="#a3f902e890c68daec20fd5b550044c61d">More...</a><br /></td></tr>
-<tr class="separator:a3f902e890c68daec20fd5b550044c61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10b694c29d04105076d7c2b387827d35"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00021.html#a10b694c29d04105076d7c2b387827d35">RangeFloat</a> (float @from, float to)</td></tr>
-<tr class="memdesc:a10b694c29d04105076d7c2b387827d35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="a00021.html" title="Provides input for a float value range in the editor and various convencience functions to work with ...">RangeFloat</a> with a certain range.  <a href="#a10b694c29d04105076d7c2b387827d35">More...</a><br /></td></tr>
-<tr class="separator:a10b694c29d04105076d7c2b387827d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a555ce2f332f776b0169f47864fb0d04f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00021.html#a555ce2f332f776b0169f47864fb0d04f">Lerp</a> (float t)</td></tr>
-<tr class="memdesc:a555ce2f332f776b0169f47864fb0d04f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linearly interpolates between to and from by t.  <a href="#a555ce2f332f776b0169f47864fb0d04f">More...</a><br /></td></tr>
-<tr class="separator:a555ce2f332f776b0169f47864fb0d04f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac696d5a89bb0266e7e1f43edc116ee63"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00021.html#ac696d5a89bb0266e7e1f43edc116ee63">LerpUnclamped</a> (float t)</td></tr>
-<tr class="memdesc:ac696d5a89bb0266e7e1f43edc116ee63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linearly interpolates between to and from by t.  <a href="#ac696d5a89bb0266e7e1f43edc116ee63">More...</a><br /></td></tr>
-<tr class="separator:ac696d5a89bb0266e7e1f43edc116ee63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef437bca51390f168c261b80f8f43fe3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00021.html#aef437bca51390f168c261b80f8f43fe3">InverseLerp</a> (float value)</td></tr>
-<tr class="memdesc:aef437bca51390f168c261b80f8f43fe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the linear parameter t that produces the interpolant value within the range [from, to].  <a href="#aef437bca51390f168c261b80f8f43fe3">More...</a><br /></td></tr>
-<tr class="separator:aef437bca51390f168c261b80f8f43fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab130c3e5526e79709581097d86a8bc19"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00021.html#ab130c3e5526e79709581097d86a8bc19">MeshVertex</a> (Vector3 position, Vector3 normal=default(Vector3), <a class="el" href="a00021.html#ae3f876643a0e01dc8e2fc23a5ac1581f">Color</a> color=new <a class="el" href="a00021.html#ae3f876643a0e01dc8e2fc23a5ac1581f">Color</a>(), Vector2 uv=new Vector2())</td></tr>
+<tr class="memdesc:ab130c3e5526e79709581097d86a8bc19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="a00021.html" title="A vertex in a MeshTriangle. Can -and should!- be shared by multiple triangles. Used in a MeshCreator...">MeshVertex</a>.  <a href="#ab130c3e5526e79709581097d86a8bc19">More...</a><br /></td></tr>
+<tr class="separator:ab130c3e5526e79709581097d86a8bc19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a5a7805e0e6d42dad05d008bb3a948491"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00021.html#a5a7805e0e6d42dad05d008bb3a948491">From</a><code> [get]</code></td></tr>
-<tr class="memdesc:a5a7805e0e6d42dad05d008bb3a948491"><td class="mdescLeft">&#160;</td><td class="mdescRight">The range start.  <a href="#a5a7805e0e6d42dad05d008bb3a948491">More...</a><br /></td></tr>
-<tr class="separator:a5a7805e0e6d42dad05d008bb3a948491"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae6babc6b9a3917567250d277afe19bb"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00021.html#aae6babc6b9a3917567250d277afe19bb">To</a><code> [get]</code></td></tr>
-<tr class="memdesc:aae6babc6b9a3917567250d277afe19bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The range end.  <a href="#aae6babc6b9a3917567250d277afe19bb">More...</a><br /></td></tr>
-<tr class="separator:aae6babc6b9a3917567250d277afe19bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa133e42641bbbc9ab7af3806421bcb6a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00021.html#aa133e42641bbbc9ab7af3806421bcb6a">Range</a><code> [get]</code></td></tr>
-<tr class="memdesc:aa133e42641bbbc9ab7af3806421bcb6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns how wide the range between from and to is.  <a href="#aa133e42641bbbc9ab7af3806421bcb6a">More...</a><br /></td></tr>
-<tr class="separator:aa133e42641bbbc9ab7af3806421bcb6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78f43c5d9a3cbea3e4b7b169706657ea"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00021.html#a78f43c5d9a3cbea3e4b7b169706657ea">RandomInclusive</a><code> [get]</code></td></tr>
-<tr class="memdesc:a78f43c5d9a3cbea3e4b7b169706657ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a random number between from [inclusive] and to [inclusive].  <a href="#a78f43c5d9a3cbea3e4b7b169706657ea">More...</a><br /></td></tr>
-<tr class="separator:a78f43c5d9a3cbea3e4b7b169706657ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0066c9b3b7761693040738fefe352918"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00021.html#a0066c9b3b7761693040738fefe352918">Position</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a0066c9b3b7761693040738fefe352918"><td class="mdescLeft">&#160;</td><td class="mdescRight">The local position of the vertex inside the mesh.  <a href="#a0066c9b3b7761693040738fefe352918">More...</a><br /></td></tr>
+<tr class="separator:a0066c9b3b7761693040738fefe352918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a119b356367e5ca2c8d427d1a646821dd"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00021.html#a119b356367e5ca2c8d427d1a646821dd">Normal</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a119b356367e5ca2c8d427d1a646821dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The normal of the vertex.  <a href="#a119b356367e5ca2c8d427d1a646821dd">More...</a><br /></td></tr>
+<tr class="separator:a119b356367e5ca2c8d427d1a646821dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3f876643a0e01dc8e2fc23a5ac1581f"><td class="memItemLeft" align="right" valign="top">Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00021.html#ae3f876643a0e01dc8e2fc23a5ac1581f">Color</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ae3f876643a0e01dc8e2fc23a5ac1581f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The color of the vertex.  <a href="#ae3f876643a0e01dc8e2fc23a5ac1581f">More...</a><br /></td></tr>
+<tr class="separator:ae3f876643a0e01dc8e2fc23a5ac1581f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41c90d8eac232e9b663d49a6f7bf3aa6"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00021.html#a41c90d8eac232e9b663d49a6f7bf3aa6">UV</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a41c90d8eac232e9b663d49a6f7bf3aa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The first UV coordinates of the vertex.  <a href="#a41c90d8eac232e9b663d49a6f7bf3aa6">More...</a><br /></td></tr>
+<tr class="separator:a41c90d8eac232e9b663d49a6f7bf3aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1874f96274af5655da5140ce3eb46263"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00021.html#a1874f96274af5655da5140ce3eb46263">VertexIndex</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a1874f96274af5655da5140ce3eb46263"><td class="mdescLeft">&#160;</td><td class="mdescRight">The index of this vertex inside the <a class="el" href="a00019.html#a227da9877597ec5c5ac6ed3f1cd7e1c1" title="The registered vertices. Use AddVertex to add a vertex. Content of existing vertices can be freely up...">MeshCreator.MeshVertices</a> list. Automatically assigned by <a class="el" href="a00019.html#ab6940295b4dbbe418def8106bf889606" title="Adds a vertex to the MeshCreator and assigns it a VertexIndex. If it already has a VertexIndex...">MeshCreator.AddVertex()</a>, <a class="el" href="a00019.html#a934a816adfd3157d343ff309c4a9a354" title="Adds a triangle to the MeshCreator. Adds the vertices to the MeshCreator if they aren&#39;t already added...">MeshCreator.AddTriangle()</a> and <a class="el" href="a00019.html#af11f45d6c4f3218fcda7e15beb778473" title="Adds two triangles forming a quad to the MeshCreator. Adds the vertices to the MeshCreator if they ar...">MeshCreator.AddQuad()</a>. Used to identify the vertex for actually creating the Mesh in <a class="el" href="a00019.html#ac2be4b26adefa426c64429c4c0042fef" title="Takes an existing mesh previously created with CreateMesh or UpdateMesh and fills it with the data fr...">MeshCreator.UpdateMesh()</a>.  <a href="#a1874f96274af5655da5140ce3eb46263">More...</a><br /></td></tr>
+<tr class="separator:a1874f96274af5655da5140ce3eb46263"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Provides input for a float value range in the editor and various convencience functions to work with that range. </p>
+<div class="textblock"><p>A vertex in a <a class="el" href="a00020.html" title="A triangle, consisting of three MeshVertex. Used in a MeshCreator. Cannot be part of more than one Me...">MeshTriangle</a>. Can -and should!- be shared by multiple triangles. Used in a <a class="el" href="a00019.html" title="Stores the vertex/triangle data of a mesh in easily modifiable form - which can then be used to actua...">MeshCreator</a>. Cannot be part of more than one <a class="el" href="a00019.html" title="Stores the vertex/triangle data of a mesh in easily modifiable form - which can then be used to actua...">MeshCreator</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a3f902e890c68daec20fd5b550044c61d"></a>
+<a class="anchor" id="ab130c3e5526e79709581097d86a8bc19"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">UnityUtilities.RangeFloat.RangeFloat </td>
+          <td class="memname">UnityUtilities.MeshVertex.MeshVertex </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a <a class="el" href="a00021.html" title="Provides input for a float value range in the editor and various convencience functions to work with ...">RangeFloat</a> with 0-0 as the range. Needed for the editor. </p>
-
-</div>
-</div>
-<a class="anchor" id="a10b694c29d04105076d7c2b387827d35"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">UnityUtilities.RangeFloat.RangeFloat </td>
-          <td>(</td>
-          <td class="paramtype">float @&#160;</td>
-          <td class="paramname"><em>from</em>, </td>
+          <td class="paramtype">Vector3&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>to</em>&#160;</td>
+          <td class="paramtype">Vector3&#160;</td>
+          <td class="paramname"><em>normal</em> = <code>default(Vector3)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00021.html#ae3f876643a0e01dc8e2fc23a5ac1581f">Color</a>&#160;</td>
+          <td class="paramname"><em>color</em> = <code>new&#160;<a class="el" href="a00021.html#ae3f876643a0e01dc8e2fc23a5ac1581f">Color</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector2&#160;</td>
+          <td class="paramname"><em>uv</em> = <code>new&#160;Vector2()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -194,95 +180,21 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Create a <a class="el" href="a00021.html" title="Provides input for a float value range in the editor and various convencience functions to work with ...">RangeFloat</a> with a certain range. </p>
+<p>Creates a new <a class="el" href="a00021.html" title="A vertex in a MeshTriangle. Can -and should!- be shared by multiple triangles. Used in a MeshCreator...">MeshVertex</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">from</td><td>Lower range bound.</td></tr>
-    <tr><td class="paramname">to</td><td>Upper range bound.</td></tr>
+    <tr><td class="paramname">position</td><td>The local position of the vertex inside the mesh.</td></tr>
+    <tr><td class="paramname">normal</td><td>The normal of the vertex.</td></tr>
+    <tr><td class="paramname">color</td><td>The color of the vertex.</td></tr>
+    <tr><td class="paramname">uv</td><td>The first UV coordinates of the vertex.</td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aef437bca51390f168c261b80f8f43fe3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float UnityUtilities.RangeFloat.InverseLerp </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calculates the linear parameter t that produces the interpolant value within the range [from, to]. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">value</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a555ce2f332f776b0169f47864fb0d04f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float UnityUtilities.RangeFloat.Lerp </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Linearly interpolates between to and from by t. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">t</td><td>How much to interpolate. Clamped between 0 and 1. 0 is [to] and 1 is [from].</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ac696d5a89bb0266e7e1f43edc116ee63"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float UnityUtilities.RangeFloat.LerpUnclamped </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Linearly interpolates between to and from by t. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">t</td><td>How much to interpolate. 0 is [to] and 1 is [from].</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
-<a class="anchor" id="a5a7805e0e6d42dad05d008bb3a948491"></a>
+<a class="anchor" id="ae3f876643a0e01dc8e2fc23a5ac1581f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -290,21 +202,21 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float UnityUtilities.RangeFloat.From</td>
+          <td class="memname">Color UnityUtilities.MeshVertex.Color</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The range start. </p>
+<p>The color of the vertex. </p>
 
 </div>
 </div>
-<a class="anchor" id="a78f43c5d9a3cbea3e4b7b169706657ea"></a>
+<a class="anchor" id="a119b356367e5ca2c8d427d1a646821dd"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -312,21 +224,21 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float UnityUtilities.RangeFloat.RandomInclusive</td>
+          <td class="memname">Vector3 UnityUtilities.MeshVertex.Normal</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns a random number between from [inclusive] and to [inclusive]. </p>
+<p>The normal of the vertex. </p>
 
 </div>
 </div>
-<a class="anchor" id="aa133e42641bbbc9ab7af3806421bcb6a"></a>
+<a class="anchor" id="a0066c9b3b7761693040738fefe352918"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -334,21 +246,21 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float UnityUtilities.RangeFloat.Range</td>
+          <td class="memname">Vector3 UnityUtilities.MeshVertex.Position</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns how wide the range between from and to is. </p>
+<p>The local position of the vertex inside the mesh. </p>
 
 </div>
 </div>
-<a class="anchor" id="aae6babc6b9a3917567250d277afe19bb"></a>
+<a class="anchor" id="a41c90d8eac232e9b663d49a6f7bf3aa6"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -356,29 +268,51 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float UnityUtilities.RangeFloat.To</td>
+          <td class="memname">Vector2 UnityUtilities.MeshVertex.UV</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The range end. </p>
+<p>The first UV coordinates of the vertex. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1874f96274af5655da5140ce3eb46263"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UnityUtilities.MeshVertex.VertexIndex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The index of this vertex inside the <a class="el" href="a00019.html#a227da9877597ec5c5ac6ed3f1cd7e1c1" title="The registered vertices. Use AddVertex to add a vertex. Content of existing vertices can be freely up...">MeshCreator.MeshVertices</a> list. Automatically assigned by <a class="el" href="a00019.html#ab6940295b4dbbe418def8106bf889606" title="Adds a vertex to the MeshCreator and assigns it a VertexIndex. If it already has a VertexIndex...">MeshCreator.AddVertex()</a>, <a class="el" href="a00019.html#a934a816adfd3157d343ff309c4a9a354" title="Adds a triangle to the MeshCreator. Adds the vertices to the MeshCreator if they aren&#39;t already added...">MeshCreator.AddTriangle()</a> and <a class="el" href="a00019.html#af11f45d6c4f3218fcda7e15beb778473" title="Adds two triangles forming a quad to the MeshCreator. Adds the vertices to the MeshCreator if they ar...">MeshCreator.AddQuad()</a>. Used to identify the vertex for actually creating the Mesh in <a class="el" href="a00019.html#ac2be4b26adefa426c64429c4c0042fef" title="Takes an existing mesh previously created with CreateMesh or UpdateMesh and fills it with the data fr...">MeshCreator.UpdateMesh()</a>. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Range/RangeFloat.cs</li>
+<li>MeshCreator/MeshVertex.cs</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00064.html">UnityUtilities</a></li><li class="navelem"><a class="el" href="a00021.html">RangeFloat</a></li>
+    <li class="navelem"><a class="el" href="a00072.html">UnityUtilities</a></li><li class="navelem"><a class="el" href="a00021.html">MeshVertex</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

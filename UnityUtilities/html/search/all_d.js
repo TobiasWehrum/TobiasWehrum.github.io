@@ -1,8 +1,18 @@
 var searchData=
 [
-  ['this_5bint_20i_5d',['this[int i]',['../a00023.html#a7a89b7849291edc84cf9937c9c4113c4',1,'UnityUtilities::RollingArray']]],
-  ['timeleft',['TimeLeft',['../a00012.html#ac339c35858803ad324ce1e6fc400506c',1,'UnityUtilities::Countdown']]],
-  ['timepassed',['TimePassed',['../a00012.html#aebcdeebcad07ffd465202435a42edcf0',1,'UnityUtilities::Countdown']]],
-  ['to',['To',['../a00021.html#aae6babc6b9a3917567250d277afe19bb',1,'UnityUtilities.RangeFloat.To()'],['../a00022.html#a55058850d928e994b2d122d7146b91e7',1,'UnityUtilities.RangeInt.To()']]],
-  ['toonelinestring_3c_20t_20_3e',['ToOneLineString&lt; T &gt;',['../a00017.html#a1b68a813f8c3314cfc0e22ff6f39ca29',1,'UnityUtilities::LINQExtensions']]]
+  ['singletonmonobehaviour_20and_20persistentsingletonmonobehaviour',['SingletonMonoBehaviour and PersistentSingletonMonoBehaviour',['../a00009.html',1,'']]],
+  ['serializetoxmlstring_3c_20t_20_3e',['SerializeToXmlString&lt; T &gt;',['../a00030.html#a1cba7dd17eefbd2cd6dae3906003a947',1,'UnityUtilities::XmlHelper']]],
+  ['seteulerangles',['SetEulerAngles',['../a00029.html#a6bbb59e5f2ef9273357fdc061c588b22',1,'UnityUtilities::UnityHelper']]],
+  ['setlocaleulerangles',['SetLocalEulerAngles',['../a00029.html#a7d467909d932ea997016c2ebc382d446',1,'UnityUtilities::UnityHelper']]],
+  ['setlocalposition',['SetLocalPosition',['../a00029.html#af9149a2907e0245de95f56e50132b46a',1,'UnityUtilities::UnityHelper']]],
+  ['setlocalscale',['SetLocalScale',['../a00029.html#a9dfd5015ccf67cde5af9857ed74cadf9',1,'UnityUtilities::UnityHelper']]],
+  ['setlossyscale',['SetLossyScale',['../a00029.html#a4e6cd3afea9122b7f254dcb31f60f527',1,'UnityUtilities::UnityHelper']]],
+  ['setposition',['SetPosition',['../a00029.html#adb4401a87105552c433b8a89684d6227',1,'UnityUtilities::UnityHelper']]],
+  ['setrefilldelegate',['SetRefillDelegate',['../a00024.html#a58dd8ef2082d864cbbb3e59f59c12d70',1,'UnityUtilities::RandomBag']]],
+  ['setrefillitems',['SetRefillItems',['../a00024.html#a82e14932b24ac665f0ca78e0d30b9580',1,'UnityUtilities::RandomBag']]],
+  ['shuffle_3c_20t_20_3e',['Shuffle&lt; T &gt;',['../a00018.html#abaf96186110194567025c17a222b7546',1,'UnityUtilities.LINQExtensions.Shuffle&lt; T &gt;(this T[] list)'],['../a00018.html#ae22fb31ce997aeda7e08eb7816c0b8ce',1,'UnityUtilities.LINQExtensions.Shuffle&lt; T &gt;(this List&lt; T &gt; list)']]],
+  ['singletonmonobehaviour',['SingletonMonoBehaviour',['../a00028.html',1,'UnityUtilities']]],
+  ['speed',['Speed',['../a00022.html#aa517cd42c7cc50db484e3c3c54d1963c',1,'UnityUtilities::NoiseOutputValue']]],
+  ['start',['Start',['../a00023.html#aafb0041f946b2d3803a395fc3a5880a5',1,'UnityUtilities::PersistentSingletonMonoBehaviour']]],
+  ['stripclonefromname',['StripCloneFromName',['../a00029.html#a7eb18f837434bbe372481727a256c524',1,'UnityUtilities::UnityHelper']]]
 ];

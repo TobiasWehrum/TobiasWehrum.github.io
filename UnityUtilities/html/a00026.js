@@ -1,16 +1,10 @@
 var a00026 =
 [
-    [ "DeserializeFromXmlString< T >", "a00026.html#a1c417c8ae3a546fc151d77ea1f5bbebc", null ],
-    [ "GetAttributeBool", "a00026.html#ab2f991f9fc8fd187aa2efc9000dae85f", null ],
-    [ "GetAttributeFloat", "a00026.html#a83a88e48f81f9ee7f530ca9d14cc029f", null ],
-    [ "GetAttributeFloatNullable", "a00026.html#a0f42bb1a8aabc49e7b3e79e4ae272b61", null ],
-    [ "GetAttributeInt", "a00026.html#a2f3c97a6cf73d95cae10595b05acc08d", null ],
-    [ "GetAttributeIntNullable", "a00026.html#a983774afab7a2019483b9fd162c9724c", null ],
-    [ "GetAttributeString", "a00026.html#a0d75764006246d7a864afd3a44e68805", null ],
-    [ "GetElementBool", "a00026.html#a8dcb646aa34d3706701795cab3ed160f", null ],
-    [ "GetElementFloat", "a00026.html#a1ee2838534737d89839726a19b377b0b", null ],
-    [ "GetElementInt", "a00026.html#a7e167ade46ebc53eda59c05abdf7ac7f", null ],
-    [ "GetElementString", "a00026.html#a953f42484de6429ea70d368de1222837", null ],
-    [ "GetSerializer< T >", "a00026.html#a83353d74d37155e36b7bad10e530d037", null ],
-    [ "SerializeToXmlString< T >", "a00026.html#a1cba7dd17eefbd2cd6dae3906003a947", null ]
+    [ "RangeInt", "a00026.html#a0e1b0001224eeed5dced7b381039edaa", null ],
+    [ "RangeInt", "a00026.html#a3725503d60c9716b230882fd41ccc8fe", null ],
+    [ "From", "a00026.html#af1af41f71d6c9f6b3e15d6e7dc567a01", null ],
+    [ "RandomExclusive", "a00026.html#a8c317a36882f1203093268e6bcd4ead1", null ],
+    [ "RandomInclusive", "a00026.html#ae225ac60cefedb062ca5d2e4e901c54a", null ],
+    [ "Range", "a00026.html#a7d226a239cb5cf2919ea101be69a4af8", null ],
+    [ "To", "a00026.html#a55058850d928e994b2d122d7146b91e7", null ]
 ];

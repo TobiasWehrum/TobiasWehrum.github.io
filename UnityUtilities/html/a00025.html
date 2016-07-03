@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>UnityUtilities: UnityUtilities.UnityHelper Class Reference</title>
+<title>UnityUtilities: UnityUtilities.RangeFloat Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,191 +106,85 @@ $(document).ready(function(){initNavTree('a00025.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="a00078.html">List of all members</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#properties">Properties</a> &#124;
+<a href="a00085.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">UnityUtilities.UnityHelper Class Reference</div>  </div>
+<div class="title">UnityUtilities.RangeFloat Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Provides a lot of convenience methods for handling Unity data types, either in the form of extension methods or as static helper methods.  
+<p>Provides input for a float value range in the editor and various convencience functions to work with that range.  
  <a href="a00025.html#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab6d3a6c7f673f831adc482f368d3159f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ab6d3a6c7f673f831adc482f368d3159f">CopyPositionAndRotatationFrom</a> (this Transform transform, Transform source)</td></tr>
-<tr class="memdesc:ab6d3a6c7f673f831adc482f368d3159f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the position and rotation from another transform to this transform.  <a href="#ab6d3a6c7f673f831adc482f368d3159f">More...</a><br /></td></tr>
-<tr class="separator:ab6d3a6c7f673f831adc482f368d3159f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb4401a87105552c433b8a89684d6227"><td class="memItemLeft" align="right" valign="top">static Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#adb4401a87105552c433b8a89684d6227">SetPosition</a> (this Transform transform, float?x=null, float?y=null, float?z=null)</td></tr>
-<tr class="memdesc:adb4401a87105552c433b8a89684d6227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the x/y/z transform.position using optional parameters, keeping all undefined values as they were before. Can be called with named parameters like transform.SetPosition(x: 5, z: 10), for example, only changing transform.position.x and z.  <a href="#adb4401a87105552c433b8a89684d6227">More...</a><br /></td></tr>
-<tr class="separator:adb4401a87105552c433b8a89684d6227"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9149a2907e0245de95f56e50132b46a"><td class="memItemLeft" align="right" valign="top">static Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#af9149a2907e0245de95f56e50132b46a">SetLocalPosition</a> (this Transform transform, float?x=null, float?y=null, float?z=null)</td></tr>
-<tr class="memdesc:af9149a2907e0245de95f56e50132b46a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the x/y/z transform.localPosition using optional parameters, keeping all undefined values as they were before. Can be called with named parameters like transform.SetLocalPosition(x: 5, z: 10), for example, only changing transform.localPosition.x and z.  <a href="#af9149a2907e0245de95f56e50132b46a">More...</a><br /></td></tr>
-<tr class="separator:af9149a2907e0245de95f56e50132b46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dfd5015ccf67cde5af9857ed74cadf9"><td class="memItemLeft" align="right" valign="top">static Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a9dfd5015ccf67cde5af9857ed74cadf9">SetLocalScale</a> (this Transform transform, float?x=null, float?y=null, float?z=null)</td></tr>
-<tr class="memdesc:a9dfd5015ccf67cde5af9857ed74cadf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the x/y/z transform.localScale using optional parameters, keeping all undefined values as they were before. Can be called with named parameters like transform.SetLocalScale(x: 5, z: 10), for example, only changing transform.localScale.x and z.  <a href="#a9dfd5015ccf67cde5af9857ed74cadf9">More...</a><br /></td></tr>
-<tr class="separator:a9dfd5015ccf67cde5af9857ed74cadf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e6cd3afea9122b7f254dcb31f60f527"><td class="memItemLeft" align="right" valign="top">static Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a4e6cd3afea9122b7f254dcb31f60f527">SetLossyScale</a> (this Transform transform, float?x=null, float?y=null, float?z=null)</td></tr>
-<tr class="memdesc:a4e6cd3afea9122b7f254dcb31f60f527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the x/y/z transform.lossyScale using optional parameters, keeping all undefined values as they were before. Can be called with named parameters like transform.SetLossyScale(x: 5, z: 10), for example, only changing transform.lossyScale.x and z.  <a href="#a4e6cd3afea9122b7f254dcb31f60f527">More...</a><br /></td></tr>
-<tr class="separator:a4e6cd3afea9122b7f254dcb31f60f527"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bbb59e5f2ef9273357fdc061c588b22"><td class="memItemLeft" align="right" valign="top">static Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a6bbb59e5f2ef9273357fdc061c588b22">SetEulerAngles</a> (this Transform transform, float?x=null, float?y=null, float?z=null)</td></tr>
-<tr class="memdesc:a6bbb59e5f2ef9273357fdc061c588b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the x/y/z transform.eulerAngles using optional parameters, keeping all undefined values as they were before. Can be called with named parameters like transform.SetEulerAngles(x: 5, z: 10), for example, only changing transform.eulerAngles.x and z.  <a href="#a6bbb59e5f2ef9273357fdc061c588b22">More...</a><br /></td></tr>
-<tr class="separator:a6bbb59e5f2ef9273357fdc061c588b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d467909d932ea997016c2ebc382d446"><td class="memItemLeft" align="right" valign="top">static Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a7d467909d932ea997016c2ebc382d446">SetLocalEulerAngles</a> (this Transform transform, float?x=null, float?y=null, float?z=null)</td></tr>
-<tr class="memdesc:a7d467909d932ea997016c2ebc382d446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the x/y/z transform.localEulerAngles using optional parameters, keeping all undefined values as they were before. Can be called with named parameters like transform.SetLocalEulerAngles(x: 5, z: 10), for example, only changing transform.localEulerAngles.x and z.  <a href="#a7d467909d932ea997016c2ebc382d446">More...</a><br /></td></tr>
-<tr class="separator:a7d467909d932ea997016c2ebc382d446"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd02f33cdab416ac10d02453a1797827"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#afd02f33cdab416ac10d02453a1797827">AssignLayerToHierarchy</a> (this GameObject gameObject, int layer)</td></tr>
-<tr class="memdesc:afd02f33cdab416ac10d02453a1797827"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a layer to this GameObject and all its children recursively.  <a href="#afd02f33cdab416ac10d02453a1797827">More...</a><br /></td></tr>
-<tr class="separator:afd02f33cdab416ac10d02453a1797827"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7eb18f837434bbe372481727a256c524"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a7eb18f837434bbe372481727a256c524">StripCloneFromName</a> (this GameObject gameObject)</td></tr>
-<tr class="memdesc:a7eb18f837434bbe372481727a256c524"><td class="mdescLeft">&#160;</td><td class="mdescRight">When UnityEngine.Object.Instantiate(UnityEngine.Object) is called on a prefab named "Original", the resulting instance will be named "Original(Clone)". This method changes the name back to "Original" by stripping everything after and including the first "(Clone)" it finds. If no "(Clone)" is found, the name is left unchanged.  <a href="#a7eb18f837434bbe372481727a256c524">More...</a><br /></td></tr>
-<tr class="separator:a7eb18f837434bbe372481727a256c524"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a013ba71f4edab0b657a050b8de706ff8"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a013ba71f4edab0b657a050b8de706ff8">GetNameWithoutClone</a> (this GameObject gameObject)</td></tr>
-<tr class="memdesc:a013ba71f4edab0b657a050b8de706ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">When UnityEngine.Object.Instantiate(UnityEngine.Object) is called on a prefab named "Original", the resulting instance will be named "Original(Clone)". This method returns the name without "(Clone)" by stripping everything after and including the first "(Clone)" it finds. If no "(Clone)" is found, the name is returned unchanged.  <a href="#a013ba71f4edab0b657a050b8de706ff8">More...</a><br /></td></tr>
-<tr class="separator:a013ba71f4edab0b657a050b8de706ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6988b17c82fe80bcb9fe36e18a880bc"><td class="memItemLeft" align="right" valign="top">static Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ae6988b17c82fe80bcb9fe36e18a880bc">Change2</a> (this Vector2 vector, float?x=null, float?y=null)</td></tr>
-<tr class="memdesc:ae6988b17c82fe80bcb9fe36e18a880bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a copy of the Vector2 with changed x/y values, keeping all undefined values as they were before. Can be called with named parameters like vector.Change2(y: 5), for example, only changing the y component.  <a href="#ae6988b17c82fe80bcb9fe36e18a880bc">More...</a><br /></td></tr>
-<tr class="separator:ae6988b17c82fe80bcb9fe36e18a880bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f293aebbbb0a2aeb090d54c044abfa6"><td class="memItemLeft" align="right" valign="top">static Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a2f293aebbbb0a2aeb090d54c044abfa6">Change3</a> (this Vector3 vector, float?x=null, float?y=null, float?z=null)</td></tr>
-<tr class="memdesc:a2f293aebbbb0a2aeb090d54c044abfa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a copy of the Vector3 with changed x/y/z values, keeping all undefined values as they were before. Can be called with named parameters like vector.Change3(x: 5, z: 10), for example, only changing the x and z components.  <a href="#a2f293aebbbb0a2aeb090d54c044abfa6">More...</a><br /></td></tr>
-<tr class="separator:a2f293aebbbb0a2aeb090d54c044abfa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1df37bc5b80ebd91b93fe0a0202a003d"><td class="memItemLeft" align="right" valign="top">static Vector4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a1df37bc5b80ebd91b93fe0a0202a003d">Change4</a> (this Vector4 vector, float?x=null, float?y=null, float?z=null, float?w=null)</td></tr>
-<tr class="memdesc:a1df37bc5b80ebd91b93fe0a0202a003d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a copy of the Vector4 with changed x/y/z/w values, keeping all undefined values as they were before. Can be called with named parameters like vector.Change4(x: 5, z: 10), for example, only changing the x and z components.  <a href="#a1df37bc5b80ebd91b93fe0a0202a003d">More...</a><br /></td></tr>
-<tr class="separator:a1df37bc5b80ebd91b93fe0a0202a003d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f878ac9461c6ebfa88a33e81a9d1cf2"><td class="memItemLeft" align="right" valign="top">static Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a5f878ac9461c6ebfa88a33e81a9d1cf2">RotateRad</a> (this Vector2 v, float angleRad)</td></tr>
-<tr class="memdesc:a5f878ac9461c6ebfa88a33e81a9d1cf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates a Vector2.  <a href="#a5f878ac9461c6ebfa88a33e81a9d1cf2">More...</a><br /></td></tr>
-<tr class="separator:a5f878ac9461c6ebfa88a33e81a9d1cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad38dcffe2ba6cb20268a614287571378"><td class="memItemLeft" align="right" valign="top">static Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ad38dcffe2ba6cb20268a614287571378">RotateDeg</a> (this Vector2 v, float angleDeg)</td></tr>
-<tr class="memdesc:ad38dcffe2ba6cb20268a614287571378"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates a Vector2.  <a href="#ad38dcffe2ba6cb20268a614287571378">More...</a><br /></td></tr>
-<tr class="separator:ad38dcffe2ba6cb20268a614287571378"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a374e56f4e4d75d516485be39a02f91"><td class="memItemLeft" align="right" valign="top">static Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a9a374e56f4e4d75d516485be39a02f91">CreateVector2AngleRad</a> (float angleRad)</td></tr>
-<tr class="memdesc:a9a374e56f4e4d75d516485be39a02f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a Vector2 with a length of 1 pointing towards a certain angle.  <a href="#a9a374e56f4e4d75d516485be39a02f91">More...</a><br /></td></tr>
-<tr class="separator:a9a374e56f4e4d75d516485be39a02f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa602e0aea1ecb99011f7b22b3909b857"><td class="memItemLeft" align="right" valign="top">static Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#aa602e0aea1ecb99011f7b22b3909b857">CreateVector2AngleDeg</a> (float angleDeg)</td></tr>
-<tr class="memdesc:aa602e0aea1ecb99011f7b22b3909b857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a Vector2 with a length of 1 pointing towards a certain angle.  <a href="#aa602e0aea1ecb99011f7b22b3909b857">More...</a><br /></td></tr>
-<tr class="separator:aa602e0aea1ecb99011f7b22b3909b857"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefea4b67ccd730c0514e64761a73d882"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#aefea4b67ccd730c0514e64761a73d882">GetAngleRad</a> (this Vector2 vector)</td></tr>
-<tr class="memdesc:aefea4b67ccd730c0514e64761a73d882"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the rotation of a Vector2.  <a href="#aefea4b67ccd730c0514e64761a73d882">More...</a><br /></td></tr>
-<tr class="separator:aefea4b67ccd730c0514e64761a73d882"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a517eb1c6b9429e4fa953c9841d5371d2"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a517eb1c6b9429e4fa953c9841d5371d2">GetAngleDeg</a> (this Vector2 vector)</td></tr>
-<tr class="memdesc:a517eb1c6b9429e4fa953c9841d5371d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the rotation of a Vector2.  <a href="#a517eb1c6b9429e4fa953c9841d5371d2">More...</a><br /></td></tr>
-<tr class="separator:a517eb1c6b9429e4fa953c9841d5371d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8bf5786aea579e2e45e8209b5c43d9e"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ab8bf5786aea579e2e45e8209b5c43d9e">Change</a> (this Color color, float?r=null, float?g=null, float?b=null, float?a=null)</td></tr>
-<tr class="memdesc:ab8bf5786aea579e2e45e8209b5c43d9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a copy of the Color with changed r/g/b/a values, keeping all undefined values as they were before. Can be called with named parameters like color.Change(g: 0, a: 0.5), for example, only changing the g and a components.  <a href="#ab8bf5786aea579e2e45e8209b5c43d9e">More...</a><br /></td></tr>
-<tr class="separator:ab8bf5786aea579e2e45e8209b5c43d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc6175786bb6796035931d41e0fc69ca"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#acc6175786bb6796035931d41e0fc69ca">ChangeAlpha</a> (this Color color, float a)</td></tr>
-<tr class="memdesc:acc6175786bb6796035931d41e0fc69ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a copy of the vector with a changed alpha value.  <a href="#acc6175786bb6796035931d41e0fc69ca">More...</a><br /></td></tr>
-<tr class="separator:acc6175786bb6796035931d41e0fc69ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac81e6d97497f6a6f5e3f1117900d6659"><td class="memItemLeft" align="right" valign="top">static Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ac81e6d97497f6a6f5e3f1117900d6659">RandomPosition</a> (this Rect rect, float extendDistance=0f)</td></tr>
-<tr class="memdesc:ac81e6d97497f6a6f5e3f1117900d6659"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extends/shrinks the rect by extendDistance to each side and gets a random position from the resulting rect.  <a href="#ac81e6d97497f6a6f5e3f1117900d6659">More...</a><br /></td></tr>
-<tr class="separator:ac81e6d97497f6a6f5e3f1117900d6659"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1aa9957492c617067a41b17d64ec403d"><td class="memItemLeft" align="right" valign="top">static Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a1aa9957492c617067a41b17d64ec403d">RandomSubRect</a> (this Rect rect, float width, float height)</td></tr>
-<tr class="memdesc:a1aa9957492c617067a41b17d64ec403d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a random subrect of the given width or height inside this rect.  <a href="#a1aa9957492c617067a41b17d64ec403d">More...</a><br /></td></tr>
-<tr class="separator:a1aa9957492c617067a41b17d64ec403d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8585790b36507ed741ac15bab2e7c8ac"><td class="memItemLeft" align="right" valign="top">static Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a8585790b36507ed741ac15bab2e7c8ac">Clamp2</a> (this Rect rect, Vector2 position, float extendDistance=0f)</td></tr>
-<tr class="memdesc:a8585790b36507ed741ac15bab2e7c8ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extends/shrinks the rect by extendDistance to each side and then restricts the given vector to the resulting rect.  <a href="#a8585790b36507ed741ac15bab2e7c8ac">More...</a><br /></td></tr>
-<tr class="separator:a8585790b36507ed741ac15bab2e7c8ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3e1c3293fb73e6af09b7079c9b8155f"><td class="memItemLeft" align="right" valign="top">static Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#af3e1c3293fb73e6af09b7079c9b8155f">Clamp3</a> (this Rect rect, Vector3 position, float extendDistance=0f)</td></tr>
-<tr class="memdesc:af3e1c3293fb73e6af09b7079c9b8155f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extends/shrinks the rect by extendDistance to each side and then restricts the given vector to the resulting rect. The z component is kept.  <a href="#af3e1c3293fb73e6af09b7079c9b8155f">More...</a><br /></td></tr>
-<tr class="separator:af3e1c3293fb73e6af09b7079c9b8155f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ff4e6ceaf4d88515eaeac3d2a93e5d9"><td class="memItemLeft" align="right" valign="top">static Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a4ff4e6ceaf4d88515eaeac3d2a93e5d9">Extend</a> (this Rect rect, float extendDistance)</td></tr>
-<tr class="memdesc:a4ff4e6ceaf4d88515eaeac3d2a93e5d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extends/shrinks the rect by extendDistance to each side.  <a href="#a4ff4e6ceaf4d88515eaeac3d2a93e5d9">More...</a><br /></td></tr>
-<tr class="separator:a4ff4e6ceaf4d88515eaeac3d2a93e5d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ff2720752eaa0324cf8e4c2ac70165a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a6ff2720752eaa0324cf8e4c2ac70165a">Contains</a> (this Rect rect, Vector2 position, float extendDistance)</td></tr>
-<tr class="memdesc:a6ff2720752eaa0324cf8e4c2ac70165a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extends/shrinks the rect by extendDistance to each side and then checks if a given point is inside the resulting rect.  <a href="#a6ff2720752eaa0324cf8e4c2ac70165a">More...</a><br /></td></tr>
-<tr class="separator:a6ff2720752eaa0324cf8e4c2ac70165a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad13bdd015aad4a41acb2188bbf59cdda"><td class="memItemLeft" align="right" valign="top">static Vector2[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ad13bdd015aad4a41acb2188bbf59cdda">GetCornerPoints</a> (this Rect rect)</td></tr>
-<tr class="memdesc:ad13bdd015aad4a41acb2188bbf59cdda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an array containing the four corner points of a Rect.  <a href="#ad13bdd015aad4a41acb2188bbf59cdda">More...</a><br /></td></tr>
-<tr class="separator:ad13bdd015aad4a41acb2188bbf59cdda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf88e68972e0fc1bc1ed1318511f12c1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#acf88e68972e0fc1bc1ed1318511f12c1">PlayerPrefsGetBool</a> (string key, bool defaultValue=false)</td></tr>
-<tr class="memdesc:acf88e68972e0fc1bc1ed1318511f12c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value corresponding to the key in the preference file if it exists. If it doesn't exist, it will return defaultValue. (Internally, the value is stored as an int with either 0 or 1.)  <a href="#acf88e68972e0fc1bc1ed1318511f12c1">More...</a><br /></td></tr>
-<tr class="separator:acf88e68972e0fc1bc1ed1318511f12c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fae3c4c72c64e04d685b57c1f8def7a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a4fae3c4c72c64e04d685b57c1f8def7a">PlayerPrefsSetBool</a> (string key, bool value)</td></tr>
-<tr class="memdesc:a4fae3c4c72c64e04d685b57c1f8def7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of the preference entry identified by the key. (Internally, the value is stored as an int with either 0 or 1.)  <a href="#a4fae3c4c72c64e04d685b57c1f8def7a">More...</a><br /></td></tr>
-<tr class="separator:a4fae3c4c72c64e04d685b57c1f8def7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a775814f59ed6fb4081e85182fe24942c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a775814f59ed6fb4081e85182fe24942c">ContainsLayer</a> (this LayerMask mask, int layer)</td></tr>
-<tr class="memdesc:a775814f59ed6fb4081e85182fe24942c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is a specific layer actived in the given LayerMask?  <a href="#a775814f59ed6fb4081e85182fe24942c">More...</a><br /></td></tr>
-<tr class="separator:a775814f59ed6fb4081e85182fe24942c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7ad8ec24a95dfe3014b193e9d763231"><td class="memItemLeft" align="right" valign="top">static Bounds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ac7ad8ec24a95dfe3014b193e9d763231">CombineColliderBounds</a> (Collider[] colliders)</td></tr>
-<tr class="memdesc:ac7ad8ec24a95dfe3014b193e9d763231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a Bounds encapsulating all given colliders bounds.  <a href="#ac7ad8ec24a95dfe3014b193e9d763231">More...</a><br /></td></tr>
-<tr class="separator:ac7ad8ec24a95dfe3014b193e9d763231"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71631eb28cfba0e452ce893c54c94a81"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a71631eb28cfba0e452ce893c54c94a81">GetCapsuleCastData</a> (CharacterController characterController, Vector3 origin, out Vector3 point1, out Vector3 point2, out float radius)</td></tr>
-<tr class="memdesc:a71631eb28cfba0e452ce893c54c94a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a CharacterController and a point of origin (the lower point of the capsule), this returns the point1, point2 and radius needed to fill a CapsuleCast().  <a href="#a71631eb28cfba0e452ce893c54c94a81">More...</a><br /></td></tr>
-<tr class="separator:a71631eb28cfba0e452ce893c54c94a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad97f88439e14d25bc902ccba9c2ad754"><td class="memItemLeft" align="right" valign="top">static Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ad97f88439e14d25bc902ccba9c2ad754">CalculateViewportWorldSizeAtDistance</a> (this Camera camera, float distance, float aspectRatio=0)</td></tr>
-<tr class="memdesc:ad97f88439e14d25bc902ccba9c2ad754"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the size of the viewport at a given distance from a perspective camera.  <a href="#ad97f88439e14d25bc902ccba9c2ad754">More...</a><br /></td></tr>
-<tr class="separator:ad97f88439e14d25bc902ccba9c2ad754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a3f902e890c68daec20fd5b550044c61d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a3f902e890c68daec20fd5b550044c61d">RangeFloat</a> ()</td></tr>
+<tr class="memdesc:a3f902e890c68daec20fd5b550044c61d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="a00025.html" title="Provides input for a float value range in the editor and various convencience functions to work with ...">RangeFloat</a> with 0-0 as the range. Needed for the editor.  <a href="#a3f902e890c68daec20fd5b550044c61d">More...</a><br /></td></tr>
+<tr class="separator:a3f902e890c68daec20fd5b550044c61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10b694c29d04105076d7c2b387827d35"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a10b694c29d04105076d7c2b387827d35">RangeFloat</a> (float @from, float to)</td></tr>
+<tr class="memdesc:a10b694c29d04105076d7c2b387827d35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="a00025.html" title="Provides input for a float value range in the editor and various convencience functions to work with ...">RangeFloat</a> with a certain range.  <a href="#a10b694c29d04105076d7c2b387827d35">More...</a><br /></td></tr>
+<tr class="separator:a10b694c29d04105076d7c2b387827d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a555ce2f332f776b0169f47864fb0d04f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a555ce2f332f776b0169f47864fb0d04f">Lerp</a> (float t)</td></tr>
+<tr class="memdesc:a555ce2f332f776b0169f47864fb0d04f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linearly interpolates between to and from by t.  <a href="#a555ce2f332f776b0169f47864fb0d04f">More...</a><br /></td></tr>
+<tr class="separator:a555ce2f332f776b0169f47864fb0d04f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac696d5a89bb0266e7e1f43edc116ee63"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ac696d5a89bb0266e7e1f43edc116ee63">LerpUnclamped</a> (float t)</td></tr>
+<tr class="memdesc:ac696d5a89bb0266e7e1f43edc116ee63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linearly interpolates between to and from by t.  <a href="#ac696d5a89bb0266e7e1f43edc116ee63">More...</a><br /></td></tr>
+<tr class="separator:ac696d5a89bb0266e7e1f43edc116ee63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef437bca51390f168c261b80f8f43fe3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#aef437bca51390f168c261b80f8f43fe3">InverseLerp</a> (float value)</td></tr>
+<tr class="memdesc:aef437bca51390f168c261b80f8f43fe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the linear parameter t that produces the interpolant value within the range [from, to].  <a href="#aef437bca51390f168c261b80f8f43fe3">More...</a><br /></td></tr>
+<tr class="separator:aef437bca51390f168c261b80f8f43fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a5a7805e0e6d42dad05d008bb3a948491"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a5a7805e0e6d42dad05d008bb3a948491">From</a><code> [get]</code></td></tr>
+<tr class="memdesc:a5a7805e0e6d42dad05d008bb3a948491"><td class="mdescLeft">&#160;</td><td class="mdescRight">The range start.  <a href="#a5a7805e0e6d42dad05d008bb3a948491">More...</a><br /></td></tr>
+<tr class="separator:a5a7805e0e6d42dad05d008bb3a948491"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae6babc6b9a3917567250d277afe19bb"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#aae6babc6b9a3917567250d277afe19bb">To</a><code> [get]</code></td></tr>
+<tr class="memdesc:aae6babc6b9a3917567250d277afe19bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The range end.  <a href="#aae6babc6b9a3917567250d277afe19bb">More...</a><br /></td></tr>
+<tr class="separator:aae6babc6b9a3917567250d277afe19bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa133e42641bbbc9ab7af3806421bcb6a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#aa133e42641bbbc9ab7af3806421bcb6a">Range</a><code> [get]</code></td></tr>
+<tr class="memdesc:aa133e42641bbbc9ab7af3806421bcb6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns how wide the range between from and to is.  <a href="#aa133e42641bbbc9ab7af3806421bcb6a">More...</a><br /></td></tr>
+<tr class="separator:aa133e42641bbbc9ab7af3806421bcb6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78f43c5d9a3cbea3e4b7b169706657ea"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a78f43c5d9a3cbea3e4b7b169706657ea">RandomInclusive</a><code> [get]</code></td></tr>
+<tr class="memdesc:a78f43c5d9a3cbea3e4b7b169706657ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a random number between from [inclusive] and to [inclusive].  <a href="#a78f43c5d9a3cbea3e4b7b169706657ea">More...</a><br /></td></tr>
+<tr class="separator:a78f43c5d9a3cbea3e4b7b169706657ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Provides a lot of convenience methods for handling Unity data types, either in the form of extension methods or as static helper methods. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="afd02f33cdab416ac10d02453a1797827"></a>
+<div class="textblock"><p>Provides input for a float value range in the editor and various convencience functions to work with that range. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a3f902e890c68daec20fd5b550044c61d"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void UnityUtilities.UnityHelper.AssignLayerToHierarchy </td>
+          <td class="memname">UnityUtilities.RangeFloat.RangeFloat </td>
           <td>(</td>
-          <td class="paramtype">this GameObject&#160;</td>
-          <td class="paramname"><em>gameObject</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>layer</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Assigns a layer to this GameObject and all its children recursively. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">gameObject</td><td>The GameObject to start at.</td></tr>
-    <tr><td class="paramname">layer</td><td>The layer to set.</td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Create a <a class="el" href="a00025.html" title="Provides input for a float value range in the editor and various convencience functions to work with ...">RangeFloat</a> with 0-0 as the range. Needed for the editor. </p>
 
 </div>
 </div>
-<a class="anchor" id="ad97f88439e14d25bc902ccba9c2ad754"></a>
+<a class="anchor" id="a10b694c29d04105076d7c2b387827d35"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static Vector2 UnityUtilities.UnityHelper.CalculateViewportWorldSizeAtDistance </td>
+          <td class="memname">UnityUtilities.RangeFloat.RangeFloat </td>
           <td>(</td>
-          <td class="paramtype">this Camera&#160;</td>
-          <td class="paramname"><em>camera</em>, </td>
+          <td class="paramtype">float @&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>distance</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>aspectRatio</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -298,693 +192,97 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Calculates the size of the viewport at a given distance from a perspective camera. </p>
+<p>Create a <a class="el" href="a00025.html" title="Provides input for a float value range in the editor and various convencience functions to work with ...">RangeFloat</a> with a certain range. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">camera</td><td>The Camera.</td></tr>
-    <tr><td class="paramname">distance</td><td>The positive distance from the camera.</td></tr>
-    <tr><td class="paramname">aspectRatio</td><td>Optionally: An aspect ratio to use. If 0 is set, camera.aspect is used.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The size of the viewport at the given distance.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ab8bf5786aea579e2e45e8209b5c43d9e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Color UnityUtilities.UnityHelper.Change </td>
-          <td>(</td>
-          <td class="paramtype">this Color&#160;</td>
-          <td class="paramname"><em>color</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>r</em> = <code>null</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>g</em> = <code>null</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>b</em> = <code>null</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>a</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Makes a copy of the Color with changed r/g/b/a values, keeping all undefined values as they were before. Can be called with named parameters like color.Change(g: 0, a: 0.5), for example, only changing the g and a components. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">color</td><td>The Color to be copied with changed values.</td></tr>
-    <tr><td class="paramname">r</td><td>If this is not null, the r component is set to this value.</td></tr>
-    <tr><td class="paramname">g</td><td>If this is not null, the g component is set to this value.</td></tr>
-    <tr><td class="paramname">b</td><td>If this is not null, the b component is set to this value.</td></tr>
-    <tr><td class="paramname">a</td><td>If this is not null, the a component is set to this value.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A copy of the Color with changed values.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ae6988b17c82fe80bcb9fe36e18a880bc"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Vector2 UnityUtilities.UnityHelper.Change2 </td>
-          <td>(</td>
-          <td class="paramtype">this Vector2&#160;</td>
-          <td class="paramname"><em>vector</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>x</em> = <code>null</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>y</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Makes a copy of the Vector2 with changed x/y values, keeping all undefined values as they were before. Can be called with named parameters like vector.Change2(y: 5), for example, only changing the y component. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vector</td><td>The Vector2 to be copied with changed values.</td></tr>
-    <tr><td class="paramname">x</td><td>If this is not null, the x component is set to this value.</td></tr>
-    <tr><td class="paramname">y</td><td>If this is not null, the y component is set to this value.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A copy of the Vector2 with changed values.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a2f293aebbbb0a2aeb090d54c044abfa6"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Vector3 UnityUtilities.UnityHelper.Change3 </td>
-          <td>(</td>
-          <td class="paramtype">this Vector3&#160;</td>
-          <td class="paramname"><em>vector</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>x</em> = <code>null</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>y</em> = <code>null</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>z</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Makes a copy of the Vector3 with changed x/y/z values, keeping all undefined values as they were before. Can be called with named parameters like vector.Change3(x: 5, z: 10), for example, only changing the x and z components. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vector</td><td>The Vector3 to be copied with changed values.</td></tr>
-    <tr><td class="paramname">x</td><td>If this is not null, the x component is set to this value.</td></tr>
-    <tr><td class="paramname">y</td><td>If this is not null, the y component is set to this value.</td></tr>
-    <tr><td class="paramname">z</td><td>If this is not null, the z component is set to this value.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A copy of the Vector3 with changed values.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a1df37bc5b80ebd91b93fe0a0202a003d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Vector4 UnityUtilities.UnityHelper.Change4 </td>
-          <td>(</td>
-          <td class="paramtype">this Vector4&#160;</td>
-          <td class="paramname"><em>vector</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>x</em> = <code>null</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>y</em> = <code>null</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>z</em> = <code>null</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>w</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Makes a copy of the Vector4 with changed x/y/z/w values, keeping all undefined values as they were before. Can be called with named parameters like vector.Change4(x: 5, z: 10), for example, only changing the x and z components. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vector</td><td>The Vector4 to be copied with changed values.</td></tr>
-    <tr><td class="paramname">x</td><td>If this is not null, the x component is set to this value.</td></tr>
-    <tr><td class="paramname">y</td><td>If this is not null, the y component is set to this value.</td></tr>
-    <tr><td class="paramname">z</td><td>If this is not null, the z component is set to this value.</td></tr>
-    <tr><td class="paramname">w</td><td>If this is not null, the w component is set to this value.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A copy of the Vector4 with changed values.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="acc6175786bb6796035931d41e0fc69ca"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Color UnityUtilities.UnityHelper.ChangeAlpha </td>
-          <td>(</td>
-          <td class="paramtype">this Color&#160;</td>
-          <td class="paramname"><em>color</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>a</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Makes a copy of the vector with a changed alpha value. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">color</td><td>The Color to copy.</td></tr>
-    <tr><td class="paramname">a</td><td>The new a component.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A copy of the Color with a changed alpha.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a8585790b36507ed741ac15bab2e7c8ac"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Vector2 UnityUtilities.UnityHelper.Clamp2 </td>
-          <td>(</td>
-          <td class="paramtype">this Rect&#160;</td>
-          <td class="paramname"><em>rect</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Vector2&#160;</td>
-          <td class="paramname"><em>position</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>extendDistance</em> = <code>0f</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Extends/shrinks the rect by extendDistance to each side and then restricts the given vector to the resulting rect. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rect</td><td>The Rect.</td></tr>
-    <tr><td class="paramname">position</td><td>A position that should be restricted to the rect.</td></tr>
-    <tr><td class="paramname">extendDistance</td><td>The distance to extend/shrink the rect to each side.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The vector, clamped to the Rect.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="af3e1c3293fb73e6af09b7079c9b8155f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Vector3 UnityUtilities.UnityHelper.Clamp3 </td>
-          <td>(</td>
-          <td class="paramtype">this Rect&#160;</td>
-          <td class="paramname"><em>rect</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Vector3&#160;</td>
-          <td class="paramname"><em>position</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>extendDistance</em> = <code>0f</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Extends/shrinks the rect by extendDistance to each side and then restricts the given vector to the resulting rect. The z component is kept. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rect</td><td>The Rect.</td></tr>
-    <tr><td class="paramname">position</td><td>A position that should be restricted to the rect.</td></tr>
-    <tr><td class="paramname">extendDistance</td><td>The distance to extend/shrink the rect to each side.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The vector, clamped to the Rect.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ac7ad8ec24a95dfe3014b193e9d763231"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Bounds UnityUtilities.UnityHelper.CombineColliderBounds </td>
-          <td>(</td>
-          <td class="paramtype">Collider[]&#160;</td>
-          <td class="paramname"><em>colliders</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates a Bounds encapsulating all given colliders bounds. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">colliders</td><td>The colliders.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A Bounds encapsulating all given colliders bounds.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a6ff2720752eaa0324cf8e4c2ac70165a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool UnityUtilities.UnityHelper.Contains </td>
-          <td>(</td>
-          <td class="paramtype">this Rect&#160;</td>
-          <td class="paramname"><em>rect</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Vector2&#160;</td>
-          <td class="paramname"><em>position</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>extendDistance</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Extends/shrinks the rect by extendDistance to each side and then checks if a given point is inside the resulting rect. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rect</td><td>The Rect.</td></tr>
-    <tr><td class="paramname">position</td><td>A position that should be restricted to the rect.</td></tr>
-    <tr><td class="paramname">extendDistance</td><td>The distance to extend/shrink the rect to each side.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the position is inside the extended rect.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a775814f59ed6fb4081e85182fe24942c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool UnityUtilities.UnityHelper.ContainsLayer </td>
-          <td>(</td>
-          <td class="paramtype">this LayerMask&#160;</td>
-          <td class="paramname"><em>mask</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>layer</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Is a specific layer actived in the given LayerMask? </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">mask</td><td>The LayerMask.</td></tr>
-    <tr><td class="paramname">layer</td><td>The layer to check for.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the layer is activated.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ab6d3a6c7f673f831adc482f368d3159f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void UnityUtilities.UnityHelper.CopyPositionAndRotatationFrom </td>
-          <td>(</td>
-          <td class="paramtype">this Transform&#160;</td>
-          <td class="paramname"><em>transform</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Transform&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Copies the position and rotation from another transform to this transform. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">transform</td><td>The transform to set the position/rotation at.</td></tr>
-    <tr><td class="paramname">source</td><td>The transform to take the position/rotation from.</td></tr>
+    <tr><td class="paramname">from</td><td>Lower range bound.</td></tr>
+    <tr><td class="paramname">to</td><td>Upper range bound.</td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="aa602e0aea1ecb99011f7b22b3909b857"></a>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aef437bca51390f168c261b80f8f43fe3"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static Vector2 UnityUtilities.UnityHelper.CreateVector2AngleDeg </td>
+          <td class="memname">float UnityUtilities.RangeFloat.InverseLerp </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>angleDeg</em></td><td>)</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Creates a Vector2 with a length of 1 pointing towards a certain angle. </p>
+<p>Calculates the linear parameter t that produces the interpolant value within the range [from, to]. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">angleDeg</td><td>The angle in degrees.</td></tr>
+    <tr><td class="paramname">value</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The Vector2 pointing towards the angle.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a9a374e56f4e4d75d516485be39a02f91"></a>
+<a class="anchor" id="a555ce2f332f776b0169f47864fb0d04f"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static Vector2 UnityUtilities.UnityHelper.CreateVector2AngleRad </td>
+          <td class="memname">float UnityUtilities.RangeFloat.Lerp </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>angleRad</em></td><td>)</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Creates a Vector2 with a length of 1 pointing towards a certain angle. </p>
+<p>Linearly interpolates between to and from by t. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">angleRad</td><td>The angle in radians.</td></tr>
+    <tr><td class="paramname">t</td><td>How much to interpolate. Clamped between 0 and 1. 0 is [to] and 1 is [from].</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The Vector2 pointing towards the angle.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a4ff4e6ceaf4d88515eaeac3d2a93e5d9"></a>
+<a class="anchor" id="ac696d5a89bb0266e7e1f43edc116ee63"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static Rect UnityUtilities.UnityHelper.Extend </td>
+          <td class="memname">float UnityUtilities.RangeFloat.LerpUnclamped </td>
           <td>(</td>
-          <td class="paramtype">this Rect&#160;</td>
-          <td class="paramname"><em>rect</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>extendDistance</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>t</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Extends/shrinks the rect by extendDistance to each side. </p>
+<p>Linearly interpolates between to and from by t. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">rect</td><td>The Rect.</td></tr>
-    <tr><td class="paramname">extendDistance</td><td>The distance to extend/shrink the rect to each side.</td></tr>
+    <tr><td class="paramname">t</td><td>How much to interpolate. 0 is [to] and 1 is [from].</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The rect, extended/shrunken by extendDistance to each side.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a517eb1c6b9429e4fa953c9841d5371d2"></a>
+<h2 class="groupheader">Property Documentation</h2>
+<a class="anchor" id="a5a7805e0e6d42dad05d008bb3a948491"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -992,32 +290,21 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static float UnityUtilities.UnityHelper.GetAngleDeg </td>
-          <td>(</td>
-          <td class="paramtype">this Vector2&#160;</td>
-          <td class="paramname"><em>vector</em></td><td>)</td>
-          <td></td>
+          <td class="memname">float UnityUtilities.RangeFloat.From</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the rotation of a Vector2. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vector</td><td>The Vector2.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The rotation of the Vector2 in degrees.</dd></dl>
+<p>The range start. </p>
 
 </div>
 </div>
-<a class="anchor" id="aefea4b67ccd730c0514e64761a73d882"></a>
+<a class="anchor" id="a78f43c5d9a3cbea3e4b7b169706657ea"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1025,32 +312,21 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static float UnityUtilities.UnityHelper.GetAngleRad </td>
-          <td>(</td>
-          <td class="paramtype">this Vector2&#160;</td>
-          <td class="paramname"><em>vector</em></td><td>)</td>
-          <td></td>
+          <td class="memname">float UnityUtilities.RangeFloat.RandomInclusive</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the rotation of a Vector2. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vector</td><td>The Vector2.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The rotation of the Vector2 in radians.</dd></dl>
+<p>Returns a random number between from [inclusive] and to [inclusive]. </p>
 
 </div>
 </div>
-<a class="anchor" id="a71631eb28cfba0e452ce893c54c94a81"></a>
+<a class="anchor" id="aa133e42641bbbc9ab7af3806421bcb6a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1058,63 +334,21 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void UnityUtilities.UnityHelper.GetCapsuleCastData </td>
-          <td>(</td>
-          <td class="paramtype">CharacterController&#160;</td>
-          <td class="paramname"><em>characterController</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Vector3&#160;</td>
-          <td class="paramname"><em>origin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">out Vector3&#160;</td>
-          <td class="paramname"><em>point1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">out Vector3&#160;</td>
-          <td class="paramname"><em>point2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">out float&#160;</td>
-          <td class="paramname"><em>radius</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">float UnityUtilities.RangeFloat.Range</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Given a CharacterController and a point of origin (the lower point of the capsule), this returns the point1, point2 and radius needed to fill a CapsuleCast(). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">characterController</td><td>The CharacterController to use as the capsule, providing scale, radius, height and center offset.</td></tr>
-    <tr><td class="paramname">origin</td><td>The capsule cast starting point at the lower end of the capsule.</td></tr>
-    <tr><td class="paramname">point1</td><td>Outputs the point1 parameter to be used in the CapsuleCast()</td></tr>
-    <tr><td class="paramname">point2</td><td>Outputs the point2 parameter to be used in the CapsuleCast()</td></tr>
-    <tr><td class="paramname">radius</td><td>Outputs the radius parameter to be used in the CapsuleCast()</td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Returns how wide the range between from and to is. </p>
 
 </div>
 </div>
-<a class="anchor" id="ad13bdd015aad4a41acb2188bbf59cdda"></a>
+<a class="anchor" id="aae6babc6b9a3917567250d277afe19bb"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1122,722 +356,29 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static Vector2 [] UnityUtilities.UnityHelper.GetCornerPoints </td>
-          <td>(</td>
-          <td class="paramtype">this Rect&#160;</td>
-          <td class="paramname"><em>rect</em></td><td>)</td>
-          <td></td>
+          <td class="memname">float UnityUtilities.RangeFloat.To</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates an array containing the four corner points of a Rect. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rect</td><td>The Rect.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>An array containing the four corner points of the Rect.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a013ba71f4edab0b657a050b8de706ff8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static string UnityUtilities.UnityHelper.GetNameWithoutClone </td>
-          <td>(</td>
-          <td class="paramtype">this GameObject&#160;</td>
-          <td class="paramname"><em>gameObject</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>When UnityEngine.Object.Instantiate(UnityEngine.Object) is called on a prefab named "Original", the resulting instance will be named "Original(Clone)". This method returns the name without "(Clone)" by stripping everything after and including the first "(Clone)" it finds. If no "(Clone)" is found, the name is returned unchanged. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">gameObject</td><td>The GameObject to return the original name of.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="acf88e68972e0fc1bc1ed1318511f12c1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool UnityUtilities.UnityHelper.PlayerPrefsGetBool </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>defaultValue</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value corresponding to the key in the preference file if it exists. If it doesn't exist, it will return defaultValue. (Internally, the value is stored as an int with either 0 or 1.) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">key</td><td>The key.</td></tr>
-    <tr><td class="paramname">defaultValue</td><td>The default value if none is given.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The value corresponding to key in the preference file if it exists, else the default value.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a4fae3c4c72c64e04d685b57c1f8def7a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void UnityUtilities.UnityHelper.PlayerPrefsSetBool </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the value of the preference entry identified by the key. (Internally, the value is stored as an int with either 0 or 1.) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">key</td><td>The key.</td></tr>
-    <tr><td class="paramname">value</td><td>The value to set the preference entry to.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ac81e6d97497f6a6f5e3f1117900d6659"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Vector2 UnityUtilities.UnityHelper.RandomPosition </td>
-          <td>(</td>
-          <td class="paramtype">this Rect&#160;</td>
-          <td class="paramname"><em>rect</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>extendDistance</em> = <code>0f</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Extends/shrinks the rect by extendDistance to each side and gets a random position from the resulting rect. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rect</td><td>The Rect.</td></tr>
-    <tr><td class="paramname">extendDistance</td><td>The distance to extend/shrink the rect to each side.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A random position inside the extended rect.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a1aa9957492c617067a41b17d64ec403d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Rect UnityUtilities.UnityHelper.RandomSubRect </td>
-          <td>(</td>
-          <td class="paramtype">this Rect&#160;</td>
-          <td class="paramname"><em>rect</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>height</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets a random subrect of the given width or height inside this rect. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rect</td><td>The Rect.</td></tr>
-    <tr><td class="paramname">width</td><td>The target width of the subrect. Clamped to the width of the given rect.</td></tr>
-    <tr><td class="paramname">height</td><td>The target height of the subrect. Clamped to the height of the given rect.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A random subrect with the given width and height.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ad38dcffe2ba6cb20268a614287571378"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Vector2 UnityUtilities.UnityHelper.RotateDeg </td>
-          <td>(</td>
-          <td class="paramtype">this Vector2&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>angleDeg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Rotates a Vector2. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">v</td><td>The Vector2 to rotate.</td></tr>
-    <tr><td class="paramname">angleDeg</td><td>How far to rotate the Vector2 in degrees.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The rotated Vector2.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a5f878ac9461c6ebfa88a33e81a9d1cf2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Vector2 UnityUtilities.UnityHelper.RotateRad </td>
-          <td>(</td>
-          <td class="paramtype">this Vector2&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>angleRad</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Rotates a Vector2. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">v</td><td>The Vector2 to rotate.</td></tr>
-    <tr><td class="paramname">angleRad</td><td>How far to rotate the Vector2 in radians.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The rotated Vector2.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a6bbb59e5f2ef9273357fdc061c588b22"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Transform UnityUtilities.UnityHelper.SetEulerAngles </td>
-          <td>(</td>
-          <td class="paramtype">this Transform&#160;</td>
-          <td class="paramname"><em>transform</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>x</em> = <code>null</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>y</em> = <code>null</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>z</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the x/y/z transform.eulerAngles using optional parameters, keeping all undefined values as they were before. Can be called with named parameters like transform.SetEulerAngles(x: 5, z: 10), for example, only changing transform.eulerAngles.x and z. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">transform</td><td>The transform to set the transform.eulerAngles at.</td></tr>
-    <tr><td class="paramname">x</td><td>If this is not null, transform.eulerAngles.x is set to this value.</td></tr>
-    <tr><td class="paramname">y</td><td>If this is not null, transform.eulerAngles.y is set to this value.</td></tr>
-    <tr><td class="paramname">z</td><td>If this is not null, transform.eulerAngles.z is set to this value.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The transform itself.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a7d467909d932ea997016c2ebc382d446"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Transform UnityUtilities.UnityHelper.SetLocalEulerAngles </td>
-          <td>(</td>
-          <td class="paramtype">this Transform&#160;</td>
-          <td class="paramname"><em>transform</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>x</em> = <code>null</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>y</em> = <code>null</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>z</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the x/y/z transform.localEulerAngles using optional parameters, keeping all undefined values as they were before. Can be called with named parameters like transform.SetLocalEulerAngles(x: 5, z: 10), for example, only changing transform.localEulerAngles.x and z. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">transform</td><td>The transform to set the transform.localEulerAngles at.</td></tr>
-    <tr><td class="paramname">x</td><td>If this is not null, transform.localEulerAngles.x is set to this value.</td></tr>
-    <tr><td class="paramname">y</td><td>If this is not null, transform.localEulerAngles.y is set to this value.</td></tr>
-    <tr><td class="paramname">z</td><td>If this is not null, transform.localEulerAngles.z is set to this value.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The transform itself.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="af9149a2907e0245de95f56e50132b46a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Transform UnityUtilities.UnityHelper.SetLocalPosition </td>
-          <td>(</td>
-          <td class="paramtype">this Transform&#160;</td>
-          <td class="paramname"><em>transform</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>x</em> = <code>null</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>y</em> = <code>null</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>z</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the x/y/z transform.localPosition using optional parameters, keeping all undefined values as they were before. Can be called with named parameters like transform.SetLocalPosition(x: 5, z: 10), for example, only changing transform.localPosition.x and z. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">transform</td><td>The transform to set the transform.localPosition at.</td></tr>
-    <tr><td class="paramname">x</td><td>If this is not null, transform.localPosition.x is set to this value.</td></tr>
-    <tr><td class="paramname">y</td><td>If this is not null, transform.localPosition.y is set to this value.</td></tr>
-    <tr><td class="paramname">z</td><td>If this is not null, transform.localPosition.z is set to this value.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The transform itself.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a9dfd5015ccf67cde5af9857ed74cadf9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Transform UnityUtilities.UnityHelper.SetLocalScale </td>
-          <td>(</td>
-          <td class="paramtype">this Transform&#160;</td>
-          <td class="paramname"><em>transform</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>x</em> = <code>null</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>y</em> = <code>null</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>z</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the x/y/z transform.localScale using optional parameters, keeping all undefined values as they were before. Can be called with named parameters like transform.SetLocalScale(x: 5, z: 10), for example, only changing transform.localScale.x and z. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">transform</td><td>The transform to set the transform.localScale at.</td></tr>
-    <tr><td class="paramname">x</td><td>If this is not null, transform.localScale.x is set to this value.</td></tr>
-    <tr><td class="paramname">y</td><td>If this is not null, transform.localScale.y is set to this value.</td></tr>
-    <tr><td class="paramname">z</td><td>If this is not null, transform.localScale.z is set to this value.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The transform itself.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a4e6cd3afea9122b7f254dcb31f60f527"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Transform UnityUtilities.UnityHelper.SetLossyScale </td>
-          <td>(</td>
-          <td class="paramtype">this Transform&#160;</td>
-          <td class="paramname"><em>transform</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>x</em> = <code>null</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>y</em> = <code>null</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>z</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the x/y/z transform.lossyScale using optional parameters, keeping all undefined values as they were before. Can be called with named parameters like transform.SetLossyScale(x: 5, z: 10), for example, only changing transform.lossyScale.x and z. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">transform</td><td>The transform to set the transform.lossyScale at.</td></tr>
-    <tr><td class="paramname">x</td><td>If this is not null, transform.lossyScale.x is set to this value.</td></tr>
-    <tr><td class="paramname">y</td><td>If this is not null, transform.lossyScale.y is set to this value.</td></tr>
-    <tr><td class="paramname">z</td><td>If this is not null, transform.lossyScale.z is set to this value.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The transform itself.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="adb4401a87105552c433b8a89684d6227"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Transform UnityUtilities.UnityHelper.SetPosition </td>
-          <td>(</td>
-          <td class="paramtype">this Transform&#160;</td>
-          <td class="paramname"><em>transform</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>x</em> = <code>null</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>y</em> = <code>null</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float?&#160;</td>
-          <td class="paramname"><em>z</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the x/y/z transform.position using optional parameters, keeping all undefined values as they were before. Can be called with named parameters like transform.SetPosition(x: 5, z: 10), for example, only changing transform.position.x and z. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">transform</td><td>The transform to set the transform.position at.</td></tr>
-    <tr><td class="paramname">x</td><td>If this is not null, transform.position.x is set to this value.</td></tr>
-    <tr><td class="paramname">y</td><td>If this is not null, transform.position.y is set to this value.</td></tr>
-    <tr><td class="paramname">z</td><td>If this is not null, transform.position.z is set to this value.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The transform itself.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a7eb18f837434bbe372481727a256c524"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void UnityUtilities.UnityHelper.StripCloneFromName </td>
-          <td>(</td>
-          <td class="paramtype">this GameObject&#160;</td>
-          <td class="paramname"><em>gameObject</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>When UnityEngine.Object.Instantiate(UnityEngine.Object) is called on a prefab named "Original", the resulting instance will be named "Original(Clone)". This method changes the name back to "Original" by stripping everything after and including the first "(Clone)" it finds. If no "(Clone)" is found, the name is left unchanged. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">gameObject</td><td>The GameObject to change the name of.</td></tr>
-  </table>
-  </dd>
-</dl>
+<p>The range end. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>UnityHelper/UnityHelper.cs</li>
+<li>Range/RangeFloat.cs</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00064.html">UnityUtilities</a></li><li class="navelem"><a class="el" href="a00025.html">UnityHelper</a></li>
+    <li class="navelem"><a class="el" href="a00072.html">UnityUtilities</a></li><li class="navelem"><a class="el" href="a00025.html">RangeFloat</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

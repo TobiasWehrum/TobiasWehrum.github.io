@@ -1,12 +1,10 @@
 var a00023 =
 [
-    [ "RollingArray", "a00023.html#a66653e2df3309e7373cf5e0bf50279e2", null ],
-    [ "Append", "a00023.html#a41d3466c39027953afe9c0ed79a60e12", null ],
-    [ "Clear", "a00023.html#ad5f16cddd586de6ca4e681068a0b9bc2", null ],
-    [ "GetEnumerator", "a00023.html#aee8a1399b7bd9c394fb390f17a2a74d3", null ],
-    [ "Count", "a00023.html#a3ef3a46617ec7c84cded2b18cfb00aa7", null ],
-    [ "IsEmpty", "a00023.html#a7c73a97671dafbf6c270e553ebdaf274", null ],
-    [ "LatestElement", "a00023.html#af2cba6059ad08bd80d5293529876c284", null ],
-    [ "OldestElement", "a00023.html#ac6b7fb7e512f1f3a989407e119e7d665", null ],
-    [ "this[int i]", "a00023.html#a7a89b7849291edc84cf9937c9c4113c4", null ]
+    [ "OnAwakeOrSwitch", "a00023.html#a0c1be3e0d13f8ba2da7ee1f6943be216", null ],
+    [ "OnDestroy", "a00023.html#a9aba1d7dae803878ba16f99ed55918ff", null ],
+    [ "OnPersistentSingletonAwake", "a00023.html#a748d2abb1599f2905665c945a0dbd951", null ],
+    [ "OnSceneSwitched", "a00023.html#aaa5668bd8329ff57f3a19b14d781c566", null ],
+    [ "Start", "a00023.html#aafb0041f946b2d3803a395fc3a5880a5", null ],
+    [ "Instance", "a00023.html#a31171a31077abbd9940e6bb28746e890", null ],
+    [ "InstanceExists", "a00023.html#abc4667bd6fa49504fffbe3465c246f63", null ]
 ];

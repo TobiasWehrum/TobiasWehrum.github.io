@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>UnityUtilities: UnityUtilities.RollingArray&lt; T &gt; Class Template Reference</title>
+<title>UnityUtilities: UnityUtilities.PersistentSingletonMonoBehaviour&lt; TSubclass &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,156 +106,197 @@ $(document).ready(function(){initNavTree('a00023.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
-<a href="a00076.html">List of all members</a>  </div>
+<a href="a00083.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">UnityUtilities.RollingArray&lt; T &gt; Class Template Reference</div>  </div>
+<div class="title">UnityUtilities.PersistentSingletonMonoBehaviour&lt; TSubclass &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A container that always stores the last arraySize elements added. New elements are added via <a class="el" href="a00023.html#a41d3466c39027953afe9c0ed79a60e12" title="Appends an element to the RollingArray. Automatically rolls over once the maximum number of elements ...">Append()</a>, which automatically rolls over once the maximum number of elements is reached, overwriting the oldest element. array[i] always returns the oldest element that still exists + i. That way, this container always stores the last arraySize elements added.  
+<p>Any class that extends from this one will persist through scenes (via Object.DontDestroyOnLoad) and can be handily accessed via the static <a class="el" href="a00023.html#a31171a31077abbd9940e6bb28746e890" title="Returns the singleton instance. ">Instance</a> property.  
  <a href="a00023.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for UnityUtilities.RollingArray&lt; T &gt;:</div>
+Inheritance diagram for UnityUtilities.PersistentSingletonMonoBehaviour&lt; TSubclass &gt;:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00023.png" usemap="#UnityUtilities.RollingArray_3C_20T_20_3E_map" alt=""/>
-  <map id="UnityUtilities.RollingArray_3C_20T_20_3E_map" name="UnityUtilities.RollingArray&lt; T &gt;_map">
+  <img src="a00023.png" usemap="#UnityUtilities.PersistentSingletonMonoBehaviour_3C_20TSubclass_20_3E_map" alt=""/>
+  <map id="UnityUtilities.PersistentSingletonMonoBehaviour_3C_20TSubclass_20_3E_map" name="UnityUtilities.PersistentSingletonMonoBehaviour&lt; TSubclass &gt;_map">
 </map>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a66653e2df3309e7373cf5e0bf50279e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a66653e2df3309e7373cf5e0bf50279e2">RollingArray</a> (int arraySize)</td></tr>
-<tr class="memdesc:a66653e2df3309e7373cf5e0bf50279e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new rolling array with the defined arraySize.  <a href="#a66653e2df3309e7373cf5e0bf50279e2">More...</a><br /></td></tr>
-<tr class="separator:a66653e2df3309e7373cf5e0bf50279e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41d3466c39027953afe9c0ed79a60e12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a41d3466c39027953afe9c0ed79a60e12">Append</a> (T element)</td></tr>
-<tr class="memdesc:a41d3466c39027953afe9c0ed79a60e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends an element to the <a class="el" href="a00023.html" title="A container that always stores the last arraySize elements added. New elements are added via Append()...">RollingArray</a>. Automatically rolls over once the maximum number of elements is reached, overwriting the oldest element  <a href="#a41d3466c39027953afe9c0ed79a60e12">More...</a><br /></td></tr>
-<tr class="separator:a41d3466c39027953afe9c0ed79a60e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5f16cddd586de6ca4e681068a0b9bc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ad5f16cddd586de6ca4e681068a0b9bc2">Clear</a> ()</td></tr>
-<tr class="memdesc:ad5f16cddd586de6ca4e681068a0b9bc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the <a class="el" href="a00023.html" title="A container that always stores the last arraySize elements added. New elements are added via Append()...">RollingArray</a>.  <a href="#ad5f16cddd586de6ca4e681068a0b9bc2">More...</a><br /></td></tr>
-<tr class="separator:ad5f16cddd586de6ca4e681068a0b9bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee8a1399b7bd9c394fb390f17a2a74d3"><td class="memItemLeft" align="right" valign="top">IEnumerator&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#aee8a1399b7bd9c394fb390f17a2a74d3">GetEnumerator</a> ()</td></tr>
-<tr class="memdesc:aee8a1399b7bd9c394fb390f17a2a74d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an enumerator that iterates through the collection from oldest to newest element.  <a href="#aee8a1399b7bd9c394fb390f17a2a74d3">More...</a><br /></td></tr>
-<tr class="separator:aee8a1399b7bd9c394fb390f17a2a74d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a9aba1d7dae803878ba16f99ed55918ff"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a9aba1d7dae803878ba16f99ed55918ff">OnDestroy</a> ()</td></tr>
+<tr class="memdesc:a9aba1d7dae803878ba16f99ed55918ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this is the persistent instance and it was destroyed (manually), remove the instance registration.  <a href="#a9aba1d7dae803878ba16f99ed55918ff">More...</a><br /></td></tr>
+<tr class="separator:a9aba1d7dae803878ba16f99ed55918ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafb0041f946b2d3803a395fc3a5880a5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#aafb0041f946b2d3803a395fc3a5880a5">Start</a> ()</td></tr>
+<tr class="memdesc:aafb0041f946b2d3803a395fc3a5880a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable skipOnLevelWasLoaded.  <a href="#aafb0041f946b2d3803a395fc3a5880a5">More...</a><br /></td></tr>
+<tr class="separator:aafb0041f946b2d3803a395fc3a5880a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a748d2abb1599f2905665c945a0dbd951"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a748d2abb1599f2905665c945a0dbd951">OnPersistentSingletonAwake</a> ()</td></tr>
+<tr class="memdesc:a748d2abb1599f2905665c945a0dbd951"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when the Awake() method of the first instance of the persistent singleton is done. This is not called if this is a second instance and will be destroyed.  <a href="#a748d2abb1599f2905665c945a0dbd951">More...</a><br /></td></tr>
+<tr class="separator:a748d2abb1599f2905665c945a0dbd951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa5668bd8329ff57f3a19b14d781c566"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#aaa5668bd8329ff57f3a19b14d781c566">OnSceneSwitched</a> ()</td></tr>
+<tr class="memdesc:aaa5668bd8329ff57f3a19b14d781c566"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called after switching to a new scene.  <a href="#aaa5668bd8329ff57f3a19b14d781c566">More...</a><br /></td></tr>
+<tr class="separator:aaa5668bd8329ff57f3a19b14d781c566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c1be3e0d13f8ba2da7ee1f6943be216"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a0c1be3e0d13f8ba2da7ee1f6943be216">OnAwakeOrSwitch</a> ()</td></tr>
+<tr class="memdesc:a0c1be3e0d13f8ba2da7ee1f6943be216"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called immediately after <a class="el" href="a00023.html#a748d2abb1599f2905665c945a0dbd951" title="This method is called when the Awake() method of the first instance of the persistent singleton is do...">OnPersistentSingletonAwake</a> or <a class="el" href="a00023.html#aaa5668bd8329ff57f3a19b14d781c566" title="This method is called after switching to a new scene. ">OnSceneSwitched</a>.  <a href="#a0c1be3e0d13f8ba2da7ee1f6943be216">More...</a><br /></td></tr>
+<tr class="separator:a0c1be3e0d13f8ba2da7ee1f6943be216"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a3ef3a46617ec7c84cded2b18cfb00aa7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a3ef3a46617ec7c84cded2b18cfb00aa7">Count</a><code> [get]</code></td></tr>
-<tr class="memdesc:a3ef3a46617ec7c84cded2b18cfb00aa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current count of filled elements.  <a href="#a3ef3a46617ec7c84cded2b18cfb00aa7">More...</a><br /></td></tr>
-<tr class="separator:a3ef3a46617ec7c84cded2b18cfb00aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c73a97671dafbf6c270e553ebdaf274"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a7c73a97671dafbf6c270e553ebdaf274">IsEmpty</a><code> [get]</code></td></tr>
-<tr class="memdesc:a7c73a97671dafbf6c270e553ebdaf274"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the array empty?  <a href="#a7c73a97671dafbf6c270e553ebdaf274">More...</a><br /></td></tr>
-<tr class="separator:a7c73a97671dafbf6c270e553ebdaf274"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6b7fb7e512f1f3a989407e119e7d665"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ac6b7fb7e512f1f3a989407e119e7d665">OldestElement</a><code> [get]</code></td></tr>
-<tr class="memdesc:ac6b7fb7e512f1f3a989407e119e7d665"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the oldest element.  <a href="#ac6b7fb7e512f1f3a989407e119e7d665">More...</a><br /></td></tr>
-<tr class="separator:ac6b7fb7e512f1f3a989407e119e7d665"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2cba6059ad08bd80d5293529876c284"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#af2cba6059ad08bd80d5293529876c284">LatestElement</a><code> [get]</code></td></tr>
-<tr class="memdesc:af2cba6059ad08bd80d5293529876c284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the latest added element.  <a href="#af2cba6059ad08bd80d5293529876c284">More...</a><br /></td></tr>
-<tr class="separator:af2cba6059ad08bd80d5293529876c284"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a89b7849291edc84cf9937c9c4113c4"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a7a89b7849291edc84cf9937c9c4113c4">this[int i]</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a7a89b7849291edc84cf9937c9c4113c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets/sets an element from/in the array. 0 is always the oldest element that is still in the array, [Count-1] is always the latest added element.  <a href="#a7a89b7849291edc84cf9937c9c4113c4">More...</a><br /></td></tr>
-<tr class="separator:a7a89b7849291edc84cf9937c9c4113c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31171a31077abbd9940e6bb28746e890"><td class="memItemLeft" align="right" valign="top">static TSubclass&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a31171a31077abbd9940e6bb28746e890">Instance</a><code> [get]</code></td></tr>
+<tr class="memdesc:a31171a31077abbd9940e6bb28746e890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the singleton instance.  <a href="#a31171a31077abbd9940e6bb28746e890">More...</a><br /></td></tr>
+<tr class="separator:a31171a31077abbd9940e6bb28746e890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc4667bd6fa49504fffbe3465c246f63"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#abc4667bd6fa49504fffbe3465c246f63">InstanceExists</a><code> [get]</code></td></tr>
+<tr class="memdesc:abc4667bd6fa49504fffbe3465c246f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if a singleton instance is registered.  <a href="#abc4667bd6fa49504fffbe3465c246f63">More...</a><br /></td></tr>
+<tr class="separator:abc4667bd6fa49504fffbe3465c246f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A container that always stores the last arraySize elements added. New elements are added via <a class="el" href="a00023.html#a41d3466c39027953afe9c0ed79a60e12" title="Appends an element to the RollingArray. Automatically rolls over once the maximum number of elements ...">Append()</a>, which automatically rolls over once the maximum number of elements is reached, overwriting the oldest element. array[i] always returns the oldest element that still exists + i. That way, this container always stores the last arraySize elements added. </p>
-<p>Adding is O(1), retrieving is O(1) and (with the exception of <a class="el" href="a00023.html#aee8a1399b7bd9c394fb390f17a2a74d3" title="Returns an enumerator that iterates through the collection from oldest to newest element. ">GetEnumerator()</a>) no new memory is allocated after the initial creation. </p>
+<div class="textblock"><p>Any class that extends from this one will persist through scenes (via Object.DontDestroyOnLoad) and can be handily accessed via the static <a class="el" href="a00023.html#a31171a31077abbd9940e6bb28746e890" title="Returns the singleton instance. ">Instance</a> property. </p>
+<p>If a new scene is loaded with a new instance of this class while another persistent instance already exists, the new instance in the scene is destroyed. This allows you to make this a prefab and have it in all scenes that you are working on.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The collection element type.</td></tr>
+    <tr><td class="paramname">TSubclass</td><td>The subclass that extends from this class.</td></tr>
   </table>
   </dd>
 </dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a66653e2df3309e7373cf5e0bf50279e2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00023.html">UnityUtilities.RollingArray</a>&lt; T &gt;.<a class="el" href="a00023.html">RollingArray</a> </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>arraySize</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Creates a new rolling array with the defined arraySize. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">arraySize</td><td></td></tr>
-  </table>
-  </dd>
+<div class="typeconstraint">
+<dl><dt><b>Type Constraints</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>TSubclass</em></td><td>&#160;:</td><td valign="top"><em><a class="el" href="a00023.html">PersistentSingletonMonoBehaviour</a>&lt;TSubclass&gt;</em></td><td>&#160;</td></tr>
+</table>
+</dd>
 </dl>
-
 </div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a41d3466c39027953afe9c0ed79a60e12"></a>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a0c1be3e0d13f8ba2da7ee1f6943be216"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00023.html">UnityUtilities.RollingArray</a>&lt; T &gt;.Append </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>element</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Appends an element to the <a class="el" href="a00023.html" title="A container that always stores the last arraySize elements added. New elements are added via Append()...">RollingArray</a>. Automatically rolls over once the maximum number of elements is reached, overwriting the oldest element </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">element</td><td>The element to be added.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ad5f16cddd586de6ca4e681068a0b9bc2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00023.html">UnityUtilities.RollingArray</a>&lt; T &gt;.Clear </td>
+          <td class="memname">virtual void <a class="el" href="a00023.html">UnityUtilities.PersistentSingletonMonoBehaviour</a>&lt; TSubclass &gt;.OnAwakeOrSwitch </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Clears the <a class="el" href="a00023.html" title="A container that always stores the last arraySize elements added. New elements are added via Append()...">RollingArray</a>. </p>
+<p>This method is called immediately after <a class="el" href="a00023.html#a748d2abb1599f2905665c945a0dbd951" title="This method is called when the Awake() method of the first instance of the persistent singleton is do...">OnPersistentSingletonAwake</a> or <a class="el" href="a00023.html#aaa5668bd8329ff57f3a19b14d781c566" title="This method is called after switching to a new scene. ">OnSceneSwitched</a>. </p>
 
 </div>
 </div>
-<a class="anchor" id="aee8a1399b7bd9c394fb390f17a2a74d3"></a>
+<a class="anchor" id="a9aba1d7dae803878ba16f99ed55918ff"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">IEnumerator&lt;T&gt; <a class="el" href="a00023.html">UnityUtilities.RollingArray</a>&lt; T &gt;.GetEnumerator </td>
+          <td class="memname">virtual void <a class="el" href="a00023.html">UnityUtilities.PersistentSingletonMonoBehaviour</a>&lt; TSubclass &gt;.OnDestroy </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Returns an enumerator that iterates through the collection from oldest to newest element. </p>
-<p>Caveat: Due to the outdated Mono version used in Unity3D, this allocates a small amount of memory, leading to memory fragmentation if called often. You might want to use array[i] instead.</p>
-<p>Read more about this under "Should you avoid foreach loops?" at: <a href="http://www.gamasutra.com/blogs/WendelinReich/20131109/203841/C_Memory_Management_for_Unity_Developers_part_1_of_3.php">http://www.gamasutra.com/blogs/WendelinReich/20131109/203841/C_Memory_Management_for_Unity_Developers_part_1_of_3.php</a> </p>
-<dl class="section return"><dt>Returns</dt><dd>An enumerator that iterates through the collection from oldest to newest element.</dd></dl>
+<p>If this is the persistent instance and it was destroyed (manually), remove the instance registration. </p>
+
+</div>
+</div>
+<a class="anchor" id="a748d2abb1599f2905665c945a0dbd951"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="a00023.html">UnityUtilities.PersistentSingletonMonoBehaviour</a>&lt; TSubclass &gt;.OnPersistentSingletonAwake </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method is called when the Awake() method of the first instance of the persistent singleton is done. This is not called if this is a second instance and will be destroyed. </p>
+
+</div>
+</div>
+<a class="anchor" id="aaa5668bd8329ff57f3a19b14d781c566"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="a00023.html">UnityUtilities.PersistentSingletonMonoBehaviour</a>&lt; TSubclass &gt;.OnSceneSwitched </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method is called after switching to a new scene. </p>
+
+</div>
+</div>
+<a class="anchor" id="aafb0041f946b2d3803a395fc3a5880a5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="a00023.html">UnityUtilities.PersistentSingletonMonoBehaviour</a>&lt; TSubclass &gt;.Start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Disable skipOnLevelWasLoaded. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
-<a class="anchor" id="a3ef3a46617ec7c84cded2b18cfb00aa7"></a>
+<a class="anchor" id="a31171a31077abbd9940e6bb28746e890"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -263,21 +304,21 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="a00023.html">UnityUtilities.RollingArray</a>&lt; T &gt;.Count</td>
+          <td class="memname">TSubclass <a class="el" href="a00023.html">UnityUtilities.PersistentSingletonMonoBehaviour</a>&lt; TSubclass &gt;.Instance</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The current count of filled elements. </p>
+<p>Returns the singleton instance. </p>
 
 </div>
 </div>
-<a class="anchor" id="a7c73a97671dafbf6c270e553ebdaf274"></a>
+<a class="anchor" id="abc4667bd6fa49504fffbe3465c246f63"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -285,121 +326,29 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="a00023.html">UnityUtilities.RollingArray</a>&lt; T &gt;.IsEmpty</td>
+          <td class="memname">bool <a class="el" href="a00023.html">UnityUtilities.PersistentSingletonMonoBehaviour</a>&lt; TSubclass &gt;.InstanceExists</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Is the array empty? </p>
-
-</div>
-</div>
-<a class="anchor" id="af2cba6059ad08bd80d5293529876c284"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T <a class="el" href="a00023.html">UnityUtilities.RollingArray</a>&lt; T &gt;.LatestElement</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets the latest added element. </p>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">IndexOutOfRangeException</td><td>Thrown when the array is empty.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ac6b7fb7e512f1f3a989407e119e7d665"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T <a class="el" href="a00023.html">UnityUtilities.RollingArray</a>&lt; T &gt;.OldestElement</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets the oldest element. </p>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">IndexOutOfRangeException</td><td>Thrown when the array is empty.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a7a89b7849291edc84cf9937c9c4113c4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T <a class="el" href="a00023.html">UnityUtilities.RollingArray</a>&lt; T &gt;.this[int i]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets/sets an element from/in the array. 0 is always the oldest element that is still in the array, [Count-1] is always the latest added element. </p>
-<p>This method should NOT be used to add elements - used <a class="el" href="a00023.html#a41d3466c39027953afe9c0ed79a60e12" title="Appends an element to the RollingArray. Automatically rolls over once the maximum number of elements ...">Append()</a> for that. Only read and write elements that are already in the array. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">i</td><td>The index. 0 is the oldest, [Count-1] the newest element.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The accessed elements.</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">IndexOutOfRangeException</td><td>Thrown when accessing an element outside of [0..Count-1].</td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Returns true if a singleton instance is registered. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>RollingArray/RollingArray.cs</li>
+<li>Singleton/PersistentSingletonMonoBehaviour.cs</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00064.html">UnityUtilities</a></li><li class="navelem"><a class="el" href="a00023.html">RollingArray</a></li>
+    <li class="navelem"><a class="el" href="a00072.html">UnityUtilities</a></li><li class="navelem"><a class="el" href="a00023.html">PersistentSingletonMonoBehaviour</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

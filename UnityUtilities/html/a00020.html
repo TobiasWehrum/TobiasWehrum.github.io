@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>UnityUtilities: UnityUtilities.RandomBag&lt; T &gt; Class Template Reference</title>
+<title>UnityUtilities: UnityUtilities.MeshTriangle Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,79 +108,54 @@ $(document).ready(function(){initNavTree('a00020.html','');});
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
-<a href="a00073.html">List of all members</a>  </div>
+<a href="a00080.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">UnityUtilities.RandomBag&lt; T &gt; Class Template Reference</div>  </div>
+<div class="title">UnityUtilities.MeshTriangle Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A <a class="el" href="a00020.html" title="A RandomBag ensures that per interval [fillings * itemCount], every different item in it will be give...">RandomBag</a> ensures that per interval [fillings * itemCount], every different item in it will be given back [fillings] times. Once the bag is empty, it is automatically refilled, either from a fixed array or by calling a delegate.  
+<p>A triangle, consisting of three <a class="el" href="a00021.html" title="A vertex in a MeshTriangle. Can -and should!- be shared by multiple triangles. Used in a MeshCreator...">MeshVertex</a>. Used in a <a class="el" href="a00019.html" title="Stores the vertex/triangle data of a mesh in easily modifiable form - which can then be used to actua...">MeshCreator</a>. Cannot be part of more than one <a class="el" href="a00019.html" title="Stores the vertex/triangle data of a mesh in easily modifiable form - which can then be used to actua...">MeshCreator</a>.  
  <a href="a00020.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adfb628736b2d5028bd868c7d9311c6da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#adfb628736b2d5028bd868c7d9311c6da">RandomBag</a> (T[] refillItems, int fillings)</td></tr>
-<tr class="memdesc:adfb628736b2d5028bd868c7d9311c6da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the bag with a array of items to refill it and the number of times the array is added to the bag. Once the bag is empty, the array will automatically be added to the bag [fillings] times again.  <a href="#adfb628736b2d5028bd868c7d9311c6da">More...</a><br /></td></tr>
-<tr class="separator:adfb628736b2d5028bd868c7d9311c6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fb585117608488361cadf6c89ca0d89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a8fb585117608488361cadf6c89ca0d89">RandomBag</a> (Action&lt; List&lt; T &gt;&gt; refillDelegate, int fillings)</td></tr>
-<tr class="memdesc:a8fb585117608488361cadf6c89ca0d89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the bag by calling the refillDelegate multiple times. Once the bag is empty, the delegate will automatically be called [fillings] times again.  <a href="#a8fb585117608488361cadf6c89ca0d89">More...</a><br /></td></tr>
-<tr class="separator:a8fb585117608488361cadf6c89ca0d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58dd8ef2082d864cbbb3e59f59c12d70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a58dd8ef2082d864cbbb3e59f59c12d70">SetRefillDelegate</a> (Action&lt; List&lt; T &gt;&gt; refillDelegate)</td></tr>
-<tr class="memdesc:a58dd8ef2082d864cbbb3e59f59c12d70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the refill method to "When empty, this delegate is called [fillings] times to fill the bag."  <a href="#a58dd8ef2082d864cbbb3e59f59c12d70">More...</a><br /></td></tr>
-<tr class="separator:a58dd8ef2082d864cbbb3e59f59c12d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82e14932b24ac665f0ca78e0d30b9580"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a82e14932b24ac665f0ca78e0d30b9580">SetRefillItems</a> (T[] refillItems)</td></tr>
-<tr class="memdesc:a82e14932b24ac665f0ca78e0d30b9580"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the refill method to "When empty, this array is added to the bag [fillings] times."  <a href="#a82e14932b24ac665f0ca78e0d30b9580">More...</a><br /></td></tr>
-<tr class="separator:a82e14932b24ac665f0ca78e0d30b9580"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdb96c06be84f384d4f41ffae81cb4a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#afdb96c06be84f384d4f41ffae81cb4a0">Reset</a> ()</td></tr>
-<tr class="memdesc:afdb96c06be84f384d4f41ffae81cb4a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the bag and refills it.  <a href="#afdb96c06be84f384d4f41ffae81cb4a0">More...</a><br /></td></tr>
-<tr class="separator:afdb96c06be84f384d4f41ffae81cb4a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65ad3da831ff78a796163fd34dcf7d50"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a65ad3da831ff78a796163fd34dcf7d50">PopRandomItem</a> ()</td></tr>
-<tr class="memdesc:a65ad3da831ff78a796163fd34dcf7d50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a random item from the bag. If there is no item in the bag, it is automatically refilled first.  <a href="#a65ad3da831ff78a796163fd34dcf7d50">More...</a><br /></td></tr>
-<tr class="separator:a65ad3da831ff78a796163fd34dcf7d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad603c36ae4b6cbff4426766218c45dc8"><td class="memItemLeft" align="right" valign="top">T[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ad603c36ae4b6cbff4426766218c45dc8">PopRandomItems</a> (int count)</td></tr>
-<tr class="memdesc:ad603c36ae4b6cbff4426766218c45dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets multiple random items from the bag. If there aren't enough item in the bag, it is automatically refilled.  <a href="#ad603c36ae4b6cbff4426766218c45dc8">More...</a><br /></td></tr>
-<tr class="separator:ad603c36ae4b6cbff4426766218c45dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb86eb2831f7cb34cc84867c8ed57233"><td class="memItemLeft" align="right" valign="top">IEnumerator&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#acb86eb2831f7cb34cc84867c8ed57233">GetEndlessEnumerator</a> ()</td></tr>
-<tr class="memdesc:acb86eb2831f7cb34cc84867c8ed57233"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an enumerator returning an endless number of items, automatically refilling the bag when empty.  <a href="#acb86eb2831f7cb34cc84867c8ed57233">More...</a><br /></td></tr>
-<tr class="separator:acb86eb2831f7cb34cc84867c8ed57233"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecf553b86b51b542e33e674afcc84f02"><td class="memItemLeft" align="right" valign="top">IEnumerator&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#aecf553b86b51b542e33e674afcc84f02">GetRemainderEnumerator</a> ()</td></tr>
-<tr class="memdesc:aecf553b86b51b542e33e674afcc84f02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an enumerator returning the items remaining in the bag.  <a href="#aecf553b86b51b542e33e674afcc84f02">More...</a><br /></td></tr>
-<tr class="separator:aecf553b86b51b542e33e674afcc84f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda1a184e48a79ca081df421f80ce5be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#acda1a184e48a79ca081df421f80ce5be">MeshTriangle</a> (<a class="el" href="a00021.html">MeshVertex</a> a, <a class="el" href="a00021.html">MeshVertex</a> b, <a class="el" href="a00021.html">MeshVertex</a> c)</td></tr>
+<tr class="memdesc:acda1a184e48a79ca081df421f80ce5be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new triangle.  <a href="#acda1a184e48a79ca081df421f80ce5be">More...</a><br /></td></tr>
+<tr class="separator:acda1a184e48a79ca081df421f80ce5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92bf2125c47a5c27a6d0a00265b4977b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a92bf2125c47a5c27a6d0a00265b4977b">Update</a> (<a class="el" href="a00021.html">MeshVertex</a> a, <a class="el" href="a00021.html">MeshVertex</a> b, <a class="el" href="a00021.html">MeshVertex</a> c)</td></tr>
+<tr class="memdesc:a92bf2125c47a5c27a6d0a00265b4977b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience method to update all three vertices at once.  <a href="#a92bf2125c47a5c27a6d0a00265b4977b">More...</a><br /></td></tr>
+<tr class="separator:a92bf2125c47a5c27a6d0a00265b4977b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a87873b7400c0e09a0ca4d57301a6fa12"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a87873b7400c0e09a0ca4d57301a6fa12">Fillings</a><code> [get]</code></td></tr>
-<tr class="memdesc:a87873b7400c0e09a0ca4d57301a6fa12"><td class="mdescLeft">&#160;</td><td class="mdescRight">How often refillItems/refillDelegate is used to fill the bag when the bag is empty.  <a href="#a87873b7400c0e09a0ca4d57301a6fa12">More...</a><br /></td></tr>
-<tr class="separator:a87873b7400c0e09a0ca4d57301a6fa12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a686ada39962cdb7a9a38b45082436348"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a686ada39962cdb7a9a38b45082436348">RemainderCount</a><code> [get]</code></td></tr>
-<tr class="memdesc:a686ada39962cdb7a9a38b45082436348"><td class="mdescLeft">&#160;</td><td class="mdescRight">The items currently remaining in the bag.  <a href="#a686ada39962cdb7a9a38b45082436348">More...</a><br /></td></tr>
-<tr class="separator:a686ada39962cdb7a9a38b45082436348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae90611f97b3258457fcd903be9905d72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00021.html">MeshVertex</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ae90611f97b3258457fcd903be9905d72">MeshVertices</a><code> [get]</code></td></tr>
+<tr class="memdesc:ae90611f97b3258457fcd903be9905d72"><td class="mdescLeft">&#160;</td><td class="mdescRight">The three vertices that make up this triangle in clockwise order.  <a href="#ae90611f97b3258457fcd903be9905d72">More...</a><br /></td></tr>
+<tr class="separator:ae90611f97b3258457fcd903be9905d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A <a class="el" href="a00020.html" title="A RandomBag ensures that per interval [fillings * itemCount], every different item in it will be give...">RandomBag</a> ensures that per interval [fillings * itemCount], every different item in it will be given back [fillings] times. Once the bag is empty, it is automatically refilled, either from a fixed array or by calling a delegate. </p>
-<p>An example for that is used in some implementations of Tetris. The bag is filled with one instance (fillings=1) of each of the seven different pieces. Every time the next piece is needed, a random one is taken out of the bag until the bag is empty. That way, any two pieces are never longer than 7 pulls apart - and even that is only the case if the first and the last piece in the bag are the same one. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>The type to be put in the bag.</td></tr>
-  </table>
-  </dd>
-</dl>
+<div class="textblock"><p>A triangle, consisting of three <a class="el" href="a00021.html" title="A vertex in a MeshTriangle. Can -and should!- be shared by multiple triangles. Used in a MeshCreator...">MeshVertex</a>. Used in a <a class="el" href="a00019.html" title="Stores the vertex/triangle data of a mesh in easily modifiable form - which can then be used to actua...">MeshCreator</a>. Cannot be part of more than one <a class="el" href="a00019.html" title="Stores the vertex/triangle data of a mesh in easily modifiable form - which can then be used to actua...">MeshCreator</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="adfb628736b2d5028bd868c7d9311c6da"></a>
+<a class="anchor" id="acda1a184e48a79ca081df421f80ce5be"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00020.html">UnityUtilities.RandomBag</a>&lt; T &gt;.<a class="el" href="a00020.html">RandomBag</a> </td>
+          <td class="memname">UnityUtilities.MeshTriangle.MeshTriangle </td>
           <td>(</td>
-          <td class="paramtype">T[]&#160;</td>
-          <td class="paramname"><em>refillItems</em>, </td>
+          <td class="paramtype"><a class="el" href="a00021.html">MeshVertex</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>fillings</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00021.html">MeshVertex</a>&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00021.html">MeshVertex</a>&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -190,46 +165,12 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initializes the bag with a array of items to refill it and the number of times the array is added to the bag. Once the bag is empty, the array will automatically be added to the bag [fillings] times again. </p>
+<p>Creates a new triangle. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">refillItems</td><td>The array to fill the bag [fillings] times with.</td></tr>
-    <tr><td class="paramname">fillings</td><td>The number of times the array is added to the bag.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a8fb585117608488361cadf6c89ca0d89"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00020.html">UnityUtilities.RandomBag</a>&lt; T &gt;.<a class="el" href="a00020.html">RandomBag</a> </td>
-          <td>(</td>
-          <td class="paramtype">Action&lt; List&lt; T &gt;&gt;&#160;</td>
-          <td class="paramname"><em>refillDelegate</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>fillings</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initializes the bag by calling the refillDelegate multiple times. Once the bag is empty, the delegate will automatically be called [fillings] times again. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">refillDelegate</td><td>The delegate that will be called [fillings] times to fill the bag.</td></tr>
-    <tr><td class="paramname">fillings</td><td>The number of times refillDelegate is called.</td></tr>
+    <tr><td class="paramname">a</td><td>The first vertex in clockwise order.</td></tr>
+    <tr><td class="paramname">b</td><td>The second vertex in clockwise order.</td></tr>
+    <tr><td class="paramname">c</td><td>The third vertex in clockwise order.</td></tr>
   </table>
   </dd>
 </dl>
@@ -237,144 +178,42 @@ Properties</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="acb86eb2831f7cb34cc84867c8ed57233"></a>
+<a class="anchor" id="a92bf2125c47a5c27a6d0a00265b4977b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">IEnumerator&lt;T&gt; <a class="el" href="a00020.html">UnityUtilities.RandomBag</a>&lt; T &gt;.GetEndlessEnumerator </td>
+          <td class="memname">void UnityUtilities.MeshTriangle.Update </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="a00021.html">MeshVertex</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets an enumerator returning an endless number of items, automatically refilling the bag when empty. </p>
-<dl class="section return"><dt>Returns</dt><dd>An enumerator returning an endless number of items from the bag.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="aecf553b86b51b542e33e674afcc84f02"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">IEnumerator&lt;T&gt; <a class="el" href="a00020.html">UnityUtilities.RandomBag</a>&lt; T &gt;.GetRemainderEnumerator </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="a00021.html">MeshVertex</a>&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets an enumerator returning the items remaining in the bag. </p>
-<dl class="section return"><dt>Returns</dt><dd>An enumerator returning the items currently remaining in the bag.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a65ad3da831ff78a796163fd34dcf7d50"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="a00020.html">UnityUtilities.RandomBag</a>&lt; T &gt;.PopRandomItem </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="a00021.html">MeshVertex</a>&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets a random item from the bag. If there is no item in the bag, it is automatically refilled first. </p>
-<dl class="section return"><dt>Returns</dt><dd>A random item from the bag.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ad603c36ae4b6cbff4426766218c45dc8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">T [] <a class="el" href="a00020.html">UnityUtilities.RandomBag</a>&lt; T &gt;.PopRandomItems </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>count</em></td><td>)</td>
           <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets multiple random items from the bag. If there aren't enough item in the bag, it is automatically refilled. </p>
+<p>Convenience method to update all three vertices at once. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">count</td><td>How many items to pull from the bag.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A number of random items from the bag.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="afdb96c06be84f384d4f41ffae81cb4a0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00020.html">UnityUtilities.RandomBag</a>&lt; T &gt;.Reset </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Clears the bag and refills it. </p>
-
-</div>
-</div>
-<a class="anchor" id="a58dd8ef2082d864cbbb3e59f59c12d70"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00020.html">UnityUtilities.RandomBag</a>&lt; T &gt;.SetRefillDelegate </td>
-          <td>(</td>
-          <td class="paramtype">Action&lt; List&lt; T &gt;&gt;&#160;</td>
-          <td class="paramname"><em>refillDelegate</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets the refill method to "When empty, this delegate is called [fillings] times to fill the bag." </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">refillDelegate</td><td>The delegate that will be called [fillings] times to fill the bag once it's empty.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a82e14932b24ac665f0ca78e0d30b9580"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00020.html">UnityUtilities.RandomBag</a>&lt; T &gt;.SetRefillItems </td>
-          <td>(</td>
-          <td class="paramtype">T[]&#160;</td>
-          <td class="paramname"><em>refillItems</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets the refill method to "When empty, this array is added to the bag [fillings] times." </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">refillItems</td><td>The array to fill the bag [fillings] times with once it's empty.</td></tr>
+    <tr><td class="paramname">a</td><td>The first vertex in clockwise order.</td></tr>
+    <tr><td class="paramname">b</td><td>The second vertex in clockwise order.</td></tr>
+    <tr><td class="paramname">c</td><td>The third vertex in clockwise order.</td></tr>
   </table>
   </dd>
 </dl>
@@ -382,7 +221,7 @@ Properties</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
-<a class="anchor" id="a87873b7400c0e09a0ca4d57301a6fa12"></a>
+<a class="anchor" id="ae90611f97b3258457fcd903be9905d72"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -390,7 +229,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="a00020.html">UnityUtilities.RandomBag</a>&lt; T &gt;.Fillings</td>
+          <td class="memname"><a class="el" href="a00021.html">MeshVertex</a> [] UnityUtilities.MeshTriangle.MeshVertices</td>
         </tr>
       </table>
   </td>
@@ -400,41 +239,19 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>How often refillItems/refillDelegate is used to fill the bag when the bag is empty. </p>
-
-</div>
-</div>
-<a class="anchor" id="a686ada39962cdb7a9a38b45082436348"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int <a class="el" href="a00020.html">UnityUtilities.RandomBag</a>&lt; T &gt;.RemainderCount</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The items currently remaining in the bag. </p>
+<p>The three vertices that make up this triangle in clockwise order. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>RandomBag/RandomBag.cs</li>
+<li>MeshCreator/MeshTriangle.cs</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00064.html">UnityUtilities</a></li><li class="navelem"><a class="el" href="a00020.html">RandomBag</a></li>
+    <li class="navelem"><a class="el" href="a00072.html">UnityUtilities</a></li><li class="navelem"><a class="el" href="a00020.html">MeshTriangle</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
