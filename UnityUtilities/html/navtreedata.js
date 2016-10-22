@@ -2,17 +2,18 @@ var NAVTREE =
 [
   [ "UnityUtilities", "index.html", [
     [ "Unity Utilities", "index.html", null ],
-    [ "Countdown", "a00001.html", null ],
-    [ "EditorHelper", "a00002.html", null ],
-    [ "LINQExtensions", "a00003.html", null ],
-    [ "MeshCreator", "a00004.html", null ],
-    [ "NoiseOutputValue", "a00005.html", null ],
-    [ "RandomBag", "a00006.html", null ],
-    [ "RangeInt/Float", "a00007.html", null ],
-    [ "RollingArray", "a00008.html", null ],
-    [ "SingletonMonoBehaviour and PersistentSingletonMonoBehaviour", "a00009.html", null ],
-    [ "UnityHelper", "a00010.html", null ],
-    [ "XmlHelper", "a00011.html", null ],
+    [ "Countdown", "a00224.html", null ],
+    [ "EditorHelper", "a00225.html", null ],
+    [ "LINQExtensions", "a00226.html", null ],
+    [ "MathHelper", "a00227.html", null ],
+    [ "MeshCreator", "a00228.html", null ],
+    [ "NoiseOutputValue", "a00229.html", null ],
+    [ "RandomBag", "a00230.html", null ],
+    [ "RangeInt/Float", "a00231.html", null ],
+    [ "RollingArray", "a00232.html", null ],
+    [ "SingletonMonoBehaviour and PersistentSingletonMonoBehaviour", "a00233.html", null ],
+    [ "UnityHelper", "a00234.html", null ],
+    [ "XmlHelper", "a00235.html", null ],
     [ "Packages", null, [
       [ "Packages", "namespaces.html", "namespaces" ]
     ] ],
@@ -31,7 +32,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"a00001.html"
+"a00089.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
