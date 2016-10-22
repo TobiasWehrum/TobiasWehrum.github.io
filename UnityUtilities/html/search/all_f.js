@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['unity_20utilities',['Unity Utilities',['../index.html',1,'']]],
   ['unityhelper',['UnityHelper',['../a00234.html',1,'']]],
   ['unityhelper',['UnityHelper',['../a00171.html',1,'UnityUtilities']]],
   ['unityutilities',['UnityUtilities',['../a00089.html',1,'']]],

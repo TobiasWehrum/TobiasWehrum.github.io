@@ -1,7 +1,7 @@
 var NAVTREE =
 [
   [ "UnityUtilities", "index.html", [
-    [ "Unity Utilities", "index.html", null ],
+    [ "Tobi's Unity Utilities", "index.html", null ],
     [ "Countdown", "a00224.html", null ],
     [ "EditorHelper", "a00225.html", null ],
     [ "LINQExtensions", "a00226.html", null ],
