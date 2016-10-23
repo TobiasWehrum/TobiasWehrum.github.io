@@ -108,8 +108,11 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:aafb0041f946b2d3803a395fc3a5880a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable skipOnLevelWasLoaded.  <a href="#aafb0041f946b2d3803a395fc3a5880a5">More...</a><br /></td></tr>
 <tr class="separator:aafb0041f946b2d3803a395fc3a5880a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a748d2abb1599f2905665c945a0dbd951"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00163.html#a748d2abb1599f2905665c945a0dbd951">OnPersistentSingletonAwake</a> ()</td></tr>
-<tr class="memdesc:a748d2abb1599f2905665c945a0dbd951"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when the Awake() method of the first instance of the persistent singleton is done. This is not called if this is a second instance and will be destroyed.  <a href="#a748d2abb1599f2905665c945a0dbd951">More...</a><br /></td></tr>
+<tr class="memdesc:a748d2abb1599f2905665c945a0dbd951"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when the Awake() method of the first instance of the persistent singleton is done. This is not called if this is a second instance (which is destroyed automatically immediately).  <a href="#a748d2abb1599f2905665c945a0dbd951">More...</a><br /></td></tr>
 <tr class="separator:a748d2abb1599f2905665c945a0dbd951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28246590641936c9d0211c153fda367a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00163.html#a28246590641936c9d0211c153fda367a">OnPersistentSingletonDestroyed</a> ()</td></tr>
+<tr class="memdesc:a28246590641936c9d0211c153fda367a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when the registered instance of the persistent singleton is either destroyed manually by calling Destroy() or the application is closed. This is not called if this is a second instance (which is destroyed automatically immediately).  <a href="#a28246590641936c9d0211c153fda367a">More...</a><br /></td></tr>
+<tr class="separator:a28246590641936c9d0211c153fda367a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa5668bd8329ff57f3a19b14d781c566"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00163.html#aaa5668bd8329ff57f3a19b14d781c566">OnSceneSwitched</a> ()</td></tr>
 <tr class="memdesc:aaa5668bd8329ff57f3a19b14d781c566"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called after switching to a new scene.  <a href="#aaa5668bd8329ff57f3a19b14d781c566">More...</a><br /></td></tr>
 <tr class="separator:aaa5668bd8329ff57f3a19b14d781c566"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,6 +198,12 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>If this is the persistent instance and it was destroyed (manually), remove the instance registration. </p>
+<p>Note: This also means that you need to use </p><pre class="fragment">protected override void OnDestroy()
+{
+    base.OnDestroy();
+    // [Your code]
+}
+</pre><p>in subclasses. </p>
 
 </div>
 </div>
@@ -221,7 +230,34 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>This method is called when the Awake() method of the first instance of the persistent singleton is done. This is not called if this is a second instance and will be destroyed. </p>
+<p>This method is called when the Awake() method of the first instance of the persistent singleton is done. This is not called if this is a second instance (which is destroyed automatically immediately). </p>
+
+</div>
+</div>
+<a id="a28246590641936c9d0211c153fda367a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28246590641936c9d0211c153fda367a">&sect;&nbsp;</a></span>OnPersistentSingletonDestroyed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="a00163.html">UnityUtilities.PersistentSingletonMonoBehaviour</a>&lt; TSubclass &gt;.OnPersistentSingletonDestroyed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method is called when the registered instance of the persistent singleton is either destroyed manually by calling Destroy() or the application is closed. This is not called if this is a second instance (which is destroyed automatically immediately). </p>
 
 </div>
 </div>

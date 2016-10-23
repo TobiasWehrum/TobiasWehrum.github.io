@@ -1,6 +1,12 @@
 var a00171 =
 [
     [ "AssignLayerToHierarchy", "a00171.html#afd02f33cdab416ac10d02453a1797827", null ],
+    [ "CalculateCentroid", "a00171.html#a77eff3af156a965dbff68a71272dc541", null ],
+    [ "CalculateCentroid", "a00171.html#a690a2cd51b6ff524a4569347731f9379", null ],
+    [ "CalculateCentroid", "a00171.html#acadd26c42975711fa18be9e3407eb23b", null ],
+    [ "CalculateCentroid", "a00171.html#a7a0db1a0cda78bd7fb77df028e035f40", null ],
+    [ "CalculateCentroid", "a00171.html#acf4ab374762549b8647dad58f6a81edf", null ],
+    [ "CalculateCentroid", "a00171.html#a387fea13ad8d427f78c57e4b21dcea11", null ],
     [ "CalculateViewportWorldSizeAtDistance", "a00171.html#ad97f88439e14d25bc902ccba9c2ad754", null ],
     [ "Change", "a00171.html#a7bdb00150055a742ec42268d0547ba5e", null ],
     [ "Change2", "a00171.html#af2a8fc3e1b9dc8689ac8c8ea3d9218a9", null ],
@@ -15,6 +21,10 @@ var a00171 =
     [ "CopyPositionAndRotatationFrom", "a00171.html#ab6d3a6c7f673f831adc482f368d3159f", null ],
     [ "CreateVector2AngleDeg", "a00171.html#aa602e0aea1ecb99011f7b22b3909b857", null ],
     [ "CreateVector2AngleRad", "a00171.html#a9a374e56f4e4d75d516485be39a02f91", null ],
+    [ "EasedLerpColor", "a00171.html#a854c9370ee480b73670ce98bcab6dc08", null ],
+    [ "EasedLerpVector2", "a00171.html#a297f4c384ea7669c07545d4153cbff9a", null ],
+    [ "EasedLerpVector3", "a00171.html#a14c715ea7289fc132e51da75ac5fc55d", null ],
+    [ "EasedLerpVector4", "a00171.html#a9142e307961462b1ed2a51530f5a1c1a", null ],
     [ "Extend", "a00171.html#a4ff4e6ceaf4d88515eaeac3d2a93e5d9", null ],
     [ "GetAngleDeg", "a00171.html#a517eb1c6b9429e4fa953c9841d5371d2", null ],
     [ "GetAngleRad", "a00171.html#aefea4b67ccd730c0514e64761a73d882", null ],

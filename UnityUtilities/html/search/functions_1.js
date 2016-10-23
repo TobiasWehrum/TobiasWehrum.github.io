@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['calculatecentroid',['CalculateCentroid',['../a00171.html#a77eff3af156a965dbff68a71272dc541',1,'UnityUtilities.UnityHelper.CalculateCentroid(this Vector2[] array)'],['../a00171.html#a690a2cd51b6ff524a4569347731f9379',1,'UnityUtilities.UnityHelper.CalculateCentroid(this Vector3[] array)'],['../a00171.html#acadd26c42975711fa18be9e3407eb23b',1,'UnityUtilities.UnityHelper.CalculateCentroid(this Vector4[] array)'],['../a00171.html#a7a0db1a0cda78bd7fb77df028e035f40',1,'UnityUtilities.UnityHelper.CalculateCentroid(this List&lt; Vector2 &gt; list)'],['../a00171.html#acf4ab374762549b8647dad58f6a81edf',1,'UnityUtilities.UnityHelper.CalculateCentroid(this List&lt; Vector3 &gt; list)'],['../a00171.html#a387fea13ad8d427f78c57e4b21dcea11',1,'UnityUtilities.UnityHelper.CalculateCentroid(this List&lt; Vector4 &gt; list)']]],
   ['calculateviewportworldsizeatdistance',['CalculateViewportWorldSizeAtDistance',['../a00171.html#ad97f88439e14d25bc902ccba9c2ad754',1,'UnityUtilities::UnityHelper']]],
   ['change',['Change',['../a00171.html#a7bdb00150055a742ec42268d0547ba5e',1,'UnityUtilities::UnityHelper']]],
   ['change2',['Change2',['../a00171.html#af2a8fc3e1b9dc8689ac8c8ea3d9218a9',1,'UnityUtilities::UnityHelper']]],

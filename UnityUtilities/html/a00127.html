@@ -87,7 +87,7 @@ $(document).ready(function(){initNavTree('a00127.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="a00127.html" title="The MathHelper contains methods to help with mapping and angles and a really nifty method for time-in...">MathHelper</a> contains methods to help with mapping and angles and a really nifty method for time-independent eased lerping.  
+<p>The <a class="el" href="a00127.html" title="The MathHelper contains methods to help with mapping and angles and a really nifty method for framera...">MathHelper</a> contains methods to help with mapping and angles and a really nifty method for framerate-independent eased lerping.  
  <a href="a00127.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -111,11 +111,14 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad36831d1a727d1b6431783c9b05cd856"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalizes an angle between -180 (inclusive) and 180 (exclusive).  <a href="#ad36831d1a727d1b6431783c9b05cd856">More...</a><br /></td></tr>
 <tr class="separator:ad36831d1a727d1b6431783c9b05cd856"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7068f12f03ac4b30ffc6528e4fccb72"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00127.html#ab7068f12f03ac4b30ffc6528e4fccb72">EasedLerpFactor</a> (float factor, float deltaTime=0f)</td></tr>
-<tr class="memdesc:ab7068f12f03ac4b30ffc6528e4fccb72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a time-independent T for lerping towards a target.  <a href="#ab7068f12f03ac4b30ffc6528e4fccb72">More...</a><br /></td></tr>
+<tr class="memdesc:ab7068f12f03ac4b30ffc6528e4fccb72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a framerate-independent t for lerping towards a target.  <a href="#ab7068f12f03ac4b30ffc6528e4fccb72">More...</a><br /></td></tr>
 <tr class="separator:ab7068f12f03ac4b30ffc6528e4fccb72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f1cab6e1b38d04cb4e78edd36e682ae"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00127.html#a9f1cab6e1b38d04cb4e78edd36e682ae">EasedLerp</a> (float current, float target, float percentPerSecond, float deltaTime=0f)</td></tr>
+<tr class="memdesc:a9f1cab6e1b38d04cb4e78edd36e682ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Framerate-independent eased lerping to a target value, slowing down the closer it is.  <a href="#a9f1cab6e1b38d04cb4e78edd36e682ae">More...</a><br /></td></tr>
+<tr class="separator:a9f1cab6e1b38d04cb4e78edd36e682ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="a00127.html" title="The MathHelper contains methods to help with mapping and angles and a really nifty method for time-in...">MathHelper</a> contains methods to help with mapping and angles and a really nifty method for time-independent eased lerping. </p>
+<div class="textblock"><p>The <a class="el" href="a00127.html" title="The MathHelper contains methods to help with mapping and angles and a really nifty method for framera...">MathHelper</a> contains methods to help with mapping and angles and a really nifty method for framerate-independent eased lerping. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a45ace5f75629ee6e30b064fc7c8552ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a45ace5f75629ee6e30b064fc7c8552ec">&sect;&nbsp;</a></span>ApplyJoystickDeadzone()</h2>
@@ -170,6 +173,69 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a9f1cab6e1b38d04cb4e78edd36e682ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f1cab6e1b38d04cb4e78edd36e682ae">&sect;&nbsp;</a></span>EasedLerp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float UnityUtilities.MathHelper.EasedLerp </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>current</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>percentPerSecond</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>deltaTime</em> = <code>0f</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Framerate-independent eased lerping to a target value, slowing down the closer it is. </p>
+<p>If you call </p><pre class="fragment">currentValue = MathHelper.EasedLerp(currentValue, 1f, 0.75f);
+</pre><p>each frame (e.g. in Update()), starting with a currentValue of 0, then after 1 second it will be approximately 0.75 - which is 75% of the way between 0 and 1.</p>
+<p>Adjusting the target or the percentPerSecond between calls is also possible. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">current</td><td>The current value.</td></tr>
+    <tr><td class="paramname">target</td><td>The target value.</td></tr>
+    <tr><td class="paramname">percentPerSecond</td><td>How much of the distance between current and target should be covered per second?</td></tr>
+    <tr><td class="paramname">deltaTime</td><td>How much time passed since the last call.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The interpolated value from current to target.</dd></dl>
+
+</div>
+</div>
 <a id="ab7068f12f03ac4b30ffc6528e4fccb72"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab7068f12f03ac4b30ffc6528e4fccb72">&sect;&nbsp;</a></span>EasedLerpFactor()</h2>
 
@@ -204,14 +270,14 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Provides a time-independent T for lerping towards a target. </p>
+<p>Provides a framerate-independent t for lerping towards a target. </p>
 <p>Example: </p><pre class="fragment">currentValue = Mathf.Lerp(currentValue, 1f, MathHelper.EasedLerpFactor(0.75f);
 </pre><p>will cover 75% of the remaining distance between currentValue and 1 each second.</p>
 <p>There are essentially two ways of lerping a value over time: linear (constant speed) or eased (e.g. getting slower the closer you are to the target, see <a href="http://easings.net">http://easings.net</a>.)</p>
 <p>For linear lerping (and most of the easing functions), you need to track the start and end positions and the time that elapsed.</p>
 <p>Calling something like </p><pre class="fragment">currentValue = Mathf.Lerp(currentValue, 1f, 0.95f);
-</pre><p>every frame provides an easy way of eased lerping without tracking elapsed time or the starting value, but since it's called every frame, the actual speed changes the higher the framerate is.</p>
-<p>This function replaces the lerp T to make it time-independent and easier to estimate.</p>
+</pre><p>every frame provides an easy way of eased lerping without tracking elapsed time or the starting value, but since it's called every frame, the actual traversed distance per second changes the higher the framerate is.</p>
+<p>This function replaces the lerp T to make it framerate-independent and easier to estimate.</p>
 <p>For more info, see <a href="https://www.scirra.com/blog/ashley/17/using-lerp-with-delta-time">https://www.scirra.com/blog/ashley/17/using-lerp-with-delta-time</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -220,7 +286,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The time-independent lerp T.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The framerate-independent lerp t.</dd></dl>
 
 </div>
 </div>

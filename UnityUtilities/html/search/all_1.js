@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['calculatecentroid',['CalculateCentroid',['../a00171.html#a77eff3af156a965dbff68a71272dc541',1,'UnityUtilities.UnityHelper.CalculateCentroid(this Vector2[] array)'],['../a00171.html#a690a2cd51b6ff524a4569347731f9379',1,'UnityUtilities.UnityHelper.CalculateCentroid(this Vector3[] array)'],['../a00171.html#acadd26c42975711fa18be9e3407eb23b',1,'UnityUtilities.UnityHelper.CalculateCentroid(this Vector4[] array)'],['../a00171.html#a7a0db1a0cda78bd7fb77df028e035f40',1,'UnityUtilities.UnityHelper.CalculateCentroid(this List&lt; Vector2 &gt; list)'],['../a00171.html#acf4ab374762549b8647dad58f6a81edf',1,'UnityUtilities.UnityHelper.CalculateCentroid(this List&lt; Vector3 &gt; list)'],['../a00171.html#a387fea13ad8d427f78c57e4b21dcea11',1,'UnityUtilities.UnityHelper.CalculateCentroid(this List&lt; Vector4 &gt; list)']]],
   ['calculatedurationdelegate',['CalculateDurationDelegate',['../a00103.html#aee719bfa039feb3aa93f1dcc8fe3fccf',1,'UnityUtilities::Countdown']]],
   ['calculateviewportworldsizeatdistance',['CalculateViewportWorldSizeAtDistance',['../a00171.html#ad97f88439e14d25bc902ccba9c2ad754',1,'UnityUtilities::UnityHelper']]],
   ['change',['Change',['../a00171.html#a7bdb00150055a742ec42268d0547ba5e',1,'UnityUtilities::UnityHelper']]],
@@ -18,10 +19,10 @@ var searchData=
   ['count',['Count',['../a00159.html#a3ef3a46617ec7c84cded2b18cfb00aa7',1,'UnityUtilities::RollingArray']]],
   ['countdown',['Countdown',['../a00103.html',1,'UnityUtilities']]],
   ['countdown',['Countdown',['../a00103.html#a1b62636300043bcb7b55ba1212b463eb',1,'UnityUtilities.Countdown.Countdown(bool loop)'],['../a00103.html#aac37514944dfb115132b6b3958028545',1,'UnityUtilities.Countdown.Countdown(bool loop, float startDuration)'],['../a00103.html#a1e25507742417681189fadeab0d4a5a5',1,'UnityUtilities.Countdown.Countdown(bool loop, Func&lt; float &gt; calculateDurationDelegate, float? startDuration=null)']]],
-  ['countdownproperty',['CountdownProperty',['../a00107.html#a1e1e4a3a34b1dc3df4c03f8414f88857',1,'UnityUtilities::CountdownProperty']]],
   ['countdownproperty',['CountdownProperty',['../a00107.html',1,'UnityUtilities']]],
-  ['countdownpropertyloop',['CountdownPropertyLoop',['../a00111.html#af74dff3070f2d8ca47bd22c208c7cfdd',1,'UnityUtilities::CountdownPropertyLoop']]],
+  ['countdownproperty',['CountdownProperty',['../a00107.html#a1e1e4a3a34b1dc3df4c03f8414f88857',1,'UnityUtilities::CountdownProperty']]],
   ['countdownpropertyloop',['CountdownPropertyLoop',['../a00111.html',1,'UnityUtilities']]],
+  ['countdownpropertyloop',['CountdownPropertyLoop',['../a00111.html#af74dff3070f2d8ca47bd22c208c7cfdd',1,'UnityUtilities::CountdownPropertyLoop']]],
   ['countdownpropertyonce',['CountdownPropertyOnce',['../a00115.html',1,'UnityUtilities']]],
   ['countdownpropertyonce',['CountdownPropertyOnce',['../a00115.html#ad89a953c59b89deaec5abb3f905acb3b',1,'UnityUtilities::CountdownPropertyOnce']]],
   ['createmesh',['CreateMesh',['../a00131.html#a03204a9edf528fec57e27917abda7baf',1,'UnityUtilities::MeshCreator']]],

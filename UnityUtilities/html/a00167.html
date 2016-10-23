@@ -80,6 +80,7 @@ $(document).ready(function(){initNavTree('a00167.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="a00164.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -98,6 +99,12 @@ Inheritance diagram for UnityUtilities.SingletonMonoBehaviour&lt; TSubclass &gt;
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a673913f4990f7bf94e787b28f760510a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00167.html#a673913f4990f7bf94e787b28f760510a">OnDestroy</a> ()</td></tr>
+<tr class="memdesc:a673913f4990f7bf94e787b28f760510a"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this is the instance and it was destroyed, remove the instance registration.  <a href="#a673913f4990f7bf94e787b28f760510a">More...</a><br /></td></tr>
+<tr class="separator:a673913f4990f7bf94e787b28f760510a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a2f148625a4dd30cd1e9787b7e41639f2"><td class="memItemLeft" align="right" valign="top">static TSubclass&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00167.html#a2f148625a4dd30cd1e9787b7e41639f2">Instance</a><code> [get]</code></td></tr>
@@ -123,7 +130,41 @@ Properties</h2></td></tr>
 </dd>
 </dl>
 </div>
-</div><h2 class="groupheader">Property Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a673913f4990f7bf94e787b28f760510a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a673913f4990f7bf94e787b28f760510a">&sect;&nbsp;</a></span>OnDestroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="a00167.html">UnityUtilities.SingletonMonoBehaviour</a>&lt; TSubclass &gt;.OnDestroy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If this is the instance and it was destroyed, remove the instance registration. </p>
+<p>Note: This also means that you need to use </p><pre class="fragment">protected override void OnDestroy()
+{
+    base.OnDestroy();
+    // [Your code]
+}
+</pre><p>in subclasses. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
 <a id="a2f148625a4dd30cd1e9787b7e41639f2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2f148625a4dd30cd1e9787b7e41639f2">&sect;&nbsp;</a></span>Instance</h2>
 
